@@ -1,5 +1,5 @@
 ---
-title: "Getting started with DocuScope & DocuScope Corpus Analysis"
+title: "Getting Started with DocuScope & DocuScope Corpus Analysis"
 keywords: sample homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
@@ -9,7 +9,7 @@ summary: This site contains documentation for DocuScope Corpus Analysis (or Docu
 
 {% include note.html content="If you're seeking information about other DocuScope tools (like DocuScope Write & Audit, please check the <a alt='DocuScope homepage' href='https://www.cmu.edu/dietrich/english/research-and-publications/docuscope.html'>DocuScope homepage</a>. If you're interested in reading more about how to apply DocuScope in research, see <a href='https://benjamins.com/catalog/scl'>Corpora and Rhetorically Informed Text Analysis: The Diverse Applications of DocuScope</a>, which is scheduled to be published by John Benjamins in 2023 as part of their their Studies in Corpus Linguistics series." %}
 
-## Build the Theme
+## Load a Corpus
 
 Follow these instructions to build the theme.
 
