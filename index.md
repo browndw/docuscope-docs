@@ -1,13 +1,13 @@
 ---
-title: "Getting started with the Documentation Theme for Jekyll"
+title: "Getting started with DocuScope & DocuScope Corpus Analysis"
 keywords: sample homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
 permalink: index.html
-summary: These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll.
+summary: This site contains documentation for DocuScope Corpus Analysis (or DocuScope CA), as well information for those using the *docuscospacy* Python package.
 ---
 
-{% include note.html content="If you're cloning this theme, you're probably writing documentation of some kind. I have a blog on technical writing here called <a alt='technical writing blog' href='http://idratherbewriting.com'>I'd Rather Be Writing</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='https://tinyletter.com/tomjoht'>subscribing</a>. I also have a site on <a href='http://idratherbewriting.com/learnapidoc'>writing API documentation</a>." %}
+{% include note.html content="If you're seeking information about other DocuScope tools (like DocuScope Write & Audit, please check the <a alt='DocuScope homepage' href='https://www.cmu.edu/dietrich/english/research-and-publications/docuscope.html'>DocuScope homepage</a>. If you're interested in reading more about how to apply DocuScope in research, see <a href='https://benjamins.com/catalog/scl'>Corpora and Rhetorically Informed Text Analysis: The Diverse Applications of DocuScope</a>, which is scheduled to be published by John Benjamins in 2023 as part of their their Studies in Corpus Linguistics series." %}
 
 ## Build the Theme
 
