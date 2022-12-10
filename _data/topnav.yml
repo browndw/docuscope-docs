@@ -15,11 +15,11 @@ topnav_dropdowns:
     - title: More DocuScope
       folderitems:
         - title: DocuScope Project
-          external_url: https://talk.jekyllrb.com
-        - title: Jekyll documentation
-          external_url: http://jekyllrb.com/docs/home/
-        - title: Jekyll on Stack Overflow
-          external_url: http://stackoverflow.com/questions/tagged/jekyll
+          external_url: https://www.cmu.edu/dietrich/english/research-and-publications/docuscope.html
+        - title: Python package
+          external_url: https://pypi.org/project/docuscospacy/
+        - title: Python package documentation
+          external_url: https://docuscospacy.readthedocs.org/
         - title: Jekyll on my blog
           external_url: http://idratherbewriting.com/category-jekyll/
     - title: Models
