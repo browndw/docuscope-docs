@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with DocuScope & DocuScope Corpus Analysis"
+title: "Getting Started with DocuScope"
 keywords: sample homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
