@@ -11,11 +11,19 @@ summary: This site contains documentation for DocuScope Corpus Analysis (or Docu
 
 ## Load a Corpus
 
-Follow these instructions to build the theme.
+The first step in using DocuScope CA is to load a corpus of plain text files.
 
-### 1. Download the theme
+If you're not familiar with the basics of corpus building and file preparation, see these guidelines.
 
-First, download or clone the theme from the [Github repo](https://github.com/tomjoht/documentation-theme-jekyll). Most likely you won't be pulling in updates once you start customizing the theme, so downloading the theme (instead of cloning it) probably makes the most sense. In Github, click the **Clone or download** button, and then click **Download ZIP**.
+Otherwise, follow these steps.
+
+### 1. Upload files
+
+First, select the **load corpus** tab on the left side of your screen.
+
+Scroll down to the bottom of the page, where you will find the **browse files** button. Select it.
+
+{% include image.html file="getting_started/image8.png" caption="The widget for browsing and selecting files." %}
 
 ### 2. Install Jekyll
 
