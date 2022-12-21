@@ -19,11 +19,19 @@ Otherwise, follow these steps.
 
 ### 1. Upload files
 
-First, select the **load corpus** tab on the left side of your screen.
+First, select the **load corpus** tab on the left side of the window.
 
 Scroll down to the bottom of the page, where you will find the **browse files** button. Select it.
 
 {% include image.html file="getting_started/image8.png" caption="The widget for browsing and selecting files." %}
+
+A dialogue window will open. Navigate your corpus files and select them. You can select multiple files by holding down the shift key or the command key. You can also use **select all** if you have organized them in their own directory.
+
+{% include image.html file="getting_started/image23.png" caption="A dialogue window for selecting files." %}
+
+Alternatively, you can simply drag and drop your corpus files into the uploader.
+
+{% include warning.html content="The uploader allows only files formatted as plain text (TXT). If you're not sure how to do that, consult the guidelines for preparing a corpus. Also, the uploader limits the size of files to 200 MB. Even long novels are typically under 1.5 MB, so the size restriction shouldn't generally cause problems. But be aware if you are harvesting data from sites like Kaggle, where data has sometimes been aggregated into large files." %}
 
 ### 2. Install Jekyll
 
