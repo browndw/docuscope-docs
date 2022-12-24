@@ -29,7 +29,7 @@ entries:
       type: homepage
 
     - title: Load a corpus
-      url: /load_corpus.html
+      url: /mydoc_load_corpus.html
       output: web, pdf
 
     - title: Supported features
