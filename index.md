@@ -25,30 +25,37 @@ Scroll down to the bottom of the page, where you will find the **browse files** 
 
 {% include image.html file="getting_started/image8.png" caption="The widget for browsing and selecting files." %}
 
-A dialogue window will open. Navigate your corpus files and select them. You can select multiple files by holding down the shift key or the command key. You can also use **select all** if you have organized them in their own directory.
+A dialogue window will open. Navigate to your corpus files and select them. You can select multiple files by holding down the shift key or the command key. You can also use **select all** if you have organized them in their own directory.
 
 {% include image.html file="getting_started/image23.png" caption="A dialogue window for selecting files." %}
 
 Alternatively, you can simply drag and drop your corpus files into the uploader.
 
-{% include warning.html content="The uploader allows only files formatted as plain text (TXT). If you're not sure how to do that, consult the guidelines for preparing a corpus. Also, the uploader limits the size of files to 200 MB. Even long novels are typically under 1.5 MB, so the size restriction shouldn't generally cause problems. But be aware if you are harvesting data from sites like Kaggle, where data has sometimes been aggregated into large files." %}
+{% include warning.html content="The uploader allows only files formatted as plain text (TXT). If you're not sure how to create plain text files, consult the guidelines for preparing a corpus. Also, the uploader limits the size of files to 200 MB. Even long novels are typically under 1.5 MB, so the size restriction shouldn't generally cause problems. But be aware if you are harvesting data from sites like Kaggle, where data has sometimes been aggregated into large files." %}
 
-### 2. Install Jekyll
+### 2. Choose a dictionary
 
-If you've never installed or run a Jekyll site locally on your computer, follow these instructions to install Jekyll:
+From the drop-down menu, select the dictionary you would like to use to tag the corpus. The "dictionaries" are actually models that have been trained on different tagsets.
 
-* [Install Jekyll on Mac][mydoc_install_jekyll_on_mac]
-* [Install Jekyll on Windows][mydoc_install_jekyll_on_windows]
+**Part-of-speech tagging is the same for all models. But the models are trained on different DocuScope tagsets.**
 
-### 3. Install Bundler
+Broadly, the models are differentiated by their number of DocuScope categories:
 
-In case you haven't installed Bundler, install it:
+* Large Dictionary = many categories
+* Medium Dictionary = some categories
+* Common Dictionary = fewer categories
 
-```
-gem install bundler
-```
+Your choice of model largely depends on your data and your research questions. More categories means greater coverage (fewer tokens left "Untagged"), but also more variables with finer grained distinctions.
 
-You'll want [Bundler](http://bundler.io/) to make sure all the Ruby gems needed work well with your project. Bundler sorts out dependencies and installs missing gems or matches up gems with the right versions based on gem dependencies.
+For more informtion, consult the DocuScope tagset descriptions.
+
+### 3. Process a corpus
+
+Once you have selected your desired files, they will appear in the widget. Make sure you select the "process corpus" button below the widget.
+
+{% include image.html file="getting_started/image18.png" caption="Widget showing selected files and the process button." %}
+
+Processing time depends on the size of your corpus. A corpus with a 250,000 words should process in just a few seconds. A corpus with 2 million words will take roughly 30 seconds.
 
 ### 4. Option 1: Build the Theme (*without* the github-pages gem) {#option1}
 
