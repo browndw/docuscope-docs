@@ -12,7 +12,7 @@ topnav_title: DocuScope Docs
 site_title: Documentation for DocuScope Corpus Analysis
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-company_name: Copyright 2021 Google LLC
+company_name: Copyright 2022 David Kaufer & Suguru Ishizaki
 # this appears in the footer
 
 github_editme_path:
@@ -36,9 +36,9 @@ exclude:
   - vendor
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: Jekyll documentation theme
+feedback_subject_line: DocuScope CA documentation
 
-feedback_email: tomjoht@gmail.com
+feedback_email: dwb2@andrew.cmu.edu
 # used as a contact email for the Feedback link in the top navigation bar
 
 # feedback_disable: true
