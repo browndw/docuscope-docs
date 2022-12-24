@@ -28,8 +28,8 @@ entries:
       output: web, pdf
       type: homepage
 
-    - title: Introduction
-      url: /mydoc_introduction.html
+    - title: Load a corpus
+      url: /load_corpus.html
       output: web, pdf
 
     - title: Supported features
@@ -44,16 +44,16 @@ entries:
       url: /mydoc_support.html
       output: web, pdf
 
-  - title: Release Notes
+  - title: Tagsets
     output: web, pdf
     folderitems:
 
-    - title: 6.0 Release notes
-      url: /mydoc_release_notes_60.html
+    - title: DocuScope tagsets
+      url: /tagset_docuscope.html
       output: web, pdf
 
-    - title: 5.0 Release notes
-      url: /mydoc_release_notes_50.html
+    - title: Part-of-speech tagset
+      url: /tagset_claws.html
       output: web, pdf
 
   - title: Installation
