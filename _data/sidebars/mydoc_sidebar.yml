@@ -29,11 +29,43 @@ entries:
       type: homepage
 
     - title: Load a corpus
-      url: /mydoc_load_corpus.html
+      url: /load_corpus.html
       output: web, pdf
 
-    - title: Supported features
-      url: /mydoc_supported_features.html
+    - title: Token frequencies
+      url: /token_frequencies.html
+      output: web, pdf
+
+    - title: Tag frequencies
+      url: /tag_frequencies.html
+      output: web, pdf
+
+    - title: Ngrams
+      url: /ngrams.html
+      output: web, pdf
+
+    - title: KWIC
+      url: /kwic.html
+      output: web, pdf
+
+    - title: Collocations
+      url: /collocations.html
+      output: web, pdf
+
+    - title: Compare corpora
+      url: /compare_corpora.html
+      output: web, pdf
+
+    - title: Compare corpus parts
+      url: /compare_corpus_parts.html
+      output: web, pdf
+
+    - title: Single document
+      url: /singple_document.html
+      output: web, pdf
+
+    - title: Download tagged files
+      url: /download_tagged_files.html
       output: web, pdf
 
     - title: About the theme author
