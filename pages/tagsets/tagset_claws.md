@@ -6,7 +6,7 @@ last_updated: July 3, 2016
 summary: "Descriptions of the part-of-speech tags for all versions of the model."
 sidebar: mydoc_sidebar
 permalink: tagset_claws.html
-folder: mydoc
+folder: tagsets
 ---
 
 ## Unique sidebars for each product

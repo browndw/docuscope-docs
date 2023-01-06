@@ -6,7 +6,7 @@ last_updated: December 28, 2022
 summary: "Descriptions of the DocuScope tags for the different versions of the dictionary."
 sidebar: mydoc_sidebar
 permalink: tagset_docuscope.html
-folder: mydoc
+folder: tagsets
 ---
 
 ## Relative links
