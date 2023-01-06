@@ -68,14 +68,6 @@ entries:
       url: /download_tagged_files.html
       output: web, pdf
 
-    - title: About the theme author
-      url: /mydoc_about.html
-      output: web, pdf
-
-    - title: Support
-      url: /mydoc_support.html
-      output: web, pdf
-
   - title: Tagsets
     output: web, pdf
     folderitems:
