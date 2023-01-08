@@ -1,7 +1,7 @@
 ---
 title: DocuScope Tagsets
 tags: [getting_started]
-keywords: release notes, announcements, what's new, new features
+keywords: tagsets, docuscope
 last_updated: December 28, 2022
 summary: "Descriptions of the DocuScope tags for the different versions of the dictionary."
 sidebar: mydoc_sidebar
@@ -9,32 +9,8 @@ permalink: tagset_docuscope.html
 folder: tagsets
 ---
 
-## Relative links
+## DocuScope
 
-You can now view the site offline rather than solely through the Jekyll preview server or deployed on a web server. The linking approach in both the sidebar and with inline links uses relative linking throughout.
-
-## Subfolders for pages
-
-You can creates folders and subfolders for your pages, similar to how you can store posts in folders and subfolders. When Jekyll builds the site, all pages get pushed into the root directory as single html files (rather than being pushed inside folders, or remaining in subfolders). See [Pages][mydoc_pages] for more details.
-
-## Alerts templates
-
-You can use include templates for notes, tips, and warnings. These include templates make it easier to insert notes. If you make an error, you're immediately made aware since the site won't build. See [Alerts][mydoc_alerts] for more details.
-
-## Image templates
-
-Similar to alerts, images also have include templates. You can insert both regular images and inline images, such as images that are a button or icon. See [Images][mydoc_images] for more details.
-
-## Automated links using Markdown formatting
-
-Instead of using YAML references to handle links, I've switched to a Markdown reference style approach. A links.html file iterates through the sidebar files and formats the content in the Markdown reference. You then just use Markdown syntax for the links. See [Links][mydoc_hyperlinks] for more details.
-
-## Workflow maps
-
-If you want to display a workflow map for a process, you can do so by adding some properties in your frontmatter. The workflow map helps guide users through a process. Both simple and complex workflow maps are available. For more details, see [Workflow maps][mydoc_workflow_maps].
-
-## Upgrading
-
-If you want to upgrade from an earlier version of the theme, I recommend that you download the new theme and copy of your Markdown files into the new theme. You'll then need to make adjustments to your page frontmatter, to the sidebar table of contents, links, image references, and alert references. In short, there's no easy upgrade path. But all of this won't take too long if you don't have mountains of content.
+DocuScope is a dictionary-based tagger, developed by [David Kaufer and Suguru Ishizaki](https://www.igi-global.com/chapter/computer-aided-rhetorical-analysis/61054) at Carnegie Mellon University.\n It consists of an enormous lexicon organized into a 3-level taxonomy.  An analogue would be the [lexicons typically used in sentiment analysis](https://saifmohammad.com/WebPages/lexicons.html).  Those usually organize words and phrases into 2 categories (positive and negative) and work by matching strings over a corpus of texts.\n DocuScope works in the same basic way, but organizes its strings into many more categories and is orders of magnitude larger. A typical sentiment lexicon may match 3-5 thousand strings.  DocuScope matches 100s of millions. You can find a small, early version of the dictionary [here](https://github.com/docuscope/DocuScope-Dictionary-June-26-2012).
 
 {% include links.html %}
