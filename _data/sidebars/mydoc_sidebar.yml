@@ -60,6 +60,10 @@ entries:
       url: /compare_corpus_parts.html
       output: web, pdf
 
+    - title: Advanced plotting
+      url: /advanced_plotting.html
+      output: web, pdf
+
     - title: Single document
       url: /single_document.html
       output: web, pdf
