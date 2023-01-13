@@ -61,19 +61,15 @@ entries:
       output: web, pdf
 
     - title: Single document
-      url: /singple_document.html
+      url: /single_document.html
+      output: web, pdf
+
+    - title: Advanced plotting
+      url: /advanced_plotting.html
       output: web, pdf
 
     - title: Download tagged files
       url: /download_tagged_files.html
-      output: web, pdf
-
-    - title: About the theme author
-      url: /mydoc_about.html
-      output: web, pdf
-
-    - title: Support
-      url: /mydoc_support.html
       output: web, pdf
 
   - title: Tagsets

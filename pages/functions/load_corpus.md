@@ -1,8 +1,8 @@
 ---
-title: Introduction
+title: Load a corpus
 sidebar: mydoc_sidebar
 permalink: load_corpus.html
-folder: mydoc
+folder: functions
 ---
 
 ## Overview
