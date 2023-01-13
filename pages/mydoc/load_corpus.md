@@ -28,3 +28,5 @@ Some of the more prominent features of this theme include the following:
 To get started, see [Getting Started][index].
 
 {% include links.html %}
+
+\
