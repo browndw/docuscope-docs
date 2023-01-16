@@ -3,7 +3,7 @@ title: Compare corpus parts
 tags:
   - getting_started
 keywords: "features, capabilities, scalability, multichannel output, dita, hats, comparison, benefits"
-last_updated: "July 16, 2016"
+last_updated: "January 16, 2023"
 summary: "Instructions for generating keywords from sub-corpora with encoded meta-data using DocuScope CA."
 published: true
 sidebar: mydoc_sidebar
