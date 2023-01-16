@@ -1,5 +1,5 @@
 ---
-title: Tag frequencies
+title: Advanced plotting
 tags:
   - getting_started
 keywords: "features, capabilities, scalability, multichannel output, dita, hats, comparison, benefits"
@@ -12,8 +12,8 @@ folder: functions
 ---
 
 
-## Advanced plotting
+## Overview
 
-:hammer: Currently under construction.
+<a>&#128736;</a> This page is currently under construction.
 
 {% include links.html %}
