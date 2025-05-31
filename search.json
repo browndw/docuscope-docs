@@ -14,7 +14,7 @@
     "href": "intro.html",
     "title": "2  Introduction",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "3 Introduction\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -24,7 +24,7 @@
     "href": "summary.html",
     "title": "3  Summary",
     "section": "",
-    "text": "In summary, this book has no content whatsoever.",
+    "text": "4 Summary\nIn summary, this book has no content whatsoever.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Summary</span>"
     ]
@@ -32,11 +32,11 @@
   {
     "objectID": "references.html",
     "href": "references.html",
-    "title": "References",
+    "title": "4  References",
     "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "References\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "References"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>References</span>"
     ]
   }
 ]
