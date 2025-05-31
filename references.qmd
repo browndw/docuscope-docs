@@ -1,3 +1,10 @@
+---
+title: References
+date: last-modified
+resources:
+  - .nojekyll
+---
+
 # References {.unnumbered}
 
 ::: {#refs}
