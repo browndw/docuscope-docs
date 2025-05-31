@@ -1,2 +1,6 @@
 # Project Specific
 .DS_Store
+
+/.quarto/
+/docs/
+/index_files/
