@@ -3,16 +3,33 @@ project:
   output-dir: docs
 
 book:
-  title: "DocuScope"
-  author: "David Brown"
-  navbar:
-    search: true
-  date: "5/31/2025"
+  title: DocuScope
+  author: David Brown
+  sidebar:
+    logo: images/docuscope-logo.png
+    style: docked
+    background: light
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+    - part: DocuScope CA Apps
+      chapters:
+        - guide/load-corpus.qmd
+        - guide/token-frequencies.qmd
+        - guide/tag-frequencies.qmd
+        - guide/ngrams.qmd
+        - guide/compare-corpora.qmd
+        - guide/compare-corpus-parts.qmd
+        - guide/collocations.qmd
+        - guide/kwic.qmd
+        - guide/advanced-plotting.qmd
+        - guide/single-document.qmd
+        - guide/assisted-plotting.qmd
+        - guide/assisted-analysis.qmd
+        - guide/download-corpus.qmd
+        - guide/download-tagged-files.qmd
+    - part: About the DocuScope Project
+      chapters:
+         - about/kaufer-ishizaki.qmd
 
 bibliography: references.bib
 
