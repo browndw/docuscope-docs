@@ -1,3 +1,23 @@
-# Download Tagged Files {.unnumbered}
+---
+highlight-style: a11y
+---
+
+# <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#434343"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"/></svg> Download Tagged Files {.unnumbered}
 
 {{< iconify material-symbols:construction >}} Under construction.
+
+Once a corpus has been processed, you can use this page to generate a **zipped folder of tagged text files**.
+
+The tags are embbedd into the text after a vertical bar:
+
+```{.js}
+At|II root|NN1 , every|AT1 hypothesis|NN1 is|VBZ a|AT1 claim|NN1 about|II the|AT relevance|NN1
+```
+
+Because the tags identify mutliword units, spaces that occur within a token are replaced with underscores:
+
+```{.js}
+evidence|Reasoning and|SyntacticComplexity theory|AcademicTerms pertaining_to_the|Reasoning possibility_of|ConfidenceHedged sympatric|Description speciation|Description
+```
+
+If you are planning to use the output to process the files in a tool like [AntConc](https://www.laurenceanthony.net/software/antconc/){target="_blank"} or in a coding environment, take note of these conventions and account for them accordingly.

@@ -1,7 +1,6 @@
 project:
   type: book
   output-dir: docs
-
 book:
   title: DocuScope
   author: David Brown
@@ -9,6 +8,7 @@ book:
     logo: images/docuscope-logo.png
     style: docked
     background: light
+    collapse-level: 1
   chapters:
     - index.qmd
     - part: DocuScope CA Apps
@@ -36,3 +36,6 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
+    link-external-icon: false
+    toc: true
+    toc-depth: 4
