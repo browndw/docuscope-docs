@@ -1,3 +1,106 @@
 # <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#434343"><path d="m147-192-51-51 288-288 157 157 65-73-222-219-237 237-51-51 288-288 270 267 156-176 54 47-159 179 162 161-51 50-159-157-113 127-160-160-237 238Z"/></svg> Advanced Plotting {.unnumbered}
 
 {{< iconify material-symbols:construction >}} Under construction.
+
+The **Advanced Plotting** page lets you create a variety of visualizations to explore tag frequencies and relationships in your corpus. You can make boxplots, scatterplots, and perform principal component analysis (PCA), with options to group and highlight by metadata.
+
+---
+
+## What You Can Do
+
+- Create **boxplots** of tag frequencies, optionally grouped by metadata categories
+- Create **scatterplots** of tag frequencies, with optional group highlighting
+- Perform **PCA** (Principal Component Analysis) to reduce dimensionality and visualize patterns
+- Select and compare variables (tags) and groups
+- Download descriptive statistics for your plots
+
+---
+
+## Plot Types
+
+### Boxplot
+
+- Shows the distribution of tag frequencies across your documents.
+- You can group by metadata categories (e.g., genre, author) if you have processed metadata.
+- Select one or more tags to plot.
+
+### Scatterplot
+
+- Plots the relationship between two tag frequencies for each document.
+- Optionally highlight groups (categories) in the plot.
+- Useful for spotting correlations or outliers.
+
+### PCA (Principal Component Analysis)
+
+- Reduces many tag variables to a few principal components that capture the most variance.
+- Visualize documents in a lower-dimensional space, colored by group if metadata is available.
+- Explore which tags contribute most to each principal component.
+
+---
+
+## Step-by-Step Guide
+
+### 1. Select Plot Type
+
+- Use the radio buttons to choose **Boxplot**, **Scatterplot**, or **PCA**.
+
+### 2. Choose Tagset
+
+- For each plot type, select **Parts-of-Speech** or **DocuScope** tags.
+- For POS, choose between *General* (broad) or *Specific* (detailed) tags.
+
+### 3. Select Variables
+
+- For boxplots, select one or more tags to plot.
+- For scatterplots, select tags for the x-axis and y-axis.
+- For PCA, all tags are included, but you can explore contributions of each.
+
+### 4. Grouping and Highlighting
+
+- If you have processed metadata, you can group or highlight by categories (e.g., genre, author).
+- For boxplots and scatterplots, select groups to compare or highlight.
+- For PCA, select which groups to highlight in the plot.
+
+::: {.callout-important}
+**You must process metadata to use grouping and highlighting features.**  
+If you haven't, go to **Manage Corpus Data** and process document metadata first.
+:::
+
+### 5. Generate and Explore Plots
+
+- Click the relevant button to generate your plot.
+- For boxplots and scatterplots, descriptive statistics and correlation info are shown below the plot.
+- For PCA, explore both the scatterplot of documents and the contribution of each variable (tag) to the principal components.
+
+### 6. Download Results
+
+- Download descriptive statistics for your plots as needed.
+
+---
+
+## Understanding the Plots
+
+- **Boxplot:** Shows the spread and central tendency of tag frequencies, with boxes for each group.
+- **Scatterplot:** Each point is a document; axes are tag frequencies. Highlighted groups are colored.
+- **PCA:** Documents are plotted by principal components; variable contribution plots show which tags drive each component.
+
+---
+
+## Tips for New Users
+
+::: {.callout-tip}
+- Try grouping by different metadata categories to reveal patterns.
+- Use PCA to reduce complexity and spot clusters or outliers.
+- Download your statistics to keep a record of your findings.
+:::
+
+---
+
+## If You Get Stuck
+
+::: {.callout-important}
+- Make sure you have loaded and processed a target corpus.
+- Process metadata if you want to use grouping or highlighting.
+- If you see warnings, check your variable selections and that your data is available.
+- Use the **reset** button on the Manage Corpus Data page if you need to start over.
+:::

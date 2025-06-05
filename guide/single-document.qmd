@@ -1,3 +1,74 @@
 # <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#434343"><path d="m592-168 72 72H264q-29.7 0-50.85-21.15Q192-138.3 192-168v-624q0-29.7 21.15-50.85Q234.3-864 264-864h312l192 192v476q0 36-5.5 54T746-116L553-309q-15 10-34 14.5t-39 4.5q-60 0-102-42t-42-102q0-60 42-102t102-42q60 0 102 42t42 102q0 20-5 39.5T604-360l92 92v-374L546-792H264v624h328ZM480.21-362Q510-362 531-383.21t21-51Q552-464 530.79-485t-51-21Q450-506 429-484.79t-21 51Q408-404 429.21-383t51 21Zm-.21-82Zm0 0Z"/></svg> Single Documents {.unnumbered}
 
 {{< iconify material-symbols:construction >}} Under construction.
+
+The **Single Document** page lets you closely examine the linguistic features of one document at a time. You can highlight up to five tags, visualize where they occur, and download a color-coded version of your document.
+
+---
+
+## What You Can Do
+
+- Select a document from your corpus to explore in detail
+- Highlight up to **five** tags (POS or DocuScope) in the text
+- Visualize where tags occur using a density plot
+- Download a color-coded Word file of the document
+- Reset and select a new document to explore
+
+---
+
+## Step-by-Step Guide
+
+### 1. Choose a Document
+
+- Use the sidebar to select a document from your loaded corpus.
+- If no documents are available, make sure you have loaded and processed a target corpus.
+
+### 2. Select Tagset and Tags
+
+- Choose between **Parts-of-Speech** or **DocuScope** tags.
+- For POS, you can select either *General* or *Specific* tags.
+- Use the multiselect menu to pick up to **five** tags to highlight in the document.
+
+::: {.callout-important}
+You can highlight a maximum of **five** tags at a time. If you select more, you’ll see a warning.
+:::
+
+### 3. Visualize Tag Locations
+
+- Click **Tag Density Plot** to see where your selected tags occur in the document.
+- The plot shows tag positions as a percentage of the document’s length, helping you spot patterns or clusters.
+
+::: {.callout-tip}
+The density plot is useful for seeing if certain features (like verbs or rhetorical moves) cluster at the beginning, middle, or end of a text.
+:::
+
+### 4. View and Download the Document
+
+- The main panel shows your document with selected tags highlighted in color.
+- Below the text, you’ll see a frequency table for the tags in your document.
+- Use the **Download to Word?** toggle in the sidebar to enable download.
+- Click **Download to Word** to save a color-coded version of your document.
+
+### 5. Reset and Explore Another Document
+
+- Use the **Select a new document** button in the sidebar to reset and choose a different document.
+
+---
+
+## Tips for New Users
+
+::: {.callout-tip}
+- Try highlighting different combinations of tags to see how linguistic features interact.
+- Use the density plot to compare structural patterns across documents.
+- Download your color-coded documents for annotation or sharing.
+:::
+
+---
+
+## If You Get Stuck
+
+::: {.callout-important}
+- Make sure you have loaded and processed a target corpus.
+- If you see warnings, check your tag selections and document choice.
+- Use the **reset** button on the Manage Corpus Data page if you need to start over.
+:::

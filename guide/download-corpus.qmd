@@ -1,3 +1,61 @@
 # <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#434343"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"/></svg> Download Corpus Data {.unnumbered}
 
 {{< iconify material-symbols:construction >}} Under construction.
+
+The **Download Corpus Files** page lets you save your processed corpus and related data tables to your computer. You can choose between downloading just the tokenized corpus or all processed data, in formats suitable for future analysis or use in other tools.
+
+---
+
+## What You Can Do
+
+- Download your **target** or **reference** corpus as a single file for future use in this tool
+- Download all processed data (including frequency tables and document-term matrices) for use in other environments (like R or Python)
+- Choose between **CSV** and **Parquet** formats for bulk downloads
+
+---
+
+## Step-by-Step Guide
+
+### 1. Choose a Corpus
+
+- Select **Target** or **Reference** corpus using the radio buttons.
+- If you have not loaded a reference corpus, you will see a message explaining how to do so.
+
+### 2. Choose Data to Download
+
+- **Corpus file only:**  
+  Download just the tokenized corpus as a `.parquet` file.  
+  *Use this if you plan to reload your corpus into this tool later.*
+
+- **All of the processed data:**  
+  Download a ZIP archive containing the token file, frequency tables, and document-term matrices.  
+  *Use this if you want to analyze your data in other tools (like R or Python).*
+
+### 3. Choose File Format (for all data)
+
+- Select **CSV** or **PARQUET** as the format for your ZIP archive.
+
+### 4. Download
+
+- Click the **Download** button in the sidebar to save your files.
+- The download will start automatically.
+
+---
+
+## Tips for New Users
+
+::: {.callout-tip}
+- If you want to continue your analysis in this tool later, download the **corpus file only**.
+- If you want to use your data in other software, download **all of the processed data** in your preferred format.
+- CSV files are widely compatible; Parquet files are more efficient for large datasets and work well with Python and R.
+:::
+
+---
+
+## If You Get Stuck
+
+::: {.callout-important}
+- Make sure you have processed a target corpus before trying to download.
+- If you see a warning about missing data, use the **Load Data** button in the sidebar.
+- If you have not loaded a reference corpus, you can do so from the **Manage Corpus Data** page.
+:::

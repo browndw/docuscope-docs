@@ -1,3 +1,82 @@
 # <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#434343"><path d="M192-384q-40 0-68-28t-28-68q0-40 28-68t68-28v-72q0-29.7 21.15-50.85Q234.3-720 264-720h120q0-40 28-68t68-28q40 0 68 28t28 68h120q29.7 0 50.85 21.15Q768-677.7 768-648v72q40 0 68 28t28 68q0 40-28 68t-68 28v168q0 29.7-21.16 50.85Q725.68-144 695.96-144H263.72Q234-144 213-165.15T192-216v-168Zm168-72q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14Zm228 0q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14ZM336-312h288v-72H336v72Zm-72 96h432v-432H264v432Zm216-216Z"/></svg> AI-Assisted Analysis {.unnumbered}
 
 {{< iconify material-symbols:construction >}} Under construction.
+
+The **AI-Assisted Analysis** page lets you ask questions about your data in plain English. Powered by PandasAI, this tool is designed for one-off, natural language queries about your data tables—making it easy to get summaries, statistics, and insights without writing code.
+
+---
+
+## What You Can Do
+
+- Select a data table from your corpus (Target, Reference, Keywords, or Grouped)
+- Preview and optionally pivot or normalize your data
+- Ask questions about your data in natural language (e.g., "What is the average frequency of nouns?")
+- Get answers as text, tables, or simple plots
+- Download results (including plots as PNG images)
+- Clear your chat history and start a new query
+
+---
+
+## How It Works
+
+::: {.callout-important}
+Pandabot uses AI to turn your question into Python code, runs it on your selected data, and returns the result. Each prompt is handled as a single, independent query—there is no iterative conversation or memory of previous prompts.
+:::
+
+---
+
+## Step-by-Step Guide
+
+### 1. Select Data
+
+- Use the **Select corpus** radio buttons to choose which data to analyze (Target, Reference, Keywords, or Grouped).
+- Use the **Select data to analyze** dropdown to pick a specific table (e.g., tag frequencies, document-term matrix).
+- Preview your data in the main panel. You can toggle **Pivot Table** or **Make Percent** to adjust the format.
+
+### 2. Ask a Question
+
+- Enter your question in the chat input at the bottom. For example:
+  - "Show the top 10 most frequent tags."
+  - "What is the mean frequency of verbs by group?"
+  - "List all documents where noun frequency is above 5%."
+- Pandabot will generate the code, run it, and display the result as a table, number, text, or plot.
+
+::: {.callout-tip}
+**Tip:**  
+You can ask for summaries, group comparisons, filtering, or even simple visualizations. For more advanced or iterative plotting, use the **AI-Assisted Plotting** tool instead.
+:::
+
+### 3. Download Results
+
+- If your result is a plot, you can download it as a PNG image.
+- Tables and text results can be copied for further use.
+
+### 4. Manage API Keys and Quotas
+
+- If you’re using the community API, you have a daily quota of queries. The sidebar shows your usage and remaining queries.
+- If you run out, or want to use your own OpenAI API key, enter it in the sidebar.
+
+### 5. Clear Chat History
+
+- Use the **Clear Pandabot History** button in the sidebar to start a new query. This removes all previous messages.
+
+---
+
+## Tips for New Users
+
+::: {.callout-tip}
+- Start with simple questions: "Show all tags," "What is the average frequency of adjectives?"
+- For more complex visualizations or iterative refinement, use the **AI-Assisted Plotting** tool.
+- Download or copy your results for use in reports or further analysis.
+:::
+
+---
+
+## If You Get Stuck
+
+::: {.callout-important}
+- Make sure you have loaded and processed a target corpus.
+- If you see warnings about data, check your table selection.
+- If you run out of community API queries, enter your own OpenAI API key.
+- Use the **reset** button on the Manage Corpus Data page if you need to start over.
+:::

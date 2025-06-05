@@ -1,0 +1,152 @@
+# Turning Your Results Into a Research Paper  {.unnumbered}
+*Advice for Using DocuScope and Interpreting Your Results*
+
+## {{< iconify material-symbols:lightbulb >}} What Makes DocuScope Research Unique?
+
+DocuScope research isn't just about counting words—it's about understanding **rhetorical choices**. You're asking: How do writers use language strategically to achieve their goals? What patterns reveal about audience, purpose, and context?
+
+**Remember:** Numbers are your starting point, not your endpoint. Your job is to explain what those patterns mean for how people communicate.
+
+---
+
+## {{< iconify material-symbols:center-focus-strong >}} 1. Focus Your Claim
+
+Your claim should be **specific**, **data-driven**, and rhetorically **meaningful**. Instead of saying "this category appears a lot," ask what **rhetorical work** it's doing.
+
+### Example: Aull on Student Writing  
+Aull shows that first-year writing often overuses **Confidence High** and **Public Terms**, not just to sound "academic," but to **project certainty and generalization** when students are unsure how to argue within disciplinary constraints [@aull2023language].
+
+**Tip:** Connect category use to **audience expectations**, **genre conventions**, or **communicative goals**.
+
+### Common Pitfall to Avoid:
+❌ "Business emails use more Directive language than academic papers."
+✅ "Business emails use 40% more Directive language, suggesting writers prioritize efficiency and action over the hedged, exploratory stance valued in academic discourse."
+
+---
+
+## {{< iconify material-symbols:bar-chart >}} 2. Use Visualizations to Anchor Your Claim
+
+A figure or table isn't decoration—it's **evidence**. Show clear contrasts or trends from your corpus that directly support your claim.
+
+### Example: DeJeu on Grant Proposals  
+DeJeu uses visualizations (e.g., PCA plots) to show that **nonprofit** proposals emphasize **Facilitate** and **Positive** categories, whereas **research** proposals emphasize **Cautious Epistemic** features like **Hedged Confidence** [@dejeu2024topoi].
+
+**Practical Tip:** Use simple bar charts or frequency tables. Label everything clearly and interpret the figure in your writing. Don't just say "Figure 1 shows the results"—explain what the reader should notice and why it matters.
+
+### What Makes a Good Visualization:
+- **Clear labels** and **meaningful comparisons**
+- **Statistical significance** when relevant (not just raw counts)
+- **Direct connection** to your rhetorical claim
+
+---
+
+## {{< iconify material-symbols:psychology-alt >}} 3. Interpret Like a Rhetorician
+
+Students often describe what they found but stop short of interpretation. Always ask:
+- What is this language **doing**?
+- Why might the writer have used it?
+- How does this serve their **audience** and **purpose**?
+
+### Example: Marcellino on Marine Corps Speech  
+Marcellino found co-occurring uses of **Fear** and **Positive Relationship** categories. He interpreted this not as contradiction but as a **civil-military rhetorical blend**: Marines must motivate while warning of dangers [@marcellino2014talk].
+
+### The "So What?" Test:
+After stating your finding, ask: "So what? Why should my reader care?" If you can't answer this, dig deeper into the rhetorical implications.
+
+---
+
+## {{< iconify material-symbols:cancel >}} 4. Avoid Truisms and Oversimplification
+
+Vague statements like "this field is more objective" or "this genre is more formal" won't earn credit. Be specific about **how** and **why** linguistic patterns create meaning.
+
+### Better:
+> "The high use of **Contingent** and **Uncertainty** in Chemistry papers suggests writers must acknowledge conditions under which scientific claims hold true—highlighting rhetorical caution, not just objectivity."
+
+### Example: O'Hanlon on Epistemic Voice  
+O'Hanlon compares how medical discourses construct risk. She finds that **breast cancer texts** are more personal and **interactive**, using **FirstPerson** and **Metadiscourse** features to frame stories as communal [@o2019kills].
+
+### Red Flags in Your Writing:
+- "Obviously," "clearly," "naturally"—these suggest you're not explaining your reasoning
+- Circular explanations: "Academic writing uses academic language"
+- Missing the human element: Remember, real people made these linguistic choices for real reasons
+
+---
+
+## {{< iconify material-symbols:build >}} 5. Use DocuScope Categories Thoughtfully
+
+Introduce categories clearly and provide examples. Help your reader see not just what a category means, but **how it functions** in context.
+
+### Example: Ishizaki on Crowdfunding  
+Ishizaki shows that successful crowdfunding pitches use more **Strategic** and **Values** language. He connects this to rhetorical appeals: successful pitches **position themselves within expert communities**, not just general audiences [@ishizaki2016computer].
+
+### Best Practices:
+- **Define categories** when first mentioned
+- **Provide concrete examples** from your corpus
+- **Explain the rhetorical function**, not just the definition
+- **Connect to larger patterns** in your data
+
+---
+
+## {{< iconify material-symbols:warning >}} 6. Handle Statistical Significance and Limitations
+
+Be honest about what your data can and cannot tell you.
+
+### When to Mention Statistics:
+- If differences are **statistically significant**, say so
+- If your sample is **small**, acknowledge limitations
+- If patterns are **suggestive but not definitive**, frame them appropriately
+
+### Example Language:
+"While this pattern suggests..., a larger corpus would be needed to confirm..."
+"The 15% difference in Hedged Confidence, though not statistically significant, points toward..."
+
+---
+
+## {{< iconify material-symbols:table-rows-narrow >}} 7. IMRD Structure (with Scholarly Examples)
+
+Here's how to structure your paper using the IMRD model, with scholarly models:
+
+| Section          | Purpose                                                                                                                                                                              | Example from Scholarship                                                                                                                                                                                                                                                          |
+|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Introduction** | State your research question and its rhetorical or communicative significance. Include brief lit review.                                                                             | "How do student writers construct academic authority across disciplines?" [@aull2023language]                                                                                                                                                                                     |
+| **Methods**      | Describe the corpus, how DocuScope was used, and which categories were analyzed. Be specific about your analytical choices.                                                          | "We applied DocuScope tagging to a 200-document corpus of nonprofit and academic proposals, focusing on epistemic and interpersonal categories." [@dejeu2024topoi]                                                                                                                |
+| **Results**      | Present quantitative or qualitative findings, supported by figures or tables. **Interpret patterns immediately**: What rhetorical work do they perform?                              | "Successful pitches showed significantly higher use of Strategic and Facilitate categories (p < 0.05). This pattern suggests that effective crowdfunding appeals position themselves within expert communities rather than addressing general audiences." [@ishizaki2016computer] |
+| **Discussion**   | **Summarize main findings** and their implications. **Acknowledge limitations** of your study. **Speculate thoughtfully** about broader significance and future research directions. | "Our findings suggest that successful crowdfunding depends on strategic positioning within discourse communities. While our sample was limited to technology projects, this pattern may extend to other domains where expertise signals credibility." [@ishizaki2016computer]     |
+
+
+## {{< iconify material-symbols:checklist >}} 8. Pre-Submission Checklist
+
+Before submitting, ask yourself:
+
+**About Your Claim:**
+
+- Is my research question **specific** and **answerable** with DocuScope data?
+- Does my claim go beyond "X uses more Y than Z"?
+- Have I explained the **rhetorical significance** of my findings?
+
+**About Your Evidence:**
+
+- Do my visualizations **directly support** my claims?
+- Have I provided **concrete examples** from my corpus?
+- Are my interpretations **grounded in** the data?
+
+**About Your Writing:**
+
+- Would someone unfamiliar with DocuScope understand my categories?
+- Have I avoided **truisms** and **circular reasoning**?
+- Does my conclusion explain **why this matters** for understanding communication?
+
+---
+
+## {{< iconify material-symbols:explore >}} Final Thought: You're Mapping the Territory
+
+As a novice researcher, your goal isn't to offer definitive answers—it's to use linguistic evidence to make a **focused, well-reasoned rhetorical claim**.
+
+DocuScope gives you patterns. Your task is to explain:
+- **What do they tell us about writing?**
+- **How do they reflect audience, genre, or context?**
+- **What insights do they offer** for writers, teachers, or communicators?
+
+Remember: You're not just analyzing language—you're uncovering the strategic thinking behind communication choices. Every linguistic pattern represents human decision-making in action.
+
+## Works Cited

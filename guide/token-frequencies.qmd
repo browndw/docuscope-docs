@@ -1,3 +1,83 @@
 # <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"/></svg> Token Frequencies {.unnumbered}
 
 {{< iconify material-symbols:construction >}} Under construction.
+
+The **Token Frequencies** page lets you view, filter, and download tables showing how often different linguistic features (tokens) appear in your corpus.
+
+---
+
+## What You Can Do
+
+- Generate a frequency table for your loaded corpus
+- Choose between Parts-of-Speech (POS) tags or DocuScope tags
+- Filter the table to focus on specific tags
+- Download the table as an Excel file for further analysis
+
+---
+
+## Step 1: Generate a Frequency Table
+
+If you haven’t already generated a frequency table, you’ll see a prompt to do so.
+
+- Click the **Frequency Table** button in the sidebar.
+- Wait for processing to complete. If you see a warning, check that you have loaded a target corpus.
+
+::: {.callout-important}
+**What is a "token"?**  
+A *token* is usually a word or punctuation mark in your text. The app counts how many times each token (or tag) appears in your documents.
+:::
+
+---
+
+## Step 2: Choose a Tagset
+
+Once your frequency table is ready, use the sidebar to select which tags to display:
+
+- **Parts-of-Speech**: Shows grammatical categories (like nouns, verbs, adjectives).
+  - Choose between *General* (broad categories) or *Specific* (detailed tags).
+- **DocuScope**: Shows rhetorical or functional categories from the DocuScope system.
+
+---
+
+## Step 3: Filter and Explore
+
+- Use the **Select tags to filter** box to focus on specific tags of interest.
+- The table updates automatically to show only the tags you select.
+
+::: {.callout-tip}
+**Tip:**  
+Filtering helps you focus on just the features you care about—like seeing only verbs, or only DocuScope tags related to argumentation.
+:::
+
+---
+
+## Step 4: Download Your Table
+
+- Use the **Excel** button in the sidebar to download the current table as an Excel file.
+- You can open this file in spreadsheet software for further analysis or sharing.
+
+---
+
+## Understanding the Table
+
+- Use the **Column explanation** expander in the sidebar for definitions of each column.
+- Columns typically include the tag, its frequency, and possibly its percentage of the total.
+
+---
+
+## Tips for New Users
+
+::: {.callout-tip}
+- If you don’t see any data, make sure you have loaded and processed a target corpus.
+- Try both tagsets (POS and DocuScope) to see which is most useful for your project.
+- Download your results often so you can experiment without losing your work.
+:::
+
+---
+
+## If You Get Stuck
+
+::: {.callout-important}
+- Use the **reset** button on the Manage Corpus Data page if you need to start over.
+- If you see warnings, check that your corpus is loaded and processed.
+:::

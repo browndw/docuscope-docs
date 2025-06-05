@@ -2,3 +2,93 @@
 
 
 {{< iconify material-symbols:construction >}} Under construction.
+
+
+# Manage Corpus Data
+
+The **Manage Corpus Data** page is where you load, process, and manage your corpora before moving on to analysis and visualization.
+
+---
+
+## Step 1: Load or Process a Target Corpus
+
+Before using any other tools, you must load or process a **target corpus**.
+
+1. **Choose a Corpus Source**  
+   You will be prompted to select:
+   - **Internal**: Load a previously processed corpus from the interface.
+   - **External**: Upload a `.parquet` file (pre-processed corpus) from your computer.
+   - **New**: Upload and process plain text files (`.txt`).
+
+2. **Follow the Prompts**  
+   - For **Internal**, select the tagging model and choose a saved corpus.
+   - For **External**, upload your `.parquet` file and click **UPLOAD TARGET**.
+   - For **New**, upload your `.txt` files, select a tagging model, and process.
+
+3. **Process the Corpus**  
+   After uploading or selecting files, use the sidebar button (**Process Target**) to process and load your corpus.
+
+---
+
+::: {.callout-important}
+**What is a "corpus"?**  
+A *corpus* is simply a collection of text files you want to analyze. Each file is treated as a separate document. Make sure your files are named clearly and uniquely.
+:::
+
+::: {.callout-tip}
+**Tip:**  
+If you are new to corpus tools, start with a small set of text files to get familiar with the workflow. You can always add more documents later.
+:::
+
+---
+
+## Step 2: Assign Document Categories (Optional, but Recommended)
+
+- If your file names contain category information (e.g., group or genre), you can extract and assign categories.
+- Use the **Target corpus metadata** section in the sidebar.
+- Click **Process Document Metadata** to extract categories.
+- At least 2 and no more than 20 categories are required for group-based analysis.
+
+::: {.callout-important}
+**Why assign categories?**  
+Categories let you group your documents for comparison (for example, by genre, author, or year). The app can extract these from your file names if you use a consistent naming pattern.
+:::
+
+---
+
+## Step 3: Load a Reference Corpus (Optional)
+
+After loading a target corpus, you can load a **reference corpus** for comparison.
+
+- When prompted, choose **Yes** to load a reference corpus.
+- Select the source (Internal, External, or New) and follow similar steps as for the target corpus.
+- Reference corpora must be tagged with the same model as the target corpus.
+
+::: {.callout-tip}
+**Tip:**  
+A reference corpus is useful if you want to compare your main set of documents to another group (for example, comparing student essays to published articles).
+:::
+
+---
+
+## Resetting All Data
+
+- Use the **Reset all tools and files** button in the sidebar to clear all loaded data and start over.
+- This will remove all files, tables, and plots from your session.
+
+---
+
+::: {.callout-important}
+**If you get stuck:**  
+Don’t worry! You can always use the reset button to start over. If you see warnings about file names or categories, check that your files are named clearly and that you have at least two categories if you want to use metadata.
+:::
+
+---
+
+## Tips for New Users
+
+::: {.callout-tip}
+- Make sure all file names are unique.
+- For best results, keep the number of document categories between 2 and 20.
+- If you’re unsure which model to use, try both and see which results make more sense for your data.
+:::

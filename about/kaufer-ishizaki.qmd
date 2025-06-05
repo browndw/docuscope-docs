@@ -3,25 +3,31 @@
 
 The following is [excerpted from](https://www.degruyterbrill.com/document/doi/10.1075/scl.109/html){target="_blank"}:
 
-Brown, D. & Zawodny Wetzel, D. (2023). Corpora and Rhetorically Informed Text Analysis: The diverse applications of DocuScope. John Benjamins Publishing Company. https://doi.org/10.1075/scl.109
+> Brown, D. W. & Zawodny Wetzel, D. (2023). Corpora and Rhetorically Informed Text Analysis: The diverse applications of DocuScope. John Benjamins Publishing Company. https://doi.org/10.1075/scl.109
 
-The APA citation is:
 
-Kaufer, D. & Ishizaki, S. (2023). The DocuScope project: History, theory and future directions. In D. Brown & D. Zawodny Wetzel (Ed.), Corpora and Rhetorically Informed Text Analysis: The diverse applications of DocuScope (pp. 2-24). John Benjamins Publishing Company. https://doi.org/10.1075/scl.109.01kau
+<details> 
+<summary>You can copy the citation in **APA** format:</summary>
+```{.json .code-overflow-wrap}
+Kaufer, D. & Ishizaki, S. (2023). The DocuScope project: History, theory and future directions. In D. W. Brown & D. Zawodny Wetzel (Ed.), Corpora and Rhetorically Informed Text Analysis: The diverse applications of DocuScope (pp. 2-24). John Benjamins Publishing Company. https://doi.org/10.1075/scl.109.01kau
+```
+</details> 
 
-Or the BibTex:
-
-```{.json}
+<details> 
+<summary>Or in **BibTex** format:</summary>
+```{.json .code-overflow-wrap}
 @incollection{kaufer2023docuscope,
   title={The DocuScope project: History, theory and future directions},
   author={Kaufer, David and Ishizaki, Suguru},
   booktitle={Corpora and Rhetorically Informed Text Analysis: The diverse applications of DocuScope},
+  editor={Brown, David West and Leech, Geoffrey and Zawodny Wetzel, Danielle},
   pages={2--24},
   year={2023},
   publisher={John Benjamins Publishing Company},
   doi = {doi:10.1075/scl.109.01kau}
 }
 ```
+</details> 
 
 # Overview of “The DocuScope Project”  
 *By David Kaufer and Suguru Ishizaki*

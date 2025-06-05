@@ -1,4 +1,24 @@
-# Preface {.unnumbered}
+
+[![](images/porpoise_badge.svg)](https://github.com/browndw/){target="_blank"}
+
+
+:::{layout-ncol=3 .yellow-bg}
+:::{.left}
+[![](images/streamlit-logo.svg)](https://streamlit.io/){target="_blank"}
+:::
+
+:::{.center}
+[![](images/spacy-logo.svg)](https://spacy.io/usage/spacy-101/){target="_blank"}
+:::
+
+:::{.right}
+[![](images/openai-logo.svg)](https://openai.com/){target="_blank"}
+:::
+::::
+
+[&copy; David West Brown, David Kaufer, Suguru Ishizaki]{style="font-size: 0.8em;"}
+
+# Getting Started {.unnumbered}
 
 This is a Quarto book.
 

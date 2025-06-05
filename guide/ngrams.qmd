@@ -1,3 +1,91 @@
 # <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"/></svg> N-grams & Clusters {.unnumbered}
 
 {{< iconify material-symbols:construction >}} Under construction.
+
+The **N-gram and Cluster Frequency** page lets you explore common word/tag sequences (n-grams) and search for clusters containing specific words or tags in your corpus.
+
+---
+
+## What You Can Do
+
+- Generate frequency tables for n-grams (sequences of 2, 3, or 4 tags)
+- Search for clusters containing a specific word or tag
+- Filter n-grams by tag at each position
+- Download your results as an Excel file
+
+---
+
+## Step 1: Choose Table Type
+
+When you first visit the page, you’ll be asked:
+
+- **N-grams**: Find the most frequent sequences of tags (e.g., POS or DocuScope tags).
+- **Clusters**: Find all n-grams that contain a specific word or tag at a chosen position.
+
+::: {.callout-important}
+**What is an "n-gram"?**  
+An *n-gram* is a sequence of n items (words or tags) that appear together in your text. For example, a 3-gram (trigram) could be "in the house" or "NOUN VERB NOUN".
+:::
+
+---
+
+## Step 2: Set Your Options
+
+### For N-grams
+
+- **Span**: Choose the length (2, 3, or 4).
+- **Tagset**: Choose between Parts-of-Speech or DocuScope tags.
+- Click **N-grams Table** to generate the table.
+
+### For Clusters
+
+- **Search mode**: Choose to search by a specific token (word) or tag.
+- **Node word/tag**: Enter the word or select the tag you want to anchor your search.
+- **Search type** (for tokens): Choose Fixed, Starts with, Ends with, or Contains.
+- **Tagset**: Choose Parts-of-Speech or DocuScope.
+- **Span & position**: Choose the n-gram length and the position of your anchor.
+- Click **Clusters Table** to generate the table.
+
+---
+
+## Step 3: Filter and Explore
+
+- Once your table is generated, use the filters at the top to focus on specific tags at each position in the n-gram.
+- The table updates automatically as you filter.
+
+::: {.callout-tip}
+**Tip:**  
+Filtering by tag position helps you find patterns, like all trigrams starting with a verb or ending with a specific rhetorical tag.
+:::
+
+---
+
+## Step 4: Download Your Table
+
+- Toggle **Download to Excel?** in the sidebar to enable download.
+- Click **Download to Excel** to save your results for further analysis.
+
+---
+
+## Generating a New Table
+
+- Use the **Create a New Ngrams Table** button in the sidebar to reset and start over with new settings.
+
+---
+
+## Tips for New Users
+
+::: {.callout-tip}
+- Try generating both n-gram and cluster tables to see which is most useful for your research.
+- If you don’t see any data, make sure you have loaded and processed a target corpus.
+- Download your results often so you can experiment without losing your work.
+:::
+
+---
+
+## If You Get Stuck
+
+::: {.callout-important}
+- Use the **reset** button on the Manage Corpus Data page if you need to start over.
+- If you see warnings, check that your corpus is loaded and processed, and that your search settings are valid.
+:::

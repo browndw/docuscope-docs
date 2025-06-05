@@ -1,3 +1,101 @@
 # <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#434343"><path d="m336-168-51-51 105-105H96v-72h294L285-501l51-51 192 192-192 192Zm288-240L432-600l192-192 51 51-105 105h294v72H570l105 105-51 51Z"/></svg> Compare Corpus Parts {.unnumbered}
 
 {{< iconify material-symbols:construction >}} Under construction.
+
+The **Compare Corpora** page lets you compare two sets of texts (your target and reference corpora) to discover which words or tags are unusually frequent in one set compared to the other. This is done using keyness statistics.
+
+---
+
+## What You Can Do
+
+- Generate a keyness table comparing your target and reference corpora
+- Choose to compare tokens (words) or tags (POS or DocuScope)
+- Filter results by tag
+- View results as a table or as a plot
+- Download the results as an Excel file
+
+---
+
+## What is "Keyness"?
+
+::: {.callout-important}
+**Keyness** is a statistical measure of how much more (or less) frequent a word or tag is in one corpus compared to another. It helps you find features that are unusually common or rare in your target texts.
+:::
+
+---
+
+## Understanding the Statistics
+
+- **Log-likelihood (LL)**:  
+  This is a significance test that tells you whether the difference in frequency between the two corpora is unlikely to be due to chance.  
+  - Higher values mean a bigger, more statistically significant difference.
+  - In this app, only results with *p* < 0.01 (very strong evidence) are shown.
+  - [More about log-likelihood](https://ucrel.lancs.ac.uk/llwizard.html)
+
+- **Log-ratio**:  
+  This is an *effect size* measure. It tells you how much more frequent a word or tag is in one corpus compared to the other, regardless of sample size.
+  - A log-ratio of 1 means "twice as frequent"; 2 means "four times as frequent", etc.
+  - Positive values = more frequent in the target corpus; negative values = more frequent in the reference corpus.
+
+::: {.callout-tip}
+**Tip:**  
+Use log-likelihood to see if a difference is statistically significant, and log-ratio to see how big that difference is.
+:::
+
+---
+
+## What You See in the Table
+
+- Only items with statistically significant differences (*p* < 0.01) are shown.
+- You can choose to compare:
+  - **Tokens**: Individual words, grouped by POS or DocuScope tag.
+  - **Tags Only**: Just the tags, not individual words.
+- Filter by tag to focus on features of interest.
+- Columns include frequency in each corpus, log-likelihood, log-ratio, and more.
+
+---
+
+## Step-by-Step Guide
+
+### 1. Generate a Keyness Table
+
+- If you haven’t already, load both a target and a reference corpus.
+- Click the **Keyness Table** button in the sidebar to generate the comparison.
+
+### 2. Choose Table Type
+
+- **Tokens**: Compare individual words, grouped by tag.
+- **Tags Only**: Compare just the tags (POS or DocuScope).
+
+### 3. Choose Tagset
+
+- For either table, select **Parts-of-Speech** or **DocuScope** tags.
+- For POS, you can choose between *General* (broad) or *Specific* (detailed) tags.
+
+### 4. Filter and Explore
+
+- Use the **Select tags to filter** box to focus on specific tags.
+- Switch between **Keyness Table** and **Keyness Plot** tabs to view data as a table or bar chart.
+
+### 5. Download Your Results
+
+- Use the **Excel** button in the sidebar to download the current table.
+
+---
+
+## Tips for New Users
+
+::: {.callout-tip}
+- If you don’t see any data, make sure both corpora are loaded and processed.
+- Use the plot view to quickly spot the most distinctive features.
+- Download your results often so you can experiment without losing your work.
+:::
+
+---
+
+## If You Get Stuck
+
+::: {.callout-important}
+- Use the **reset** button on the Manage Corpus Data page if you need to start over.
+- If you see warnings, check that both corpora are loaded and processed.
+:::

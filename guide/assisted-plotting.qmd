@@ -1,3 +1,96 @@
 # <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#434343"><path d="M192-384q-40 0-68-28t-28-68q0-40 28-68t68-28v-72q0-29.7 21.15-50.85Q234.3-720 264-720h120q0-40 28-68t68-28q40 0 68 28t28 68h120q29.7 0 50.85 21.15Q768-677.7 768-648v72q40 0 68 28t28 68q0 40-28 68t-68 28v168q0 29.7-21.16 50.85Q725.68-144 695.96-144H263.72Q234-144 213-165.15T192-216v-168Zm168-72q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14Zm228 0q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14ZM336-312h288v-72H336v72Zm-72 96h432v-432H264v432Zm216-216Z"/></svg> AI-Assisted Plotting {.unnumbered}
 
 {{< iconify material-symbols:construction >}} Under construction.
+
+The **AI-Assisted Plotting** page lets you create custom visualizations by describing what you want to see in plain English. The built-in Plotbot (powered by ChatGPT) generates Python code to create your plot, and you can iteratively refine your request through chat.
+
+---
+
+## What You Can Do
+
+- Select a data table from your corpus (target, reference, keywords, or grouped)
+- Preview and optionally pivot or normalize your data
+- Choose a plotting library (Plotly Express, Matplotlib, or Seaborn)
+- Describe the plot you want in natural language
+- View, download, and iteratively refine your plot through chat
+- Download plots as PNG images
+
+---
+
+## How It Works
+
+::: {.callout-important}
+Plotbot uses AI to turn your text prompts into Python code for plotting. Each time you send a message, Plotbot generates or updates the code and shows you the result. You can keep chatting to refine your plot until it looks just right.
+:::
+
+---
+
+## Step-by-Step Guide
+
+### 1. Select Data
+
+- Use the **Select corpus** radio buttons to choose which data to plot (Target, Reference, Keywords, or Grouped).
+- Use the **Select data to plot** dropdown to pick a specific table (e.g., tag frequencies, document-term matrix).
+- Preview your data in the main panel. You can toggle **Pivot Table** or **Make Percent** to adjust the format.
+
+### 2. Choose a Plotting Library
+
+- Select from **plotly.express**, **matplotlib**, or **seaborn**.
+- The library you choose will affect the style and features of your plot.
+
+### 3. Describe Your Plot
+
+- Use the chat input at the bottom to describe the plot you want. For example:
+  - "Show a bar chart of the top 10 tags."
+  - "Plot a scatterplot of noun vs. verb frequency, colored by group."
+  - "Make a boxplot comparing tag frequencies across categories."
+- Plotbot will generate the code, run it, and display the plot.
+
+### 4. Refine Your Plot
+
+- If you want to change something, just describe the update in the chat. For example:
+  - "Change the color scheme."
+  - "Add axis labels."
+  - "Show only documents from group A."
+- Plotbot remembers your previous messages and builds on them, so you can iterate until you’re satisfied.
+
+::: {.callout-tip}
+**Tip:**  
+Be as specific as you like! You can ask for titles, legends, color changes, or even new plot types. If Plotbot doesn’t get it right, clarify your request or start over.
+:::
+
+### 5. Download Your Plot
+
+- Each plot is shown as a static PNG image.
+- Use the **Download PNG** link below the plot to save it.
+
+### 6. Manage API Keys and Quotas
+
+- If you’re using the community API, you have a daily quota of queries. The sidebar shows your usage and remaining queries.
+- If you run out, or want to use your own OpenAI API key, enter it in the sidebar.
+
+### 7. Clear Chat History
+
+- Use the **Clear chat history** button in the sidebar to start a new conversation with Plotbot. This can help if your thread gets off track.
+
+---
+
+## Tips for New Users
+
+::: {.callout-tip}
+- Start simple: "Show a bar chart of tag frequencies."
+- Refine step by step: "Now color by group," "Add a title," etc.
+- If you get an error or the plot isn’t what you expected, rephrase your request or clear the chat history.
+- Download your plots to include in reports or presentations.
+:::
+
+---
+
+## If You Get Stuck
+
+::: {.callout-important}
+- Make sure you have loaded and processed a target corpus.
+- If you see warnings about data, check your table selection.
+- If you run out of community API queries, enter your own OpenAI API key.
+- Use the **reset** button on the Manage Corpus Data page if you need to start over.
+:::

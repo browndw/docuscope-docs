@@ -1,3 +1,91 @@
 # <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"/></svg> Tag Frequencies {.unnumbered}
 
 {{< iconify material-symbols:construction >}} Under construction.
+
+The **Tag Frequencies** page lets you view, filter, and visualize how often different linguistic tags appear in your corpus. You can also download the results for further analysis.
+
+---
+
+## What You Can Do
+
+- Generate a tag frequency table for your loaded corpus
+- Choose between Parts-of-Speech (POS) tags or DocuScope tags
+- Filter the table to focus on specific tags
+- View the data as a table or as a bar plot
+- Download the table as an Excel file
+
+---
+
+## Step 1: Generate a Tag Frequency Table
+
+If you haven’t already generated a tag frequency table, you’ll see a prompt to do so.
+
+- Click the **Tags Table** button in the sidebar.
+- Wait for processing to complete. If you see a warning, check that you have loaded a target corpus.
+
+::: {.callout-important}
+**What is a "tag"?**  
+A *tag* is a label assigned to each token in your text, such as a part-of-speech (noun, verb, etc.) or a DocuScope rhetorical category. Tag frequency tables show how often each tag appears in your documents.
+:::
+
+---
+
+## Step 2: Choose a Tagset
+
+Once your tag frequency table is ready, use the sidebar to select which tags to display:
+
+- **Parts-of-Speech**: Shows grammatical categories.
+  - Choose between *General* (broad categories) or *Specific* (detailed tags).
+- **DocuScope**: Shows rhetorical or functional categories from the DocuScope system.
+
+---
+
+## Step 3: Filter and Explore
+
+- Use the **Select tags to filter** box to focus on specific tags of interest.
+- The table updates automatically to show only the tags you select.
+
+---
+
+## Step 4: Table and Plot Views
+
+- Use the **Table** tab to view the frequency data in tabular form.
+- Use the **Plot** tab to see a bar chart of tag frequencies.
+
+::: {.callout-tip}
+**Tip:**  
+Visualizing tag frequencies can help you quickly spot patterns or differences between categories in your corpus.
+:::
+
+---
+
+## Step 5: Download Your Table
+
+- Use the **Excel** button in the sidebar to download the current table as an Excel file.
+- You can open this file in spreadsheet software for further analysis or sharing.
+
+---
+
+## Understanding the Table
+
+- Use the **Column explanation** expander in the sidebar for definitions of each column.
+- Columns typically include the tag, its frequency, and possibly its percentage of the total.
+
+---
+
+## Tips for New Users
+
+::: {.callout-tip}
+- If you don’t see any data, make sure you have loaded and processed a target corpus.
+- Try both tagsets (POS and DocuScope) to see which is most useful for your project.
+- Download your results often so you can experiment without losing your work.
+:::
+
+---
+
+## If You Get Stuck
+
+::: {.callout-important}
+- Use the **reset** button on the Manage Corpus Data page if you need to start over.
+- If you see warnings, check that your corpus is loaded and processed.
+:::

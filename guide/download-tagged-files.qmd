@@ -6,9 +6,36 @@ highlight-style: a11y
 
 {{< iconify material-symbols:construction >}} Under construction.
 
-Once a corpus has been processed, you can use this page to generate a **zipped folder of tagged text files**.
+The **Download Tagged Files** page lets you export your processed corpus as a zipped folder of plain text files, each with embedded linguistic tags. This is useful for sharing, annotation, or further analysis in other tools.
 
-The tags are embbedd into the text after a vertical bar:
+---
+
+## What You Can Do
+
+- Download your **target** corpus as individual text files, each with embedded tags
+- Choose which tagset to embed: **Parts-of-Speech** or **DocuScope**
+- Download all files as a single ZIP archive
+
+---
+
+## Step-by-Step Guide
+
+### 1. Choose Tagset to Embed
+
+- In the sidebar, select either **Parts-of-Speech** or **DocuScope** as the tagset to embed in your files.
+- Parts-of-Speech tags show grammatical categories (like NOUN, VERB).
+- DocuScope tags show rhetorical or functional categories.
+
+### 2. Download the ZIP Archive
+
+- Once you’ve selected a tagset, click **Download to Zip** in the sidebar.
+- This will download a zipped folder containing one tagged text file for each document in your corpus.
+
+::: {.callout-important}
+Each file contains your original text with tags embedded, making it easy to see how each word or phrase was analyzed.
+:::
+
+In the generated text files, the tags are embbedd after a vertical bar:
 
 ```{.js}
 At|II root|NN1 , every|AT1 hypothesis|NN1 is|VBZ a|AT1 claim|NN1 about|II the|AT relevance|NN1
@@ -21,3 +48,29 @@ evidence|Reasoning and|SyntacticComplexity theory|AcademicTerms pertaining_to_th
 ```
 
 If you are planning to use the output to process the files in a tool like [AntConc](https://www.laurenceanthony.net/software/antconc/){target="_blank"} or in a coding environment, take note of these conventions and account for them accordingly.
+
+---
+
+## If You Haven’t Processed a Corpus
+
+- If you haven’t yet processed a target corpus, use the **Load Data** button in the sidebar.
+- You must process a corpus before you can download tagged files.
+
+---
+
+## Tips for New Users
+
+::: {.callout-tip}
+- Use these tagged files for manual annotation, sharing with collaborators, or further analysis in other software.
+- Choose the tagset that best fits your research question.
+- If you see a warning about missing data, make sure you have processed a target corpus using **Manage Corpus Data**.
+:::
+
+---
+
+## If You Get Stuck
+
+::: {.callout-important}
+- Make sure you have processed a target corpus before trying to download.
+- If you see warnings, use the **Load Data** button or return to **Manage Corpus Data** to process your files.
+:::
