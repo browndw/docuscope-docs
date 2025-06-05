@@ -16,79 +16,181 @@ The **Compare Corpora** page lets you compare two sets of texts (your target and
 
 ---
 
-## What is "Keyness"?
+## Step-by-Step Guide
 
-::: {.callout-important}
-**Keyness** is a statistical measure of how much more (or less) frequent a word or tag is in one corpus compared to another. It helps you find features that are unusually common or rare in your target texts.
-:::
+### 1. Generate a Keyness Table
 
----
+- If you haven't already, load both a target and a reference corpus
+- Click the **Keyness Table** button in the sidebar to generate the comparison
 
-## Understanding the Statistics
+### 2. Choose Table Type
 
-- **Log-likelihood (LL)**:  
-  This is a significance test that tells you whether the difference in frequency between the two corpora is unlikely to be due to chance.  
-  - Higher values mean a bigger, more statistically significant difference.
-  - In this app, only results with *p* < 0.01 (very strong evidence) are shown.
-  - [More about log-likelihood](https://ucrel.lancs.ac.uk/llwizard.html)
+- **Tokens**: Compare individual words, grouped by tag
+- **Tags Only**: Compare just the tags (POS or DocuScope)
 
-- **Log-ratio**:  
-  This is an *effect size* measure. It tells you how much more frequent a word or tag is in one corpus compared to the other, regardless of sample size.
-  - A log-ratio of 1 means "twice as frequent"; 2 means "four times as frequent", etc.
-  - Positive values = more frequent in the target corpus; negative values = more frequent in the reference corpus.
+### 3. Choose Tagset
 
-::: {.callout-tip}
-**Tip:**  
-Use log-likelihood to see if a difference is statistically significant, and log-ratio to see how big that difference is.
-:::
+- For either table, select **Parts-of-Speech** or **DocuScope** tags
+- For POS, you can choose between *General* (broad) or *Specific* (detailed) tags
+
+### 4. Filter and Explore
+
+- Use the **Select tags to filter** box to focus on specific tags
+- Switch between **Keyness Table** and **Keyness Plot** tabs to view data as a table or bar chart
+
+### 5. Download Your Results
+
+- Use the **Excel** button in the sidebar to download the current table
 
 ---
 
 ## What You See in the Table
 
-- Only items with statistically significant differences (*p* < 0.01) are shown.
-- You can choose to compare:
-  - **Tokens**: Individual words, grouped by POS or DocuScope tag.
-  - **Tags Only**: Just the tags, not individual words.
-- Filter by tag to focus on features of interest.
-- Columns include frequency in each corpus, log-likelihood, log-ratio, and more.
+- Only items with statistically significant differences (*p* < 0.01, LL ≥ 6.63) are shown
+// ...existing code...
+
+### What makes a strong keyword?
+1. **High log-likelihood** (LL ≥ 10): Strong evidence for a difference
+2. **Meaningful log-ratio** (|LR| ≥ 1): At least 2× difference in frequency
+3. **Sufficient frequency**: Appears multiple times in your corpus (not just once or twice)
+
+### Reading the statistics together:
+- **High LL, high LR**: Strong evidence for a large effect (your best keywords)
+- **High LL, low LR**: Strong evidence for a small effect (consistent but modest difference)
+- **Low LL, high LR**: Weak evidence for a large effect (potentially unreliable due to low frequency)
+
+**Learn more**: [Understanding effect sizes in corpus linguistics](https://www.lancaster.ac.uk/fass/projects/corpus/ZJU/CL03Rayson.pdf){target="_blank"}
 
 ---
 
-## Step-by-Step Guide
+## Understanding the Statistics
 
-### 1. Generate a Keyness Table
+::: {.callout-important}
+**Keyness** is a statistical measure that compares observed frequencies in two corpora against what we would expect if both corpora were drawn from the same distribution. It helps you identify linguistic features that distinguish your target texts from your reference texts.
+:::
 
-- If you haven’t already, load both a target and a reference corpus.
-- Click the **Keyness Table** button in the sidebar to generate the comparison.
+### Log-likelihood (LL) - Evidence for an Effect
 
-### 2. Choose Table Type
+Log-likelihood tests how well the observed frequencies match what we would expect if the target and reference corpora were samples from the same underlying distribution.
 
-- **Tokens**: Compare individual words, grouped by tag.
-- **Tags Only**: Compare just the tags (POS or DocuScope).
+- **What it calculates**: LL = 2×((a×ln(a/E₁)) + (b×ln(b/E₂)))  
+  Where a and b are observed frequencies, E₁ and E₂ are expected frequencies
+- **What it tells you**: How much evidence there is for a difference between the corpora
+- **How to interpret**: 
+  - Higher LL values = stronger evidence that the corpora differ in their use of this feature
+  - LL ≥ 3.84 = statistically significant (*p* < 0.05)
+  - LL ≥ 6.63 = statistically significant (*p* < 0.01)
+  - LL ≥ 10.83 = statistically significant (*p* < 0.001)
+- **Important**: This is a measure of **evidence for an effect**, not the size of the effect
+- This app only shows results with *p* < 0.01 (LL ≥ 6.63)
 
-### 3. Choose Tagset
+::: {.callout-warning}
+**Important caveat**: Because log-likelihood measures the amount of evidence for an effect, very frequent words like "the" may show statistical significance even when the actual difference is small (low log-ratio). Conversely, rare words might not reach significance even with large proportional differences because there isn't enough evidence. This is why you need both measures!
+:::
 
-- For either table, select **Parts-of-Speech** or **DocuScope** tags.
-- For POS, you can choose between *General* (broad) or *Specific* (detailed) tags.
+::: {.callout-note}
+**For beginners**: Think of log-likelihood as asking "How confident can we be that these corpora really do use this word/tag differently?" Higher numbers mean more confidence.
+:::
 
-### 4. Filter and Explore
+**Learn more**: [Log-likelihood calculator and explanation](https://ucrel.lancs.ac.uk/llwizard.html){target="_blank"}
 
-- Use the **Select tags to filter** box to focus on specific tags.
-- Switch between **Keyness Table** and **Keyness Plot** tabs to view data as a table or bar chart.
+### Log-ratio (LR) - Magnitude of the Effect
 
-### 5. Download Your Results
+Log-ratio measures **how much** more frequent a feature is in one corpus compared to another.
 
-- Use the **Excel** button in the sidebar to download the current table.
+- **What it tells you**: The magnitude (size) of the frequency difference
+- **How to interpret**:
+  - Log-ratio of 1 = feature is 2× more frequent in target corpus
+  - Log-ratio of 2 = feature is 4× more frequent in target corpus  
+  - Log-ratio of -1 = feature is 2× more frequent in reference corpus
+  - Log-ratio of 0 = equal frequency in both corpora
+- **Why it matters**: You can have strong evidence for an effect (high LL) but a small effect size (low LR), or vice versa
+
+::: {.callout-tip}
+**Key insight**: Use both statistics together! Log-likelihood tells you how much **evidence** you have for a difference, and log-ratio tells you how **large** that difference is. Strong keywords have both high LL and meaningful LR values.
+:::
+
+**Learn more**: [Understanding effect sizes in corpus linguistics](https://www.lancaster.ac.uk/fass/projects/corpus/ZJU/CL03Rayson.pdf){target="_blank"}
+
+---
+
+## Reporting Your Results
+
+### How to Report Keyness Statistics
+
+When writing about your findings, follow these conventions:
+
+**For individual words/features:**
+
+- Report both LL and LR values
+- Include the significance level
+- Provide context about frequency and direction
+
+**Examples:**
+
+> The word *evidence* was significantly more frequent in academic papers than in student essays (LL = 15.23, *p* < 0.001, LR = 1.87), appearing approximately 3.6 times more often.
+
+> Modal verbs showed significant overuse in student writing compared to published articles (LL = 23.45, *p* < 0.001, LR = 1.12), occurring about 2.2 times more frequently.
+
+> While *however* appeared significantly more often in the academic corpus (LL = 8.91, *p* < 0.01), the effect size was modest (LR = 0.65), representing a 1.6-fold increase in frequency.
+
+**For patterns across multiple features:**
+
+> Several features distinguished the two corpora significantly (*p* < 0.01). The strongest keywords in the target corpus were technical terms like "methodology" (LL = 28.7, LR = 2.1) and "analysis" (LL = 19.3, LR = 1.4), while the reference corpus was characterized by personal pronouns such as "I" (LL = 45.2, LR = -1.8) and "my" (LL = 22.1, LR = -1.5).
+
+### Reporting Guidelines
+
+::: {.callout-tip}
+**Best practices for academic writing:**
+
+1. **Always report both statistics**: LL shows evidence strength, LR shows effect size
+2. **Include significance levels**: Use *p* < 0.05, *p* < 0.01, or *p* < 0.001
+3. **Interpret the direction**: Specify which corpus shows higher frequency
+4. **Provide context**: Convert LR to fold-change (2^LR) for clarity
+5. **Be selective**: Focus on the most meaningful differences, not every significant result
+6. **Round appropriately**: LL to 2 decimal places, LR to 2-3 decimal places
+:::
+
+---
+
+### Reporting Guidelines
+
+::: {.callout-tip}
+**Best practices for academic writing:**
+
+1. **Always report both statistics**: LL shows evidence strength, LR shows effect size
+2. **Include significance levels**: Use *p* < 0.05, *p* < 0.01, or *p* < 0.001
+3. **Interpret the direction**: Specify which corpus shows higher frequency
+5. **Be selective**: Focus on the most meaningful differences, not every significant result
+6. **Round appropriately**: LL to 2 decimal places, log-ratio to 2-3 decimal places
+:::
+
+---
+
+## Understanding Your Results: A Beginner's Guide
+
+### What makes a strong keyword?
+1. **High log-likelihood** (LL ≥ 10): Strong evidence for a difference
+2. **Meaningful log-ratio** (|LR| ≥ 1): At least 2× difference in frequency
+3. **Sufficient frequency**: Appears multiple times in your corpus (not just once or twice)
+
+### Reading the statistics together:
+- **High LL, high log-ratio**: Strong evidence for a large effect (your best keywords)
+- **High LL, low log-ratio**: Strong evidence for a small effect (consistent but modest difference)
+- **Low LL, high log-ratio**: Weak evidence for a large effect (potentially unreliable due to low frequency)
 
 ---
 
 ## Tips for New Users
 
 ::: {.callout-tip}
-- If you don’t see any data, make sure both corpora are loaded and processed.
-- Use the plot view to quickly spot the most distinctive features.
-- Download your results often so you can experiment without losing your work.
+- **Start simple**: Begin with "Tags Only" to get an overview of broad patterns
+- **Look for patterns**: Focus on words/tags with both high LL and meaningful log-ratio
+- **Use filters**: Narrow down to specific grammatical categories to find targeted differences
+- **Compare wisely**: Ensure your reference corpus is appropriate for your research question
+- If you don't see any data, make sure both corpora are loaded and processed
+- Use the plot view to quickly spot the most distinctive features
+- Download your results often so you can experiment without losing your work
 :::
 
 ---
@@ -96,6 +198,7 @@ Use log-likelihood to see if a difference is statistically significant, and log-
 ## If You Get Stuck
 
 ::: {.callout-important}
-- Use the **reset** button on the Manage Corpus Data page if you need to start over.
-- If you see warnings, check that both corpora are loaded and processed.
+- Use the **reset** button on the Manage Corpus Data page if you need to start over
+- If you see warnings, check that both corpora are loaded and processed
+- Remember: No results might mean your corpora are actually quite similar!
 :::
