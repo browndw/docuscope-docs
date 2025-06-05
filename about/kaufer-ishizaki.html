@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../guide/download-tagged-files.html" rel="prev">
+<link href="../vignettes/results-to-paper.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -105,6 +105,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -134,7 +135,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <img src="../images/docuscope-logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">DocuScope</a> 
+      <a href="../">DocuScope CA</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/browndw" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-globe2"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -147,7 +152,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">Getting Started</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -247,13 +252,88 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">About the DocuScope Project</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Tagsets</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tagsets/claws7-tags.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Part-of-Speech Tags</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tagsets/docuscope-fd-tags.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DocuScope Tags (Full Dictionary)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tagsets/docuscope-cd-tags.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DocuScope Tags (Common Dictionary)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Datasets</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/micusp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MICSUP</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/bawe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BAWE</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/elsevier.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Elsevier</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Vignettes</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vignettes/results-to-paper.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Turning Your Results Into a Research Paper</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">About the DocuScope Project</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../about/kaufer-ishizaki.html" class="sidebar-item-text sidebar-link active">
@@ -356,19 +436,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>The following is <a href="https://www.degruyterbrill.com/document/doi/10.1075/scl.109/html" target="_blank">excerpted from</a>:</p>
-<p>Brown, D. &amp; Zawodny Wetzel, D. (2023). Corpora and Rhetorically Informed Text Analysis: The diverse applications of DocuScope. John Benjamins Publishing Company. https://doi.org/10.1075/scl.109</p>
-<p>The APA citation is:</p>
-<p>Kaufer, D. &amp; Ishizaki, S. (2023). The DocuScope project: History, theory and future directions. In D. Brown &amp; D. Zawodny Wetzel (Ed.), Corpora and Rhetorically Informed Text Analysis: The diverse applications of DocuScope (pp.&nbsp;2-24). John Benjamins Publishing Company. https://doi.org/10.1075/scl.109.01kau</p>
-<p>Or the BibTex:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="er">@incollection</span><span class="fu">{</span><span class="er">kaufer2023docuscope</span><span class="fu">,</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="er">title={The</span> <span class="er">DocuScope</span> <span class="er">project</span><span class="fu">:</span> <span class="er">History</span><span class="fu">,</span> <span class="er">theory</span> <span class="er">and</span> <span class="er">future</span> <span class="er">directions</span><span class="fu">}</span><span class="er">,</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="er">author=</span><span class="fu">{</span><span class="er">Kaufer</span><span class="fu">,</span> <span class="er">David</span> <span class="er">and</span> <span class="er">Ishizaki</span><span class="fu">,</span> <span class="er">Suguru</span><span class="fu">}</span><span class="er">,</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="er">booktitle=</span><span class="fu">{</span><span class="er">Corpora</span> <span class="er">and</span> <span class="er">Rhetorically</span> <span class="er">Informed</span> <span class="er">Text</span> <span class="er">Analysis</span><span class="fu">:</span> <span class="er">The</span> <span class="er">diverse</span> <span class="er">applications</span> <span class="er">of</span> <span class="er">DocuScope</span><span class="fu">}</span><span class="er">,</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="er">pages=</span><span class="fu">{</span><span class="er">2--24</span><span class="fu">}</span><span class="er">,</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="er">year=</span><span class="fu">{</span><span class="er">2023</span><span class="fu">}</span><span class="er">,</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="er">publisher=</span><span class="fu">{</span><span class="er">John</span> <span class="er">Benjamins</span> <span class="er">Publishing</span> <span class="er">Company</span><span class="fu">}</span><span class="er">,</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="er">doi</span> <span class="er">=</span> <span class="fu">{</span><span class="er">doi</span><span class="fu">:</span><span class="fl">10.1075</span><span class="er">/scl.</span><span class="fl">109.01</span><span class="er">kau</span><span class="fu">}</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="er">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<blockquote class="blockquote">
+<p>Brown, D. W. &amp; Zawodny Wetzel, D. (2023). Corpora and Rhetorically Informed Text Analysis: The diverse applications of DocuScope. John Benjamins Publishing Company. https://doi.org/10.1075/scl.109</p>
+</blockquote>
+<details>
+<summary>
+You can copy the citation in <strong>APA</strong> format:
+</summary>
+<div class="sourceCode" id="cb1"><pre class="sourceCode json code-overflow-wrap code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="er">Kaufer,</span> <span class="er">D.</span> <span class="er">&amp;</span> <span class="er">Ishizaki,</span> <span class="er">S.</span> <span class="er">(2023).</span> <span class="er">The</span> <span class="er">DocuScope</span> <span class="er">project:</span> <span class="er">History,</span> <span class="er">theory</span> <span class="er">and</span> <span class="er">future</span> <span class="er">directions.</span> <span class="er">In</span> <span class="er">D.</span> <span class="er">W.</span> <span class="er">Brown</span> <span class="er">&amp;</span> <span class="er">D.</span> <span class="er">Zawodny</span> <span class="er">Wetzel</span> <span class="er">(Ed.),</span> <span class="er">Corpora</span> <span class="er">and</span> <span class="er">Rhetorically</span> <span class="er">Informed</span> <span class="er">Text</span> <span class="er">Analysis:</span> <span class="er">The</span> <span class="er">diverse</span> <span class="er">applications</span> <span class="er">of</span> <span class="er">DocuScope</span> <span class="er">(pp.</span> <span class="er">2-24).</span> <span class="er">John</span> <span class="er">Benjamins</span> <span class="er">Publishing</span> <span class="er">Company.</span> <span class="er">https://doi.org/10.1075/scl.109.01kau</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<details>
+<summary>
+Or in <strong>BibTex</strong> format:
+</summary>
+<div class="sourceCode" id="cb2"><pre class="sourceCode json code-overflow-wrap code-with-copy"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="er">@incollection</span><span class="fu">{</span><span class="er">kaufer2023docuscope</span><span class="fu">,</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="er">title={The</span> <span class="er">DocuScope</span> <span class="er">project</span><span class="fu">:</span> <span class="er">History</span><span class="fu">,</span> <span class="er">theory</span> <span class="er">and</span> <span class="er">future</span> <span class="er">directions</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="er">author=</span><span class="fu">{</span><span class="er">Kaufer</span><span class="fu">,</span> <span class="er">David</span> <span class="er">and</span> <span class="er">Ishizaki</span><span class="fu">,</span> <span class="er">Suguru</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="er">booktitle=</span><span class="fu">{</span><span class="er">Corpora</span> <span class="er">and</span> <span class="er">Rhetorically</span> <span class="er">Informed</span> <span class="er">Text</span> <span class="er">Analysis</span><span class="fu">:</span> <span class="er">The</span> <span class="er">diverse</span> <span class="er">applications</span> <span class="er">of</span> <span class="er">DocuScope</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="er">editor=</span><span class="fu">{</span><span class="er">Brown</span><span class="fu">,</span> <span class="er">David</span> <span class="er">West</span> <span class="er">and</span> <span class="er">Leech</span><span class="fu">,</span> <span class="er">Geoffrey</span> <span class="er">and</span> <span class="er">Zawodny</span> <span class="er">Wetzel</span><span class="fu">,</span> <span class="er">Danielle</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="er">pages=</span><span class="fu">{</span><span class="er">2--24</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="er">year=</span><span class="fu">{</span><span class="er">2023</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="er">publisher=</span><span class="fu">{</span><span class="er">John</span> <span class="er">Benjamins</span> <span class="er">Publishing</span> <span class="er">Company</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="er">doi</span> <span class="er">=</span> <span class="fu">{</span><span class="er">doi</span><span class="fu">:</span><span class="fl">10.1075</span><span class="er">/scl.</span><span class="fl">109.01</span><span class="er">kau</span><span class="fu">}</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="er">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <section id="overview-of-the-docuscope-project" class="level1">
 <h1>Overview of “The DocuScope Project”</h1>
 <p><em>By David Kaufer and Suguru Ishizaki</em></p>
@@ -1362,8 +1453,8 @@ Figure&nbsp;2.1: A snapshot of major topics in King’s “I Have A Dream” Spe
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../guide/download-tagged-files.html" class="pagination-link" aria-label="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;20px&quot; viewBox=&quot;0 -960 960 960&quot; width=&quot;20px&quot; fill=&quot;#434343&quot;><path d=&quot;M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z&quot;/></svg> Download Tagged Files">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"></path></svg> Download Tagged Files</span>
+      <a href="../vignettes/results-to-paper.html" class="pagination-link" aria-label="Turning Your Results Into a Research Paper">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Turning Your Results Into a Research Paper</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

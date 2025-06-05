@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>   N-grams &amp; Clusters – DocuScope</title>
+<title>MICSUP – DocuScope</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../guide/compare-corpora.html" rel="next">
-<link href="../guide/tag-frequencies.html" rel="prev">
+<link href="../datasets/bawe.html" rel="next">
+<link href="../tagsets/docuscope-cd-tags.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../guide/load-corpus.html">DocuScope CA Apps</a></li><li class="breadcrumb-item"><a href="../guide/ngrams.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> N-grams &amp; Clusters</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datasets/micusp.html">Datasets</a></li><li class="breadcrumb-item"><a href="../datasets/micusp.html">MICSUP</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -124,13 +124,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">DocuScope CA Apps</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../guide/load-corpus.html" class="sidebar-item-text sidebar-link">
@@ -151,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../guide/ngrams.html" class="sidebar-item-text sidebar-link active">
+  <a href="../guide/ngrams.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> N-grams &amp; Clusters</span></a>
   </div>
 </li>
@@ -248,16 +248,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Datasets</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../datasets/micusp.html" class="sidebar-item-text sidebar-link">
+  <a href="../datasets/micusp.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">MICSUP</span></a>
   </div>
 </li>
@@ -314,35 +314,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#what-you-can-do" id="toc-what-you-can-do" class="nav-link active" data-scroll-target="#what-you-can-do">What You Can Do</a></li>
-  <li><a href="#step-1-choose-table-type" id="toc-step-1-choose-table-type" class="nav-link" data-scroll-target="#step-1-choose-table-type">Step 1: Choose Table Type</a></li>
-  <li><a href="#step-2-set-your-options" id="toc-step-2-set-your-options" class="nav-link" data-scroll-target="#step-2-set-your-options">Step 2: Set Your Options</a>
-  <ul>
-  <li><a href="#for-n-grams" id="toc-for-n-grams" class="nav-link" data-scroll-target="#for-n-grams">For N-grams</a></li>
-  <li><a href="#for-clusters" id="toc-for-clusters" class="nav-link" data-scroll-target="#for-clusters">For Clusters</a></li>
-  </ul></li>
-  <li><a href="#step-3-filter-and-explore" id="toc-step-3-filter-and-explore" class="nav-link" data-scroll-target="#step-3-filter-and-explore">Step 3: Filter and Explore</a></li>
-  <li><a href="#step-4-download-your-table" id="toc-step-4-download-your-table" class="nav-link" data-scroll-target="#step-4-download-your-table">Step 4: Download Your Table</a></li>
-  <li><a href="#generating-a-new-table" id="toc-generating-a-new-table" class="nav-link" data-scroll-target="#generating-a-new-table">Generating a New Table</a></li>
-  <li><a href="#tips-for-new-users" id="toc-tips-for-new-users" class="nav-link" data-scroll-target="#tips-for-new-users">Tips for New Users</a></li>
-  <li><a href="#if-you-get-stuck" id="toc-if-you-get-stuck" class="nav-link" data-scroll-target="#if-you-get-stuck">If You Get Stuck</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../guide/load-corpus.html">DocuScope CA Apps</a></li><li class="breadcrumb-item"><a href="../guide/ngrams.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> N-grams &amp; Clusters</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datasets/micusp.html">Datasets</a></li><li class="breadcrumb-item"><a href="../datasets/micusp.html">MICSUP</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"></svg><br>
-<path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"><br>
-<br>
-N-grams &amp; Clusters</path></h1>
+<h1 class="title">MICSUP</h1>
 </div>
 
 
@@ -360,143 +340,8 @@ N-grams &amp; Clusters</path></h1>
 
 
 <p><iconify-icon role="img" inline="" icon="material-symbols:construction" aria-label="Icon construction from material-symbols Iconify.design set." title="Icon construction from material-symbols Iconify.design set."></iconify-icon> Under construction.</p>
-<p>The <strong>N-gram and Cluster Frequency</strong> page lets you explore common word/tag sequences (n-grams) and search for clusters containing specific words or tags in your corpus.</p>
-<hr>
-<section id="what-you-can-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-can-do">What You Can Do</h2>
-<ul>
-<li>Generate frequency tables for n-grams (sequences of 2, 3, or 4 tags)</li>
-<li>Search for clusters containing a specific word or tag</li>
-<li>Filter n-grams by tag at each position</li>
-<li>Download your results as an Excel file</li>
-</ul>
-<hr>
-</section>
-<section id="step-1-choose-table-type" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-choose-table-type">Step 1: Choose Table Type</h2>
-<p>When you first visit the page, you’ll be asked:</p>
-<ul>
-<li><strong>N-grams</strong>: Find the most frequent sequences of tags (e.g., POS or DocuScope tags).</li>
-<li><strong>Clusters</strong>: Find all n-grams that contain a specific word or tag at a chosen position.</li>
-</ul>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>What is an “n-gram”?</strong><br>
-An <em>n-gram</em> is a sequence of n items (words or tags) that appear together in your text. For example, a 3-gram (trigram) could be “in the house” or “NOUN VERB NOUN”.</p>
-</div>
-</div>
-<hr>
-</section>
-<section id="step-2-set-your-options" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-set-your-options">Step 2: Set Your Options</h2>
-<section id="for-n-grams" class="level3">
-<h3 class="anchored" data-anchor-id="for-n-grams">For N-grams</h3>
-<ul>
-<li><strong>Span</strong>: Choose the length (2, 3, or 4).</li>
-<li><strong>Tagset</strong>: Choose between Parts-of-Speech or DocuScope tags.</li>
-<li>Click <strong>N-grams Table</strong> to generate the table.</li>
-</ul>
-</section>
-<section id="for-clusters" class="level3">
-<h3 class="anchored" data-anchor-id="for-clusters">For Clusters</h3>
-<ul>
-<li><strong>Search mode</strong>: Choose to search by a specific token (word) or tag.</li>
-<li><strong>Node word/tag</strong>: Enter the word or select the tag you want to anchor your search.</li>
-<li><strong>Search type</strong> (for tokens): Choose Fixed, Starts with, Ends with, or Contains.</li>
-<li><strong>Tagset</strong>: Choose Parts-of-Speech or DocuScope.</li>
-<li><strong>Span &amp; position</strong>: Choose the n-gram length and the position of your anchor.</li>
-<li>Click <strong>Clusters Table</strong> to generate the table.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="step-3-filter-and-explore" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-filter-and-explore">Step 3: Filter and Explore</h2>
-<ul>
-<li>Once your table is generated, use the filters at the top to focus on specific tags at each position in the n-gram.</li>
-<li>The table updates automatically as you filter.</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Tip:</strong><br>
-Filtering by tag position helps you find patterns, like all trigrams starting with a verb or ending with a specific rhetorical tag.</p>
-</div>
-</div>
-<hr>
-</section>
-<section id="step-4-download-your-table" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-download-your-table">Step 4: Download Your Table</h2>
-<ul>
-<li>Toggle <strong>Download to Excel?</strong> in the sidebar to enable download.</li>
-<li>Click <strong>Download to Excel</strong> to save your results for further analysis.</li>
-</ul>
-<hr>
-</section>
-<section id="generating-a-new-table" class="level2">
-<h2 class="anchored" data-anchor-id="generating-a-new-table">Generating a New Table</h2>
-<ul>
-<li>Use the <strong>Create a New Ngrams Table</strong> button in the sidebar to reset and start over with new settings.</li>
-</ul>
-<hr>
-</section>
-<section id="tips-for-new-users" class="level2">
-<h2 class="anchored" data-anchor-id="tips-for-new-users">Tips for New Users</h2>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Try generating both n-gram and cluster tables to see which is most useful for your research.</li>
-<li>If you don’t see any data, make sure you have loaded and processed a target corpus.</li>
-<li>Download your results often so you can experiment without losing your work.</li>
-</ul>
-</div>
-</div>
-<hr>
-</section>
-<section id="if-you-get-stuck" class="level2">
-<h2 class="anchored" data-anchor-id="if-you-get-stuck">If You Get Stuck</h2>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Use the <strong>reset</strong> button on the Manage Corpus Data page if you need to start over.</li>
-<li>If you see warnings, check that your corpus is loaded and processed, and that your search settings are valid.</li>
-</ul>
-</div>
-</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -900,13 +745,13 @@ Important
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../guide/tag-frequencies.html" class="pagination-link" aria-label="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;20px&quot; viewBox=&quot;0 -960 960 960&quot; width=&quot;20px&quot; fill=&quot;#434343&quot;><path d=&quot;M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z&quot;/></svg> Tag Frequencies">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> Tag Frequencies</span>
+      <a href="../tagsets/docuscope-cd-tags.html" class="pagination-link" aria-label="DocuScope Tags (Common Dictionary)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">DocuScope Tags (Common Dictionary)</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../guide/compare-corpora.html" class="pagination-link" aria-label="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;20px&quot; viewBox=&quot;0 -960 960 960&quot; width=&quot;20px&quot; fill=&quot;#434343&quot;><path d=&quot;m336-168-51-51 105-105H96v-72h294L285-501l51-51 192 192-192 192Zm288-240L432-600l192-192 51 51-105 105h294v72H570l105 105-51 51Z&quot;/></svg> Compare Corpora">
-        <span class="nav-page-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="m336-168-51-51 105-105H96v-72h294L285-501l51-51 192 192-192 192Zm288-240L432-600l192-192 51 51-105 105h294v72H570l105 105-51 51Z"></path></svg> Compare Corpora</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../datasets/bawe.html" class="pagination-link" aria-label="BAWE">
+        <span class="nav-page-text">BAWE</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

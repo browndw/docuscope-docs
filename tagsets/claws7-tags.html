@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>   N-grams &amp; Clusters – DocuScope</title>
+<title>Part-of-Speech Tags – DocuScope</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +65,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../guide/compare-corpora.html" rel="next">
-<link href="../guide/tag-frequencies.html" rel="prev">
+<link href="../tagsets/docuscope-fd-tags.html" rel="next">
+<link href="../guide/download-tagged-files.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../guide/load-corpus.html">DocuScope CA Apps</a></li><li class="breadcrumb-item"><a href="../guide/ngrams.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> N-grams &amp; Clusters</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tagsets/claws7-tags.html">Tagsets</a></li><li class="breadcrumb-item"><a href="../tagsets/claws7-tags.html">Part-of-Speech Tags</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -124,13 +159,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">DocuScope CA Apps</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../guide/load-corpus.html" class="sidebar-item-text sidebar-link">
@@ -151,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../guide/ngrams.html" class="sidebar-item-text sidebar-link active">
+  <a href="../guide/ngrams.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> N-grams &amp; Clusters</span></a>
   </div>
 </li>
@@ -219,16 +254,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Tagsets</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tagsets/claws7-tags.html" class="sidebar-item-text sidebar-link">
+  <a href="../tagsets/claws7-tags.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Part-of-Speech Tags</span></a>
   </div>
 </li>
@@ -314,35 +349,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#what-you-can-do" id="toc-what-you-can-do" class="nav-link active" data-scroll-target="#what-you-can-do">What You Can Do</a></li>
-  <li><a href="#step-1-choose-table-type" id="toc-step-1-choose-table-type" class="nav-link" data-scroll-target="#step-1-choose-table-type">Step 1: Choose Table Type</a></li>
-  <li><a href="#step-2-set-your-options" id="toc-step-2-set-your-options" class="nav-link" data-scroll-target="#step-2-set-your-options">Step 2: Set Your Options</a>
-  <ul>
-  <li><a href="#for-n-grams" id="toc-for-n-grams" class="nav-link" data-scroll-target="#for-n-grams">For N-grams</a></li>
-  <li><a href="#for-clusters" id="toc-for-clusters" class="nav-link" data-scroll-target="#for-clusters">For Clusters</a></li>
-  </ul></li>
-  <li><a href="#step-3-filter-and-explore" id="toc-step-3-filter-and-explore" class="nav-link" data-scroll-target="#step-3-filter-and-explore">Step 3: Filter and Explore</a></li>
-  <li><a href="#step-4-download-your-table" id="toc-step-4-download-your-table" class="nav-link" data-scroll-target="#step-4-download-your-table">Step 4: Download Your Table</a></li>
-  <li><a href="#generating-a-new-table" id="toc-generating-a-new-table" class="nav-link" data-scroll-target="#generating-a-new-table">Generating a New Table</a></li>
-  <li><a href="#tips-for-new-users" id="toc-tips-for-new-users" class="nav-link" data-scroll-target="#tips-for-new-users">Tips for New Users</a></li>
-  <li><a href="#if-you-get-stuck" id="toc-if-you-get-stuck" class="nav-link" data-scroll-target="#if-you-get-stuck">If You Get Stuck</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../guide/load-corpus.html">DocuScope CA Apps</a></li><li class="breadcrumb-item"><a href="../guide/ngrams.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> N-grams &amp; Clusters</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tagsets/claws7-tags.html">Tagsets</a></li><li class="breadcrumb-item"><a href="../tagsets/claws7-tags.html">Part-of-Speech Tags</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"></svg><br>
-<path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"><br>
-<br>
-N-grams &amp; Clusters</path></h1>
+<h1 class="title">Part-of-Speech Tags</h1>
 </div>
 
 
@@ -360,143 +375,742 @@ N-grams &amp; Clusters</path></h1>
 
 
 <p><iconify-icon role="img" inline="" icon="material-symbols:construction" aria-label="Icon construction from material-symbols Iconify.design set." title="Icon construction from material-symbols Iconify.design set."></iconify-icon> Under construction.</p>
-<p>The <strong>N-gram and Cluster Frequency</strong> page lets you explore common word/tag sequences (n-grams) and search for clusters containing specific words or tags in your corpus.</p>
-<hr>
-<section id="what-you-can-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-can-do">What You Can Do</h2>
-<ul>
-<li>Generate frequency tables for n-grams (sequences of 2, 3, or 4 tags)</li>
-<li>Search for clusters containing a specific word or tag</li>
-<li>Filter n-grams by tag at each position</li>
-<li>Download your results as an Excel file</li>
-</ul>
-<hr>
-</section>
-<section id="step-1-choose-table-type" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-choose-table-type">Step 1: Choose Table Type</h2>
-<p>When you first visit the page, you’ll be asked:</p>
-<ul>
-<li><strong>N-grams</strong>: Find the most frequent sequences of tags (e.g., POS or DocuScope tags).</li>
-<li><strong>Clusters</strong>: Find all n-grams that contain a specific word or tag at a chosen position.</li>
-</ul>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+DocuScope CA runs on a model
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>What is an “n-gram”?</strong><br>
-An <em>n-gram</em> is a sequence of n items (words or tags) that appear together in your text. For example, a 3-gram (trigram) could be “in the house” or “NOUN VERB NOUN”.</p>
+<p>All models are trained on the <a href="https://ucrel.lancs.ac.uk/claws7tags.html" target="_blank">CLAWS7 tagset</a>. While the original tagger is <a href="http://www.natcorp.ox.ac.uk/docs/claws7.html" target="_blank">a rules-based system</a>, <a href="https://huggingface.co/browndw/en_docusco_spacy">the model</a> is trained on data with those tags. In other words, it uses the <strong>tagset</strong> but <strong>not the tagger</strong>.</p>
 </div>
 </div>
-<hr>
-</section>
-<section id="step-2-set-your-options" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-set-your-options">Step 2: Set Your Options</h2>
-<section id="for-n-grams" class="level3">
-<h3 class="anchored" data-anchor-id="for-n-grams">For N-grams</h3>
-<ul>
-<li><strong>Span</strong>: Choose the length (2, 3, or 4).</li>
-<li><strong>Tagset</strong>: Choose between Parts-of-Speech or DocuScope tags.</li>
-<li>Click <strong>N-grams Table</strong> to generate the table.</li>
-</ul>
-</section>
-<section id="for-clusters" class="level3">
-<h3 class="anchored" data-anchor-id="for-clusters">For Clusters</h3>
-<ul>
-<li><strong>Search mode</strong>: Choose to search by a specific token (word) or tag.</li>
-<li><strong>Node word/tag</strong>: Enter the word or select the tag you want to anchor your search.</li>
-<li><strong>Search type</strong> (for tokens): Choose Fixed, Starts with, Ends with, or Contains.</li>
-<li><strong>Tagset</strong>: Choose Parts-of-Speech or DocuScope.</li>
-<li><strong>Span &amp; position</strong>: Choose the n-gram length and the position of your anchor.</li>
-<li>Click <strong>Clusters Table</strong> to generate the table.</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="step-3-filter-and-explore" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-filter-and-explore">Step 3: Filter and Explore</h2>
-<ul>
-<li>Once your table is generated, use the filters at the top to focus on specific tags at each position in the n-gram.</li>
-<li>The table updates automatically as you filter.</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Tip:</strong><br>
-Filtering by tag position helps you find patterns, like all trigrams starting with a verb or ending with a specific rhetorical tag.</p>
-</div>
-</div>
-<hr>
-</section>
-<section id="step-4-download-your-table" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-download-your-table">Step 4: Download Your Table</h2>
-<ul>
-<li>Toggle <strong>Download to Excel?</strong> in the sidebar to enable download.</li>
-<li>Click <strong>Download to Excel</strong> to save your results for further analysis.</li>
-</ul>
-<hr>
-</section>
-<section id="generating-a-new-table" class="level2">
-<h2 class="anchored" data-anchor-id="generating-a-new-table">Generating a New Table</h2>
-<ul>
-<li>Use the <strong>Create a New Ngrams Table</strong> button in the sidebar to reset and start over with new settings.</li>
-</ul>
-<hr>
-</section>
-<section id="tips-for-new-users" class="level2">
-<h2 class="anchored" data-anchor-id="tips-for-new-users">Tips for New Users</h2>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Try generating both n-gram and cluster tables to see which is most useful for your research.</li>
-<li>If you don’t see any data, make sure you have loaded and processed a target corpus.</li>
-<li>Download your results often so you can experiment without losing your work.</li>
-</ul>
-</div>
-</div>
-<hr>
-</section>
-<section id="if-you-get-stuck" class="level2">
-<h2 class="anchored" data-anchor-id="if-you-get-stuck">If You Get Stuck</h2>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Use the <strong>reset</strong> button on the Manage Corpus Data page if you need to start over.</li>
-<li>If you see warnings, check that your corpus is loaded and processed, and that your search settings are valid.</li>
-</ul>
-</div>
-</div>
+<details>
+<summary>
+Cite the tagset in <strong>APA</strong> format:
+</summary>
+<div class="sourceCode" id="cb1"><pre class="sourceCode json code-overflow-wrap code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="er">Garside,</span> <span class="er">R.,</span> <span class="er">and</span> <span class="er">Smith,</span> <span class="er">N.</span> <span class="er">(1997)</span> <span class="er">A</span> <span class="er">hybrid</span> <span class="er">grammatical</span> <span class="er">tagger:</span> <span class="er">CLAWS4,</span> <span class="er">in</span> <span class="er">Garside,</span> <span class="er">R.,</span> <span class="er">Leech,</span> <span class="er">G.,</span> <span class="er">and</span> <span class="er">McEnery,</span> <span class="er">A.</span> <span class="er">(eds.)</span> <span class="er">Corpus</span> <span class="er">Annotation:</span> <span class="er">Linguistic</span> <span class="er">Information</span> <span class="er">from</span> <span class="er">Computer</span> <span class="er">Text</span> <span class="er">Corpora.</span> <span class="er">(pp.</span> <span class="er">102-</span> <span class="er">121)</span> <span class="er">Longman,</span> <span class="er">London.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<details>
+<summary>
+Or in <strong>BibTex</strong> format:
+</summary>
+<div class="sourceCode" id="cb2"><pre class="sourceCode json code-overflow-wrap code-with-copy"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="er">@incollection</span><span class="fu">{</span><span class="er">garside1997higher</span><span class="fu">,</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="er">title={A</span> <span class="er">hybrid</span> <span class="er">grammatical</span> <span class="er">tagger</span><span class="fu">:</span> <span class="er">CLAWS4</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="er">author=</span><span class="fu">{</span><span class="er">Garside</span><span class="fu">,</span> <span class="er">Roger</span> <span class="er">and</span> <span class="er">Smith</span><span class="fu">,</span> <span class="er">Nicholas</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="er">booktitle=</span><span class="fu">{</span><span class="er">Corpus</span> <span class="er">Annotation</span><span class="fu">:</span> <span class="er">Linguistic</span> <span class="er">Information</span> <span class="er">from</span> <span class="er">Computer</span> <span class="er">Text</span> <span class="er">Corpora</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="er">editor=</span><span class="fu">{</span><span class="er">Garside</span><span class="fu">,</span> <span class="er">Roger</span><span class="fu">,</span> <span class="er">Leech</span><span class="fu">,</span> <span class="er">Geoffrey</span><span class="fu">,</span> <span class="er">McEnery</span><span class="fu">,</span> <span class="er">Anthony</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="er">pages=</span><span class="fu">{</span><span class="er">102--121</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="er">year=</span><span class="fu">{</span><span class="er">1997</span><span class="fu">}</span><span class="er">,</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="er">publisher=</span><span class="fu">{</span><span class="er">Longman</span><span class="fu">}</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="er">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 51%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Tag</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Examples</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>APPGE</td>
+<td>possessive pronoun, pre-nominal</td>
+<td><em>my</em>, <em>your</em>, <em>our</em></td>
+</tr>
+<tr class="even">
+<td>AT</td>
+<td>article</td>
+<td><em>the</em>, <em>no</em></td>
+</tr>
+<tr class="odd">
+<td>AT1</td>
+<td>singular article</td>
+<td><em>a</em>, <em>an</em>, <em>every</em></td>
+</tr>
+<tr class="even">
+<td>BCL</td>
+<td>before-clause marker</td>
+<td><em>in order</em> (that), <em>in order</em> (to)</td>
+</tr>
+<tr class="odd">
+<td>CC</td>
+<td>coordinating conjunction</td>
+<td><em>and</em>, <em>or</em></td>
+</tr>
+<tr class="even">
+<td>CCB</td>
+<td>adversative coordinating conjunction</td>
+<td><em>but</em></td>
+</tr>
+<tr class="odd">
+<td>CS</td>
+<td>subordinating conjunction</td>
+<td><em>if</em>, <em>because</em>, <em>unless</em>, <em>so</em>, <em>for</em></td>
+</tr>
+<tr class="even">
+<td>CSA</td>
+<td>as as conjunction</td>
+<td><em>as</em></td>
+</tr>
+<tr class="odd">
+<td>CSN</td>
+<td>than as conjunction</td>
+<td><em>than</em></td>
+</tr>
+<tr class="even">
+<td>CST</td>
+<td>that as conjunction</td>
+<td><em>that</em></td>
+</tr>
+<tr class="odd">
+<td>CSW</td>
+<td>whether as conjunction</td>
+<td><em>whether</em></td>
+</tr>
+<tr class="even">
+<td>DA</td>
+<td>after-determiner or post-determiner capable of pronominal function</td>
+<td><em>such</em>, <em>former</em>, <em>same</em></td>
+</tr>
+<tr class="odd">
+<td>DA1</td>
+<td>singular after-determiner</td>
+<td><em>little</em>, <em>much</em></td>
+</tr>
+<tr class="even">
+<td>DA2</td>
+<td>plural after-determiner</td>
+<td><em>few</em>, <em>several</em>, <em>many</em></td>
+</tr>
+<tr class="odd">
+<td>DAR</td>
+<td>comparative after-determiner</td>
+<td><em>more</em>, <em>less</em>, <em>fewer</em></td>
+</tr>
+<tr class="even">
+<td>DAT</td>
+<td>superlative after-determiner</td>
+<td><em>most</em>, <em>least</em>, <em>fewest</em></td>
+</tr>
+<tr class="odd">
+<td>DB</td>
+<td>before determiner or pre-determiner capable of pronominal function</td>
+<td><em>all</em>, <em>half</em></td>
+</tr>
+<tr class="even">
+<td>DB2</td>
+<td>plural before-determiner</td>
+<td><em>both</em></td>
+</tr>
+<tr class="odd">
+<td>DD</td>
+<td>determiner (capable of pronominal function)</td>
+<td><em>any</em>, <em>some</em></td>
+</tr>
+<tr class="even">
+<td>DD1</td>
+<td>singular determiner</td>
+<td><em>this</em>, <em>that</em>, <em>another</em></td>
+</tr>
+<tr class="odd">
+<td>DD2</td>
+<td>plural determiner</td>
+<td><em>these,those</em></td>
+</tr>
+<tr class="even">
+<td>DDQ</td>
+<td>wh-determiner</td>
+<td><em>which</em>, <em>what</em></td>
+</tr>
+<tr class="odd">
+<td>DDQGE</td>
+<td>wh-determiner, genitive</td>
+<td><em>whose</em></td>
+</tr>
+<tr class="even">
+<td>DDQV</td>
+<td>wh-ever determiner</td>
+<td><em>whichever</em>, <em>whatever</em></td>
+</tr>
+<tr class="odd">
+<td>EX</td>
+<td>existential there</td>
+<td><em>there</em> (is), <em>there</em> (are)</td>
+</tr>
+<tr class="even">
+<td>FO</td>
+<td>formula</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>FU</td>
+<td>unclassified word</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>FW</td>
+<td>foreign word</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>GE</td>
+<td>germanic genitive marker</td>
+<td><em>’</em>, <em>’s</em></td>
+</tr>
+<tr class="even">
+<td>IF</td>
+<td>for (as preposition)</td>
+<td><em>for</em></td>
+</tr>
+<tr class="odd">
+<td>II</td>
+<td>general preposition</td>
+<td><em>about</em>, <em>on</em></td>
+</tr>
+<tr class="even">
+<td>IO</td>
+<td>of (as preposition)</td>
+<td><em>of</em></td>
+</tr>
+<tr class="odd">
+<td>IW</td>
+<td>with, without (as prepositions)</td>
+<td><em>with</em>, <em>without</em></td>
+</tr>
+<tr class="even">
+<td>JJ</td>
+<td>general adjective</td>
+<td><em>nice</em>, <em>new</em></td>
+</tr>
+<tr class="odd">
+<td>JJR</td>
+<td>general comparative adjective</td>
+<td><em>older</em>, <em>better</em>, <em>stronger</em></td>
+</tr>
+<tr class="even">
+<td>JJT</td>
+<td>general superlative adjective</td>
+<td><em>oldest</em>, <em>best</em>, <em>strongest</em></td>
+</tr>
+<tr class="odd">
+<td>JK</td>
+<td>catenative adjective (able in be able to, willing in be willing to</td>
+<td><em>able</em> (in <em>be able to</em>), <em>willing</em> (in <em>be willing to</em>)</td>
+</tr>
+<tr class="even">
+<td>MC</td>
+<td>cardinal number,neutral for number</td>
+<td><em>two</em>, <em>three</em></td>
+</tr>
+<tr class="odd">
+<td>MC1</td>
+<td>singular cardinal number</td>
+<td><em>one</em></td>
+</tr>
+<tr class="even">
+<td>MC2</td>
+<td>plural cardinal number</td>
+<td><em>sixes</em>, <em>sevens</em></td>
+</tr>
+<tr class="odd">
+<td>MCGE</td>
+<td>genitive cardinal number, neutral for number</td>
+<td><em>two’s</em>, <em>100’s</em></td>
+</tr>
+<tr class="even">
+<td>MCMC</td>
+<td>hyphenated number</td>
+<td><em>40-50</em>, <em>1770-1827</em></td>
+</tr>
+<tr class="odd">
+<td>MD</td>
+<td>ordinal number</td>
+<td><em>first</em>, <em>second</em>, next, <em>last</em></td>
+</tr>
+<tr class="even">
+<td>MF</td>
+<td>fraction,neutral for number</td>
+<td><em>quarters</em>, <em>two-thirds</em></td>
+</tr>
+<tr class="odd">
+<td>ND1</td>
+<td>singular noun of direction</td>
+<td><em>north</em>, <em>southeast</em></td>
+</tr>
+<tr class="even">
+<td>NN</td>
+<td>common noun, neutral for number</td>
+<td><em>sheep</em>, <em>cod</em>, <em>headquarters</em></td>
+</tr>
+<tr class="odd">
+<td>NN1</td>
+<td>singular common noun</td>
+<td><em>book</em>, <em>girl</em></td>
+</tr>
+<tr class="even">
+<td>NN2</td>
+<td>plural common noun</td>
+<td><em>books</em>, <em>girls</em></td>
+</tr>
+<tr class="odd">
+<td>NNA</td>
+<td>following noun of title</td>
+<td><em>M.A.</em></td>
+</tr>
+<tr class="even">
+<td>NNB</td>
+<td>preceding noun of title</td>
+<td><em>Mr.</em>, <em>Prof.</em></td>
+</tr>
+<tr class="odd">
+<td>NNL1</td>
+<td>singular locative noun</td>
+<td><em>Island</em>, <em>Street</em></td>
+</tr>
+<tr class="even">
+<td>NNL2</td>
+<td>plural locative noun</td>
+<td><em>Islands</em>, <em>Streets</em></td>
+</tr>
+<tr class="odd">
+<td>NNO</td>
+<td>numeral noun, neutral for number</td>
+<td><em>dozen</em>, <em>hundred</em></td>
+</tr>
+<tr class="even">
+<td>NNO2</td>
+<td>numeral noun, plural</td>
+<td><em>hundreds</em>, <em>thousands</em></td>
+</tr>
+<tr class="odd">
+<td>NNT1</td>
+<td>temporal noun, singular</td>
+<td><em>day</em>, <em>week</em>, <em>year</em></td>
+</tr>
+<tr class="even">
+<td>NNT2</td>
+<td>temporal noun, plural</td>
+<td><em>days</em>, <em>weeks</em>, <em>years</em></td>
+</tr>
+<tr class="odd">
+<td>NNU</td>
+<td>unit of measurement, neutral for number</td>
+<td><em>in</em>, <em>cc</em></td>
+</tr>
+<tr class="even">
+<td>NNU1</td>
+<td>singular unit of measurement</td>
+<td><em>inch</em>, <em>centimetre</em></td>
+</tr>
+<tr class="odd">
+<td>NNU2</td>
+<td>plural unit of measurement</td>
+<td><em>ins.</em>, <em>feet</em></td>
+</tr>
+<tr class="even">
+<td>NP</td>
+<td>proper noun, neutral for number</td>
+<td><em>IBM</em>, <em>Andes</em></td>
+</tr>
+<tr class="odd">
+<td>NP1</td>
+<td>singular proper noun</td>
+<td><em>London</em>, <em>Jane</em>, <em>Frederick</em></td>
+</tr>
+<tr class="even">
+<td>NP2</td>
+<td>plural proper noun</td>
+<td><em>Browns</em>, <em>Reagans</em>, <em>Koreas</em></td>
+</tr>
+<tr class="odd">
+<td>NPD1</td>
+<td>singular weekday noun</td>
+<td><em>Sunday</em></td>
+</tr>
+<tr class="even">
+<td>NPD2</td>
+<td>plural weekday noun</td>
+<td><em>Sundays</em></td>
+</tr>
+<tr class="odd">
+<td>NPM1</td>
+<td>singular month noun</td>
+<td><em>October</em></td>
+</tr>
+<tr class="even">
+<td>NPM2</td>
+<td>plural month noun</td>
+<td><em>Octobers</em></td>
+</tr>
+<tr class="odd">
+<td>PN</td>
+<td>indefinite pronoun, neutral for number</td>
+<td><em>none</em></td>
+</tr>
+<tr class="even">
+<td>PN1</td>
+<td>indefinite pronoun, singular</td>
+<td><em>anyone</em>, <em>everything</em>, <em>nobody</em>, <em>one</em></td>
+</tr>
+<tr class="odd">
+<td>PNQO</td>
+<td>objective wh-pronoun</td>
+<td><em>whom</em></td>
+</tr>
+<tr class="even">
+<td>PNQS</td>
+<td>subjective wh-pronoun</td>
+<td><em>who</em></td>
+</tr>
+<tr class="odd">
+<td>PNQV</td>
+<td>wh-ever pronoun</td>
+<td><em>whoever</em></td>
+</tr>
+<tr class="even">
+<td>PNX1</td>
+<td>reflexive indefinite pronoun</td>
+<td><em>oneself</em></td>
+</tr>
+<tr class="odd">
+<td>PPGE</td>
+<td>nominal possessive personal pronoun</td>
+<td><em>mine</em>, <em>yours</em></td>
+</tr>
+<tr class="even">
+<td>PPH1</td>
+<td>3rd person sing. neuter personal pronoun</td>
+<td><em>it</em></td>
+</tr>
+<tr class="odd">
+<td>PPHO1</td>
+<td>3rd person sing. objective personal pronoun</td>
+<td><em>him</em>, <em>her</em></td>
+</tr>
+<tr class="even">
+<td>PPHO2</td>
+<td>3rd person plural objective personal pronoun</td>
+<td><em>them</em></td>
+</tr>
+<tr class="odd">
+<td>PPHS1</td>
+<td>3rd person sing. subjective personal pronoun</td>
+<td><em>her</em>, <em>she</em></td>
+</tr>
+<tr class="even">
+<td>PPHS2</td>
+<td>3rd person plural subjective personal pronoun</td>
+<td><em>they</em></td>
+</tr>
+<tr class="odd">
+<td>PPIO1</td>
+<td>1st person sing. objective personal pronoun</td>
+<td><em>me</em></td>
+</tr>
+<tr class="even">
+<td>PPIO2</td>
+<td>1st person plural objective personal pronoun</td>
+<td><em>us</em></td>
+</tr>
+<tr class="odd">
+<td>PPIS1</td>
+<td>1st person sing. subjective personal pronoun</td>
+<td><em>I</em></td>
+</tr>
+<tr class="even">
+<td>PPIS2</td>
+<td>1st person plural subjective personal pronoun</td>
+<td><em>we</em></td>
+</tr>
+<tr class="odd">
+<td>PPX1</td>
+<td>singular reflexive personal pronoun</td>
+<td><em>yourself</em>, <em>itself</em></td>
+</tr>
+<tr class="even">
+<td>PPX2</td>
+<td>plural reflexive personal pronoun</td>
+<td><em>yourselves</em>, <em>themselves</em></td>
+</tr>
+<tr class="odd">
+<td>PPY</td>
+<td>2nd person personal pronoun</td>
+<td><em>you</em></td>
+</tr>
+<tr class="even">
+<td>RA</td>
+<td>adverb, after nominal head</td>
+<td><em>else</em>, <em>galore</em></td>
+</tr>
+<tr class="odd">
+<td>REX</td>
+<td>adverb introducing appositional constructions</td>
+<td><em>namely</em>, <em>e.g.</em></td>
+</tr>
+<tr class="even">
+<td>RG</td>
+<td>degree adverb</td>
+<td><em>very</em>, <em>so</em>, <em>too</em></td>
+</tr>
+<tr class="odd">
+<td>RGQ</td>
+<td>wh- degree adverb</td>
+<td><em>how</em></td>
+</tr>
+<tr class="even">
+<td>RGQV</td>
+<td>wh-ever degree adverb</td>
+<td><em>however</em></td>
+</tr>
+<tr class="odd">
+<td>RGR</td>
+<td>comparative degree adverb</td>
+<td><em>more</em>, <em>less</em></td>
+</tr>
+<tr class="even">
+<td>RGT</td>
+<td>superlative degree adverb (most, least</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>RL</td>
+<td>locative adverb</td>
+<td><em>alongside</em>, <em>forward</em></td>
+</tr>
+<tr class="even">
+<td>RP</td>
+<td>prep. adverb, particle</td>
+<td><em>about</em>, <em>in</em></td>
+</tr>
+<tr class="odd">
+<td>RPK</td>
+<td>prep. adv., catenative</td>
+<td><em>about</em> (in <em>be about to</em>)</td>
+</tr>
+<tr class="even">
+<td>RR</td>
+<td>general adverb</td>
+<td><em>quietly</em>, <em>importanlty</em></td>
+</tr>
+<tr class="odd">
+<td>RRQ</td>
+<td>wh- general adverb</td>
+<td><em>where</em>, <em>when</em>, why, <em>how</em></td>
+</tr>
+<tr class="even">
+<td>RRQV</td>
+<td>wh-ever general adverb</td>
+<td><em>wherever</em>, <em>whenever</em></td>
+</tr>
+<tr class="odd">
+<td>RRR</td>
+<td>comparative general adverb</td>
+<td><em>better</em>, <em>longer</em></td>
+</tr>
+<tr class="even">
+<td>RRT</td>
+<td>superlative general adverb</td>
+<td><em>best</em>, <em>longest</em></td>
+</tr>
+<tr class="odd">
+<td>RT</td>
+<td>quasi-nominal adverb of time</td>
+<td><em>now</em>, <em>tomorrow</em></td>
+</tr>
+<tr class="even">
+<td>TO</td>
+<td>infinitive marker</td>
+<td><em>to</em></td>
+</tr>
+<tr class="odd">
+<td>UH</td>
+<td>interjection</td>
+<td><em>oh</em>, <em>yes</em>, <em>um</em></td>
+</tr>
+<tr class="even">
+<td>VB0</td>
+<td>be, base form (finite i.e.&nbsp;imperative, subjunctive)</td>
+<td><em>be</em></td>
+</tr>
+<tr class="odd">
+<td>VBDR</td>
+<td>were</td>
+<td><em>were</em></td>
+</tr>
+<tr class="even">
+<td>VBDZ</td>
+<td>was</td>
+<td><em>was</em></td>
+</tr>
+<tr class="odd">
+<td>VBG</td>
+<td>being</td>
+<td><em>being</em></td>
+</tr>
+<tr class="even">
+<td>VBI</td>
+<td>be, infinitive</td>
+<td><em>be</em> (in <em>to be or not…</em> or in <em>it will be…</em>)</td>
+</tr>
+<tr class="odd">
+<td>VBM</td>
+<td>am</td>
+<td><em>am</em></td>
+</tr>
+<tr class="even">
+<td>VBN</td>
+<td>been</td>
+<td><em>been</em></td>
+</tr>
+<tr class="odd">
+<td>VBR</td>
+<td>are</td>
+<td><em>are</em></td>
+</tr>
+<tr class="even">
+<td>VBZ</td>
+<td>is</td>
+<td><em>is</em></td>
+</tr>
+<tr class="odd">
+<td>VD0</td>
+<td>do, base form (finite</td>
+<td><em>do</em></td>
+</tr>
+<tr class="even">
+<td>VDD</td>
+<td>did</td>
+<td><em>did</em></td>
+</tr>
+<tr class="odd">
+<td>VDG</td>
+<td>doing</td>
+<td><em>doing</em></td>
+</tr>
+<tr class="even">
+<td>VDI</td>
+<td>do, infinitive</td>
+<td><em>do</em> (in <em>I may do…</em> or in <em>to do…</em>)</td>
+</tr>
+<tr class="odd">
+<td>VDN</td>
+<td>done</td>
+<td><em>done</em></td>
+</tr>
+<tr class="even">
+<td>VDZ</td>
+<td>does</td>
+<td><em>does</em></td>
+</tr>
+<tr class="odd">
+<td>VH0</td>
+<td>have, base form (finite</td>
+<td><em>have</em></td>
+</tr>
+<tr class="even">
+<td>VHD</td>
+<td>had (past tense)</td>
+<td><em>had</em></td>
+</tr>
+<tr class="odd">
+<td>VHG</td>
+<td>having</td>
+<td><em>having</em></td>
+</tr>
+<tr class="even">
+<td>VHI</td>
+<td>have, infinitive</td>
+<td><em>have</em></td>
+</tr>
+<tr class="odd">
+<td>VHN</td>
+<td>had (past participle)</td>
+<td><em>had</em></td>
+</tr>
+<tr class="even">
+<td>VHZ</td>
+<td>has</td>
+<td><em>has</em></td>
+</tr>
+<tr class="odd">
+<td>VM</td>
+<td>modal auxiliary</td>
+<td><em>can</em>, <em>will</em>, <em>would</em></td>
+</tr>
+<tr class="even">
+<td>VMK</td>
+<td>modal catenative</td>
+<td><em>ought</em>, <em>used</em></td>
+</tr>
+<tr class="odd">
+<td>VV0</td>
+<td>base form of lexical verb</td>
+<td><em>give</em>, <em>work</em></td>
+</tr>
+<tr class="even">
+<td>VVD</td>
+<td>past tense of lexical verb</td>
+<td><em>gave</em>, <em>worked</em></td>
+</tr>
+<tr class="odd">
+<td>VVG</td>
+<td>-ing participle of lexical verb</td>
+<td><em>giving</em>, <em>working</em></td>
+</tr>
+<tr class="even">
+<td>VVGK</td>
+<td>-ing participle catenative</td>
+<td><em>going</em> (in <em>be going to</em>)</td>
+</tr>
+<tr class="odd">
+<td>VVI</td>
+<td>infinitive</td>
+<td><em>to give…</em> <em>It will work…</em></td>
+</tr>
+<tr class="even">
+<td>VVN</td>
+<td>past participle of lexical verb</td>
+<td><em>given</em>, <em>worked</em></td>
+</tr>
+<tr class="odd">
+<td>VVNK</td>
+<td>past participle catenative</td>
+<td><em>bound</em> (in <em>be bound to</em>)</td>
+</tr>
+<tr class="even">
+<td>VVZ</td>
+<td>-s form of lexical verb</td>
+<td><em>gives</em>, <em>works</em></td>
+</tr>
+<tr class="odd">
+<td>XX</td>
+<td>not, n’t</td>
+<td><em>not</em>, <em>n’t</em></td>
+</tr>
+<tr class="even">
+<td>ZZ1</td>
+<td>singular letter of the alphabet</td>
+<td><em>A,b</em></td>
+</tr>
+<tr class="odd">
+<td>ZZ2</td>
+<td>plural letter of the alphabet</td>
+<td><em>A’s</em>, <em>b’s</em></td>
+</tr>
+</tbody>
+</table>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -900,13 +1514,13 @@ Important
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../guide/tag-frequencies.html" class="pagination-link" aria-label="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;20px&quot; viewBox=&quot;0 -960 960 960&quot; width=&quot;20px&quot; fill=&quot;#434343&quot;><path d=&quot;M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z&quot;/></svg> Tag Frequencies">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> Tag Frequencies</span>
+      <a href="../guide/download-tagged-files.html" class="pagination-link" aria-label="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;20px&quot; viewBox=&quot;0 -960 960 960&quot; width=&quot;20px&quot; fill=&quot;#434343&quot;><path d=&quot;M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z&quot;/></svg> Download Tagged Files">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"></path></svg> Download Tagged Files</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../guide/compare-corpora.html" class="pagination-link" aria-label="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;20px&quot; viewBox=&quot;0 -960 960 960&quot; width=&quot;20px&quot; fill=&quot;#434343&quot;><path d=&quot;m336-168-51-51 105-105H96v-72h294L285-501l51-51 192 192-192 192Zm288-240L432-600l192-192 51 51-105 105h294v72H570l105 105-51 51Z&quot;/></svg> Compare Corpora">
-        <span class="nav-page-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="m336-168-51-51 105-105H96v-72h294L285-501l51-51 192 192-192 192Zm288-240L432-600l192-192 51 51-105 105h294v72H570l105 105-51 51Z"></path></svg> Compare Corpora</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../tagsets/docuscope-fd-tags.html" class="pagination-link" aria-label="DocuScope Tags (Full Dictionary)">
+        <span class="nav-page-text">DocuScope Tags (Full Dictionary)</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

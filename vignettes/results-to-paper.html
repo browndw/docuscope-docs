@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>   N-grams &amp; Clusters – DocuScope</title>
+<title>Turning Your Results Into a Research Paper – DocuScope</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +50,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../guide/compare-corpora.html" rel="next">
-<link href="../guide/tag-frequencies.html" rel="prev">
+<link href="../about/kaufer-ishizaki.html" rel="next">
+<link href="../datasets/elsevier.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../guide/load-corpus.html">DocuScope CA Apps</a></li><li class="breadcrumb-item"><a href="../guide/ngrams.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> N-grams &amp; Clusters</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../vignettes/results-to-paper.html">Vignettes</a></li><li class="breadcrumb-item"><a href="../vignettes/results-to-paper.html">Turning Your Results Into a Research Paper</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -124,13 +144,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">DocuScope CA Apps</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../guide/load-corpus.html" class="sidebar-item-text sidebar-link">
@@ -151,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../guide/ngrams.html" class="sidebar-item-text sidebar-link active">
+  <a href="../guide/ngrams.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> N-grams &amp; Clusters</span></a>
   </div>
 </li>
@@ -277,16 +297,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Vignettes</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../vignettes/results-to-paper.html" class="sidebar-item-text sidebar-link">
+  <a href="../vignettes/results-to-paper.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Turning Your Results Into a Research Paper</span></a>
   </div>
 </li>
@@ -319,30 +339,51 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-you-can-do" id="toc-what-you-can-do" class="nav-link active" data-scroll-target="#what-you-can-do">What You Can Do</a></li>
-  <li><a href="#step-1-choose-table-type" id="toc-step-1-choose-table-type" class="nav-link" data-scroll-target="#step-1-choose-table-type">Step 1: Choose Table Type</a></li>
-  <li><a href="#step-2-set-your-options" id="toc-step-2-set-your-options" class="nav-link" data-scroll-target="#step-2-set-your-options">Step 2: Set Your Options</a>
+  <li><a href="#what-makes-docuscope-research-unique" id="toc-what-makes-docuscope-research-unique" class="nav-link active" data-scroll-target="#what-makes-docuscope-research-unique"><iconify-icon role="img" inline="" icon="material-symbols:lightbulb" aria-label="Icon lightbulb from material-symbols Iconify.design set." title="Icon lightbulb from material-symbols Iconify.design set."></iconify-icon> What Makes DocuScope Research Unique?</a></li>
+  <li><a href="#focus-your-claim" id="toc-focus-your-claim" class="nav-link" data-scroll-target="#focus-your-claim"><iconify-icon role="img" inline="" icon="material-symbols:center-focus-strong" aria-label="Icon center-focus-strong from material-symbols Iconify.design set." title="Icon center-focus-strong from material-symbols Iconify.design set."></iconify-icon> 1. Focus Your Claim</a>
   <ul>
-  <li><a href="#for-n-grams" id="toc-for-n-grams" class="nav-link" data-scroll-target="#for-n-grams">For N-grams</a></li>
-  <li><a href="#for-clusters" id="toc-for-clusters" class="nav-link" data-scroll-target="#for-clusters">For Clusters</a></li>
+  <li><a href="#example-aull-on-student-writing" id="toc-example-aull-on-student-writing" class="nav-link" data-scroll-target="#example-aull-on-student-writing">Example: Aull on Student Writing</a></li>
+  <li><a href="#common-pitfall-to-avoid" id="toc-common-pitfall-to-avoid" class="nav-link" data-scroll-target="#common-pitfall-to-avoid">Common Pitfall to Avoid:</a></li>
   </ul></li>
-  <li><a href="#step-3-filter-and-explore" id="toc-step-3-filter-and-explore" class="nav-link" data-scroll-target="#step-3-filter-and-explore">Step 3: Filter and Explore</a></li>
-  <li><a href="#step-4-download-your-table" id="toc-step-4-download-your-table" class="nav-link" data-scroll-target="#step-4-download-your-table">Step 4: Download Your Table</a></li>
-  <li><a href="#generating-a-new-table" id="toc-generating-a-new-table" class="nav-link" data-scroll-target="#generating-a-new-table">Generating a New Table</a></li>
-  <li><a href="#tips-for-new-users" id="toc-tips-for-new-users" class="nav-link" data-scroll-target="#tips-for-new-users">Tips for New Users</a></li>
-  <li><a href="#if-you-get-stuck" id="toc-if-you-get-stuck" class="nav-link" data-scroll-target="#if-you-get-stuck">If You Get Stuck</a></li>
+  <li><a href="#use-visualizations-to-anchor-your-claim" id="toc-use-visualizations-to-anchor-your-claim" class="nav-link" data-scroll-target="#use-visualizations-to-anchor-your-claim"><iconify-icon role="img" inline="" icon="material-symbols:bar-chart" aria-label="Icon bar-chart from material-symbols Iconify.design set." title="Icon bar-chart from material-symbols Iconify.design set."></iconify-icon> 2. Use Visualizations to Anchor Your Claim</a>
+  <ul>
+  <li><a href="#example-dejeu-on-grant-proposals" id="toc-example-dejeu-on-grant-proposals" class="nav-link" data-scroll-target="#example-dejeu-on-grant-proposals">Example: DeJeu on Grant Proposals</a></li>
+  <li><a href="#what-makes-a-good-visualization" id="toc-what-makes-a-good-visualization" class="nav-link" data-scroll-target="#what-makes-a-good-visualization">What Makes a Good Visualization:</a></li>
+  </ul></li>
+  <li><a href="#interpret-like-a-rhetorician" id="toc-interpret-like-a-rhetorician" class="nav-link" data-scroll-target="#interpret-like-a-rhetorician"><iconify-icon role="img" inline="" icon="material-symbols:psychology-alt" aria-label="Icon psychology-alt from material-symbols Iconify.design set." title="Icon psychology-alt from material-symbols Iconify.design set."></iconify-icon> 3. Interpret Like a Rhetorician</a>
+  <ul>
+  <li><a href="#example-marcellino-on-marine-corps-speech" id="toc-example-marcellino-on-marine-corps-speech" class="nav-link" data-scroll-target="#example-marcellino-on-marine-corps-speech">Example: Marcellino on Marine Corps Speech</a></li>
+  <li><a href="#the-so-what-test" id="toc-the-so-what-test" class="nav-link" data-scroll-target="#the-so-what-test">The “So What?” Test:</a></li>
+  </ul></li>
+  <li><a href="#avoid-truisms-and-oversimplification" id="toc-avoid-truisms-and-oversimplification" class="nav-link" data-scroll-target="#avoid-truisms-and-oversimplification"><iconify-icon role="img" inline="" icon="material-symbols:cancel" aria-label="Icon cancel from material-symbols Iconify.design set." title="Icon cancel from material-symbols Iconify.design set."></iconify-icon> 4. Avoid Truisms and Oversimplification</a>
+  <ul>
+  <li><a href="#better" id="toc-better" class="nav-link" data-scroll-target="#better">Better:</a></li>
+  <li><a href="#example-ohanlon-on-epistemic-voice" id="toc-example-ohanlon-on-epistemic-voice" class="nav-link" data-scroll-target="#example-ohanlon-on-epistemic-voice">Example: O’Hanlon on Epistemic Voice</a></li>
+  <li><a href="#red-flags-in-your-writing" id="toc-red-flags-in-your-writing" class="nav-link" data-scroll-target="#red-flags-in-your-writing">Red Flags in Your Writing:</a></li>
+  </ul></li>
+  <li><a href="#use-docuscope-categories-thoughtfully" id="toc-use-docuscope-categories-thoughtfully" class="nav-link" data-scroll-target="#use-docuscope-categories-thoughtfully"><iconify-icon role="img" inline="" icon="material-symbols:build" aria-label="Icon build from material-symbols Iconify.design set." title="Icon build from material-symbols Iconify.design set."></iconify-icon> 5. Use DocuScope Categories Thoughtfully</a>
+  <ul>
+  <li><a href="#example-ishizaki-on-crowdfunding" id="toc-example-ishizaki-on-crowdfunding" class="nav-link" data-scroll-target="#example-ishizaki-on-crowdfunding">Example: Ishizaki on Crowdfunding</a></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">Best Practices:</a></li>
+  </ul></li>
+  <li><a href="#handle-statistical-significance-and-limitations" id="toc-handle-statistical-significance-and-limitations" class="nav-link" data-scroll-target="#handle-statistical-significance-and-limitations"><iconify-icon role="img" inline="" icon="material-symbols:warning" aria-label="Icon warning from material-symbols Iconify.design set." title="Icon warning from material-symbols Iconify.design set."></iconify-icon> 6. Handle Statistical Significance and Limitations</a>
+  <ul>
+  <li><a href="#when-to-mention-statistics" id="toc-when-to-mention-statistics" class="nav-link" data-scroll-target="#when-to-mention-statistics">When to Mention Statistics:</a></li>
+  <li><a href="#example-language" id="toc-example-language" class="nav-link" data-scroll-target="#example-language">Example Language:</a></li>
+  </ul></li>
+  <li><a href="#imrd-structure-with-scholarly-examples" id="toc-imrd-structure-with-scholarly-examples" class="nav-link" data-scroll-target="#imrd-structure-with-scholarly-examples"><iconify-icon role="img" inline="" icon="material-symbols:table-rows-narrow" aria-label="Icon table-rows-narrow from material-symbols Iconify.design set." title="Icon table-rows-narrow from material-symbols Iconify.design set."></iconify-icon> 7. IMRD Structure (with Scholarly Examples)</a></li>
+  <li><a href="#pre-submission-checklist" id="toc-pre-submission-checklist" class="nav-link" data-scroll-target="#pre-submission-checklist"><iconify-icon role="img" inline="" icon="material-symbols:checklist" aria-label="Icon checklist from material-symbols Iconify.design set." title="Icon checklist from material-symbols Iconify.design set."></iconify-icon> 8. Pre-Submission Checklist</a></li>
+  <li><a href="#final-thought-youre-mapping-the-territory" id="toc-final-thought-youre-mapping-the-territory" class="nav-link" data-scroll-target="#final-thought-youre-mapping-the-territory"><iconify-icon role="img" inline="" icon="material-symbols:explore" aria-label="Icon explore from material-symbols Iconify.design set." title="Icon explore from material-symbols Iconify.design set."></iconify-icon> Final Thought: You’re Mapping the Territory</a></li>
+  <li><a href="#works-cited" id="toc-works-cited" class="nav-link" data-scroll-target="#works-cited">Works Cited</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../guide/load-corpus.html">DocuScope CA Apps</a></li><li class="breadcrumb-item"><a href="../guide/ngrams.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> N-grams &amp; Clusters</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../vignettes/results-to-paper.html">Vignettes</a></li><li class="breadcrumb-item"><a href="../vignettes/results-to-paper.html">Turning Your Results Into a Research Paper</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"></svg><br>
-<path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"><br>
-<br>
-N-grams &amp; Clusters</path></h1>
+<h1 class="title">Turning Your Results Into a Research Paper</h1>
 </div>
 
 
@@ -359,143 +400,206 @@ N-grams &amp; Clusters</path></h1>
 </header>
 
 
-<p><iconify-icon role="img" inline="" icon="material-symbols:construction" aria-label="Icon construction from material-symbols Iconify.design set." title="Icon construction from material-symbols Iconify.design set."></iconify-icon> Under construction.</p>
-<p>The <strong>N-gram and Cluster Frequency</strong> page lets you explore common word/tag sequences (n-grams) and search for clusters containing specific words or tags in your corpus.</p>
-<hr>
-<section id="what-you-can-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-can-do">What You Can Do</h2>
-<ul>
-<li>Generate frequency tables for n-grams (sequences of 2, 3, or 4 tags)</li>
-<li>Search for clusters containing a specific word or tag</li>
-<li>Filter n-grams by tag at each position</li>
-<li>Download your results as an Excel file</li>
-</ul>
+<p><em>Advice for Using DocuScope and Interpreting Your Results</em></p>
+<section id="what-makes-docuscope-research-unique" class="level2">
+<h2 class="anchored" data-anchor-id="what-makes-docuscope-research-unique"><iconify-icon role="img" inline="" icon="material-symbols:lightbulb" aria-label="Icon lightbulb from material-symbols Iconify.design set." title="Icon lightbulb from material-symbols Iconify.design set."></iconify-icon> What Makes DocuScope Research Unique?</h2>
+<p>DocuScope research isn’t just about counting words—it’s about understanding <strong>rhetorical choices</strong>. You’re asking: How do writers use language strategically to achieve their goals? What patterns reveal about audience, purpose, and context?</p>
+<p><strong>Remember:</strong> Numbers are your starting point, not your endpoint. Your job is to explain what those patterns mean for how people communicate.</p>
 <hr>
 </section>
-<section id="step-1-choose-table-type" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-choose-table-type">Step 1: Choose Table Type</h2>
-<p>When you first visit the page, you’ll be asked:</p>
-<ul>
-<li><strong>N-grams</strong>: Find the most frequent sequences of tags (e.g., POS or DocuScope tags).</li>
-<li><strong>Clusters</strong>: Find all n-grams that contain a specific word or tag at a chosen position.</li>
-</ul>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>What is an “n-gram”?</strong><br>
-An <em>n-gram</em> is a sequence of n items (words or tags) that appear together in your text. For example, a 3-gram (trigram) could be “in the house” or “NOUN VERB NOUN”.</p>
-</div>
-</div>
+<section id="focus-your-claim" class="level2">
+<h2 class="anchored" data-anchor-id="focus-your-claim"><iconify-icon role="img" inline="" icon="material-symbols:center-focus-strong" aria-label="Icon center-focus-strong from material-symbols Iconify.design set." title="Icon center-focus-strong from material-symbols Iconify.design set."></iconify-icon> 1. Focus Your Claim</h2>
+<p>Your claim should be <strong>specific</strong>, <strong>data-driven</strong>, and rhetorically <strong>meaningful</strong>. Instead of saying “this category appears a lot,” ask what <strong>rhetorical work</strong> it’s doing.</p>
+<section id="example-aull-on-student-writing" class="level3">
+<h3 class="anchored" data-anchor-id="example-aull-on-student-writing">Example: Aull on Student Writing</h3>
+<p>Aull shows that first-year writing often overuses <strong>Confidence High</strong> and <strong>Public Terms</strong>, not just to sound “academic,” but to <strong>project certainty and generalization</strong> when students are unsure how to argue within disciplinary constraints <span class="citation" data-cites="aull2023language">(<a href="#ref-aull2023language" role="doc-biblioref">Aull 2023</a>)</span>.</p>
+<p><strong>Tip:</strong> Connect category use to <strong>audience expectations</strong>, <strong>genre conventions</strong>, or <strong>communicative goals</strong>.</p>
+</section>
+<section id="common-pitfall-to-avoid" class="level3">
+<h3 class="anchored" data-anchor-id="common-pitfall-to-avoid">Common Pitfall to Avoid:</h3>
+<p>❌ “Business emails use more Directive language than academic papers.” ✅ “Business emails use 40% more Directive language, suggesting writers prioritize efficiency and action over the hedged, exploratory stance valued in academic discourse.”</p>
 <hr>
 </section>
-<section id="step-2-set-your-options" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-set-your-options">Step 2: Set Your Options</h2>
-<section id="for-n-grams" class="level3">
-<h3 class="anchored" data-anchor-id="for-n-grams">For N-grams</h3>
-<ul>
-<li><strong>Span</strong>: Choose the length (2, 3, or 4).</li>
-<li><strong>Tagset</strong>: Choose between Parts-of-Speech or DocuScope tags.</li>
-<li>Click <strong>N-grams Table</strong> to generate the table.</li>
-</ul>
 </section>
-<section id="for-clusters" class="level3">
-<h3 class="anchored" data-anchor-id="for-clusters">For Clusters</h3>
+<section id="use-visualizations-to-anchor-your-claim" class="level2">
+<h2 class="anchored" data-anchor-id="use-visualizations-to-anchor-your-claim"><iconify-icon role="img" inline="" icon="material-symbols:bar-chart" aria-label="Icon bar-chart from material-symbols Iconify.design set." title="Icon bar-chart from material-symbols Iconify.design set."></iconify-icon> 2. Use Visualizations to Anchor Your Claim</h2>
+<p>A figure or table isn’t decoration—it’s <strong>evidence</strong>. Show clear contrasts or trends from your corpus that directly support your claim.</p>
+<section id="example-dejeu-on-grant-proposals" class="level3">
+<h3 class="anchored" data-anchor-id="example-dejeu-on-grant-proposals">Example: DeJeu on Grant Proposals</h3>
+<p>DeJeu uses visualizations (e.g., PCA plots) to show that <strong>nonprofit</strong> proposals emphasize <strong>Facilitate</strong> and <strong>Positive</strong> categories, whereas <strong>research</strong> proposals emphasize <strong>Cautious Epistemic</strong> features like <strong>Hedged Confidence</strong> <span class="citation" data-cites="dejeu2024topoi">(<a href="#ref-dejeu2024topoi" role="doc-biblioref">DeJeu 2024</a>)</span>.</p>
+<p><strong>Practical Tip:</strong> Use simple bar charts or frequency tables. Label everything clearly and interpret the figure in your writing. Don’t just say “Figure 1 shows the results”—explain what the reader should notice and why it matters.</p>
+</section>
+<section id="what-makes-a-good-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="what-makes-a-good-visualization">What Makes a Good Visualization:</h3>
 <ul>
-<li><strong>Search mode</strong>: Choose to search by a specific token (word) or tag.</li>
-<li><strong>Node word/tag</strong>: Enter the word or select the tag you want to anchor your search.</li>
-<li><strong>Search type</strong> (for tokens): Choose Fixed, Starts with, Ends with, or Contains.</li>
-<li><strong>Tagset</strong>: Choose Parts-of-Speech or DocuScope.</li>
-<li><strong>Span &amp; position</strong>: Choose the n-gram length and the position of your anchor.</li>
-<li>Click <strong>Clusters Table</strong> to generate the table.</li>
+<li><strong>Clear labels</strong> and <strong>meaningful comparisons</strong></li>
+<li><strong>Statistical significance</strong> when relevant (not just raw counts)</li>
+<li><strong>Direct connection</strong> to your rhetorical claim</li>
 </ul>
 <hr>
 </section>
 </section>
-<section id="step-3-filter-and-explore" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-filter-and-explore">Step 3: Filter and Explore</h2>
-<ul>
-<li>Once your table is generated, use the filters at the top to focus on specific tags at each position in the n-gram.</li>
-<li>The table updates automatically as you filter.</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Tip:</strong><br>
-Filtering by tag position helps you find patterns, like all trigrams starting with a verb or ending with a specific rhetorical tag.</p>
-</div>
-</div>
+<section id="interpret-like-a-rhetorician" class="level2">
+<h2 class="anchored" data-anchor-id="interpret-like-a-rhetorician"><iconify-icon role="img" inline="" icon="material-symbols:psychology-alt" aria-label="Icon psychology-alt from material-symbols Iconify.design set." title="Icon psychology-alt from material-symbols Iconify.design set."></iconify-icon> 3. Interpret Like a Rhetorician</h2>
+<p>Students often describe what they found but stop short of interpretation. Always ask: - What is this language <strong>doing</strong>? - Why might the writer have used it? - How does this serve their <strong>audience</strong> and <strong>purpose</strong>?</p>
+<section id="example-marcellino-on-marine-corps-speech" class="level3">
+<h3 class="anchored" data-anchor-id="example-marcellino-on-marine-corps-speech">Example: Marcellino on Marine Corps Speech</h3>
+<p>Marcellino found co-occurring uses of <strong>Fear</strong> and <strong>Positive Relationship</strong> categories. He interpreted this not as contradiction but as a <strong>civil-military rhetorical blend</strong>: Marines must motivate while warning of dangers <span class="citation" data-cites="marcellino2014talk">(<a href="#ref-marcellino2014talk" role="doc-biblioref">Marcellino 2014</a>)</span>.</p>
+</section>
+<section id="the-so-what-test" class="level3">
+<h3 class="anchored" data-anchor-id="the-so-what-test">The “So What?” Test:</h3>
+<p>After stating your finding, ask: “So what? Why should my reader care?” If you can’t answer this, dig deeper into the rhetorical implications.</p>
 <hr>
 </section>
-<section id="step-4-download-your-table" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-download-your-table">Step 4: Download Your Table</h2>
+</section>
+<section id="avoid-truisms-and-oversimplification" class="level2">
+<h2 class="anchored" data-anchor-id="avoid-truisms-and-oversimplification"><iconify-icon role="img" inline="" icon="material-symbols:cancel" aria-label="Icon cancel from material-symbols Iconify.design set." title="Icon cancel from material-symbols Iconify.design set."></iconify-icon> 4. Avoid Truisms and Oversimplification</h2>
+<p>Vague statements like “this field is more objective” or “this genre is more formal” won’t earn credit. Be specific about <strong>how</strong> and <strong>why</strong> linguistic patterns create meaning.</p>
+<section id="better" class="level3">
+<h3 class="anchored" data-anchor-id="better">Better:</h3>
+<blockquote class="blockquote">
+<p>“The high use of <strong>Contingent</strong> and <strong>Uncertainty</strong> in Chemistry papers suggests writers must acknowledge conditions under which scientific claims hold true—highlighting rhetorical caution, not just objectivity.”</p>
+</blockquote>
+</section>
+<section id="example-ohanlon-on-epistemic-voice" class="level3">
+<h3 class="anchored" data-anchor-id="example-ohanlon-on-epistemic-voice">Example: O’Hanlon on Epistemic Voice</h3>
+<p>O’Hanlon compares how medical discourses construct risk. She finds that <strong>breast cancer texts</strong> are more personal and <strong>interactive</strong>, using <strong>FirstPerson</strong> and <strong>Metadiscourse</strong> features to frame stories as communal <span class="citation" data-cites="o2019kills">(<a href="#ref-o2019kills" role="doc-biblioref">O’Hanlon 2019</a>)</span>.</p>
+</section>
+<section id="red-flags-in-your-writing" class="level3">
+<h3 class="anchored" data-anchor-id="red-flags-in-your-writing">Red Flags in Your Writing:</h3>
 <ul>
-<li>Toggle <strong>Download to Excel?</strong> in the sidebar to enable download.</li>
-<li>Click <strong>Download to Excel</strong> to save your results for further analysis.</li>
+<li>“Obviously,” “clearly,” “naturally”—these suggest you’re not explaining your reasoning</li>
+<li>Circular explanations: “Academic writing uses academic language”</li>
+<li>Missing the human element: Remember, real people made these linguistic choices for real reasons</li>
 </ul>
 <hr>
 </section>
-<section id="generating-a-new-table" class="level2">
-<h2 class="anchored" data-anchor-id="generating-a-new-table">Generating a New Table</h2>
+</section>
+<section id="use-docuscope-categories-thoughtfully" class="level2">
+<h2 class="anchored" data-anchor-id="use-docuscope-categories-thoughtfully"><iconify-icon role="img" inline="" icon="material-symbols:build" aria-label="Icon build from material-symbols Iconify.design set." title="Icon build from material-symbols Iconify.design set."></iconify-icon> 5. Use DocuScope Categories Thoughtfully</h2>
+<p>Introduce categories clearly and provide examples. Help your reader see not just what a category means, but <strong>how it functions</strong> in context.</p>
+<section id="example-ishizaki-on-crowdfunding" class="level3">
+<h3 class="anchored" data-anchor-id="example-ishizaki-on-crowdfunding">Example: Ishizaki on Crowdfunding</h3>
+<p>Ishizaki shows that successful crowdfunding pitches use more <strong>Strategic</strong> and <strong>Values</strong> language. He connects this to rhetorical appeals: successful pitches <strong>position themselves within expert communities</strong>, not just general audiences <span class="citation" data-cites="ishizaki2016computer">(<a href="#ref-ishizaki2016computer" role="doc-biblioref">Ishizaki 2016</a>)</span>.</p>
+</section>
+<section id="best-practices" class="level3">
+<h3 class="anchored" data-anchor-id="best-practices">Best Practices:</h3>
 <ul>
-<li>Use the <strong>Create a New Ngrams Table</strong> button in the sidebar to reset and start over with new settings.</li>
+<li><strong>Define categories</strong> when first mentioned</li>
+<li><strong>Provide concrete examples</strong> from your corpus</li>
+<li><strong>Explain the rhetorical function</strong>, not just the definition</li>
+<li><strong>Connect to larger patterns</strong> in your data</li>
 </ul>
 <hr>
 </section>
-<section id="tips-for-new-users" class="level2">
-<h2 class="anchored" data-anchor-id="tips-for-new-users">Tips for New Users</h2>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+</section>
+<section id="handle-statistical-significance-and-limitations" class="level2">
+<h2 class="anchored" data-anchor-id="handle-statistical-significance-and-limitations"><iconify-icon role="img" inline="" icon="material-symbols:warning" aria-label="Icon warning from material-symbols Iconify.design set." title="Icon warning from material-symbols Iconify.design set."></iconify-icon> 6. Handle Statistical Significance and Limitations</h2>
+<p>Be honest about what your data can and cannot tell you.</p>
+<section id="when-to-mention-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="when-to-mention-statistics">When to Mention Statistics:</h3>
 <ul>
-<li>Try generating both n-gram and cluster tables to see which is most useful for your research.</li>
-<li>If you don’t see any data, make sure you have loaded and processed a target corpus.</li>
-<li>Download your results often so you can experiment without losing your work.</li>
+<li>If differences are <strong>statistically significant</strong>, say so</li>
+<li>If your sample is <strong>small</strong>, acknowledge limitations</li>
+<li>If patterns are <strong>suggestive but not definitive</strong>, frame them appropriately</li>
 </ul>
-</div>
-</div>
+</section>
+<section id="example-language" class="level3">
+<h3 class="anchored" data-anchor-id="example-language">Example Language:</h3>
+<p>“While this pattern suggests…, a larger corpus would be needed to confirm…” “The 15% difference in Hedged Confidence, though not statistically significant, points toward…”</p>
 <hr>
 </section>
-<section id="if-you-get-stuck" class="level2">
-<h2 class="anchored" data-anchor-id="if-you-get-stuck">If You Get Stuck</h2>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
+</section>
+<section id="imrd-structure-with-scholarly-examples" class="level2">
+<h2 class="anchored" data-anchor-id="imrd-structure-with-scholarly-examples"><iconify-icon role="img" inline="" icon="material-symbols:table-rows-narrow" aria-label="Icon table-rows-narrow from material-symbols Iconify.design set." title="Icon table-rows-narrow from material-symbols Iconify.design set."></iconify-icon> 7. IMRD Structure (with Scholarly Examples)</h2>
+<p>Here’s how to structure your paper using the IMRD model, with scholarly models:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 3%">
+<col style="width: 38%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Section</th>
+<th>Purpose</th>
+<th>Example from Scholarship</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Introduction</strong></td>
+<td>State your research question and its rhetorical or communicative significance. Include brief lit review.</td>
+<td>“How do student writers construct academic authority across disciplines?” <span class="citation" data-cites="aull2023language">(<a href="#ref-aull2023language" role="doc-biblioref">Aull 2023</a>)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Methods</strong></td>
+<td>Describe the corpus, how DocuScope was used, and which categories were analyzed. Be specific about your analytical choices.</td>
+<td>“We applied DocuScope tagging to a 200-document corpus of nonprofit and academic proposals, focusing on epistemic and interpersonal categories.” <span class="citation" data-cites="dejeu2024topoi">(<a href="#ref-dejeu2024topoi" role="doc-biblioref">DeJeu 2024</a>)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Results</strong></td>
+<td>Present quantitative or qualitative findings, supported by figures or tables. <strong>Interpret patterns immediately</strong>: What rhetorical work do they perform?</td>
+<td>“Successful pitches showed significantly higher use of Strategic and Facilitate categories (p &lt; 0.05). This pattern suggests that effective crowdfunding appeals position themselves within expert communities rather than addressing general audiences.” <span class="citation" data-cites="ishizaki2016computer">(<a href="#ref-ishizaki2016computer" role="doc-biblioref">Ishizaki 2016</a>)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Discussion</strong></td>
+<td><strong>Summarize main findings</strong> and their implications. <strong>Acknowledge limitations</strong> of your study. <strong>Speculate thoughtfully</strong> about broader significance and future research directions.</td>
+<td>“Our findings suggest that successful crowdfunding depends on strategic positioning within discourse communities. While our sample was limited to technology projects, this pattern may extend to other domains where expertise signals credibility.” <span class="citation" data-cites="ishizaki2016computer">(<a href="#ref-ishizaki2016computer" role="doc-biblioref">Ishizaki 2016</a>)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="pre-submission-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="pre-submission-checklist"><iconify-icon role="img" inline="" icon="material-symbols:checklist" aria-label="Icon checklist from material-symbols Iconify.design set." title="Icon checklist from material-symbols Iconify.design set."></iconify-icon> 8. Pre-Submission Checklist</h2>
+<p>Before submitting, ask yourself:</p>
+<p><strong>About Your Claim:</strong></p>
 <ul>
-<li>Use the <strong>reset</strong> button on the Manage Corpus Data page if you need to start over.</li>
-<li>If you see warnings, check that your corpus is loaded and processed, and that your search settings are valid.</li>
+<li>Is my research question <strong>specific</strong> and <strong>answerable</strong> with DocuScope data?</li>
+<li>Does my claim go beyond “X uses more Y than Z”?</li>
+<li>Have I explained the <strong>rhetorical significance</strong> of my findings?</li>
 </ul>
-</div>
-</div>
+<p><strong>About Your Evidence:</strong></p>
+<ul>
+<li>Do my visualizations <strong>directly support</strong> my claims?</li>
+<li>Have I provided <strong>concrete examples</strong> from my corpus?</li>
+<li>Are my interpretations <strong>grounded in</strong> the data?</li>
+</ul>
+<p><strong>About Your Writing:</strong></p>
+<ul>
+<li>Would someone unfamiliar with DocuScope understand my categories?</li>
+<li>Have I avoided <strong>truisms</strong> and <strong>circular reasoning</strong>?</li>
+<li>Does my conclusion explain <strong>why this matters</strong> for understanding communication?</li>
+</ul>
+<hr>
+</section>
+<section id="final-thought-youre-mapping-the-territory" class="level2">
+<h2 class="anchored" data-anchor-id="final-thought-youre-mapping-the-territory"><iconify-icon role="img" inline="" icon="material-symbols:explore" aria-label="Icon explore from material-symbols Iconify.design set." title="Icon explore from material-symbols Iconify.design set."></iconify-icon> Final Thought: You’re Mapping the Territory</h2>
+<p>As a novice researcher, your goal isn’t to offer definitive answers—it’s to use linguistic evidence to make a <strong>focused, well-reasoned rhetorical claim</strong>.</p>
+<p>DocuScope gives you patterns. Your task is to explain: - <strong>What do they tell us about writing?</strong> - <strong>How do they reflect audience, genre, or context?</strong> - <strong>What insights do they offer</strong> for writers, teachers, or communicators?</p>
+<p>Remember: You’re not just analyzing language—you’re uncovering the strategic thinking behind communication choices. Every linguistic pattern represents human decision-making in action.</p>
+</section>
+<section id="works-cited" class="level2">
+<h2 class="anchored" data-anchor-id="works-cited">Works Cited</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-aull2023language" class="csl-entry" role="listitem">
+Aull, Laura. 2023. <span>“Language Patterns in Secondary and Postsecondary Student Writing.”</span> In <em>Corpora and Rhetorically Informed Text Analysis: The Diverse Applications of <span>DocuScope</span></em>, edited by David West Brown and Danielle Zawodny Wetzel, 94–118. John Benjamins. <a href="https://doi.org/10.1075/scl.109.05aul">https://doi.org/10.1075/scl.109.05aul</a>.
+</div>
+<div id="ref-dejeu2024topoi" class="csl-entry" role="listitem">
+DeJeu, Emily Barrow. 2024. <span>“Topoi of Nonprofit Proposal Writing.”</span> <em>Business and Professional Communication Quarterly</em> 87 (1): 122–51. <a href="https://doi.org/10.1177/23294906231182616">https://doi.org/10.1177/23294906231182616</a>.
+</div>
+<div id="ref-ishizaki2016computer" class="csl-entry" role="listitem">
+Ishizaki, Suguru. 2016. <span>“Computer-Aided Rhetorical Analysis of Crowdfunding Pitches.”</span> In <em>2016 IEEE International Professional Communication Conference (IPCC)</em>, 1–4. IEEE. <a href="https://doi.org/10.1109/IPCC.2016.7740540">https://doi.org/10.1109/IPCC.2016.7740540</a>.
+</div>
+<div id="ref-marcellino2014talk" class="csl-entry" role="listitem">
+Marcellino, William M. 2014. <span>“Talk Like a Marine: USMC Linguistic Acculturation and Civil–Military Argument.”</span> <em>Discourse Studies</em> 16 (3): 385–405. <a href="https://doi.org/10.1177/1461445613508895">https://doi.org/10.1177/1461445613508895</a>.
+</div>
+<div id="ref-o2019kills" class="csl-entry" role="listitem">
+O’Hanlon, Claire E. 2019. <span>“What Kills Us and What Moves Us: A Comparative Discourse Analysis of Heart Disease and Breast Cancer.”</span> <em>Digital Health</em> 5: 2055207619844865. <a href="https://doi.org/10.1177/2055207619844865">https://doi.org/10.1177/2055207619844865</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -900,13 +1004,13 @@ Important
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../guide/tag-frequencies.html" class="pagination-link" aria-label="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;20px&quot; viewBox=&quot;0 -960 960 960&quot; width=&quot;20px&quot; fill=&quot;#434343&quot;><path d=&quot;M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z&quot;/></svg> Tag Frequencies">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> Tag Frequencies</span>
+      <a href="../datasets/elsevier.html" class="pagination-link" aria-label="Elsevier">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Elsevier</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../guide/compare-corpora.html" class="pagination-link" aria-label="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;20px&quot; viewBox=&quot;0 -960 960 960&quot; width=&quot;20px&quot; fill=&quot;#434343&quot;><path d=&quot;m336-168-51-51 105-105H96v-72h294L285-501l51-51 192 192-192 192Zm288-240L432-600l192-192 51 51-105 105h294v72H570l105 105-51 51Z&quot;/></svg> Compare Corpora">
-        <span class="nav-page-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="m336-168-51-51 105-105H96v-72h294L285-501l51-51 192 192-192 192Zm288-240L432-600l192-192 51 51-105 105h294v72H570l105 105-51 51Z"></path></svg> Compare Corpora</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../about/kaufer-ishizaki.html" class="pagination-link" aria-label="History and background">
+        <span class="nav-page-text">History and background</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
