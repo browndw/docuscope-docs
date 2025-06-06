@@ -1,0 +1,89 @@
+# Preparing a New Corpus for Processing  {.unnumbered}
+
+This vignette guides you through preparing and uploading a **new corpus** for analysis in the corpus-tagger interface. Careful preparation of your text files ensures smooth processing and accurate results.
+
+---
+
+## 1. File Format: Use Plain Text (.txt)
+
+- **All files must be in plain text format** (`.txt`).
+- **Do not use word processors** (like Microsoft Word) to save your files, as they add hidden formatting and may not save files as true plain text.
+- **Recommended free text editors:**
+  - **Mac OS:** [BBEdit](https://www.barebones.com/products/bbedit/download.html)
+  - **Windows:** [Sublime Text](https://www.sublimetext.com/)
+- **Why not Word?** Word and similar applications save files in proprietary formats (like `.docx`) that include extra formatting and may not use the correct encoding. This can cause problems during processing.
+
+---
+
+## 2. File Naming: Avoid Spaces, Use Underscores
+
+- **Avoid spaces** in file names. Use underscores (`_`) or hyphens (`-`) instead.
+  - Good: `acad_01.txt`, `blog_02.txt`
+  - Bad: `my file.txt`, `essay 1.txt`
+- **Why?** Spaces and special characters can cause errors during upload and processing.
+
+---
+
+## 3. Encoding Metadata in File Names (Optional, but Recommended)
+
+- You can **encode category information** at the start of each file name, before an underscore.
+- **Example:**
+  - `acad_01.txt`, `acad_02.txt` (category: `acad`)
+  - `blog_01.txt`, `blog_02.txt` (category: `blog`)
+- This allows you to compare up to **20 different categories** in your analysis.
+- **Tip:** Keep category names short and consistent.
+
+---
+
+## 4. Encoding: Make Sure Files Are UTF-8
+
+- **Files must be saved with UTF-8 encoding.**
+- UTF-8 is a standard way computers represent text, ensuring all characters are read correctly.
+- Most modern text editors (like BBEdit and Sublime Text) save files as UTF-8 by default.
+- **How to check?**
+  - In BBEdit: When saving, make sure "Encoding" is set to "Unicode (UTF-8)".
+  - In Sublime Text: Files are saved as UTF-8 by default.
+
+---
+
+## 5. Content: Only Include What You Want Counted
+
+- **Be sure that your text files contain only the content you want analyzed.**
+- For example, if you are using texts from sources like Project Gutenberg, **remove any headers, footers, or licensing information** that is not part of the original work.  
+  - *Example: Project Gutenberg files often include information like "The Project Gutenberg eBook of..." at the top and licensing/legal text at the end. If left in, words like "ebook" or "license" may appear frequently in your results!*
+- If your data comes from web pages or other sources, **make sure all HTML or markup tags are removed**. The app cannot distinguish between text and markup, so tags like `<div>`, `<p>`, or `<body>` will be counted as words if present.
+- **Tip:** Open your `.txt` files in a plain text editor and review the content before uploading.
+
+---
+
+## 6. Paragraphs and Formatting
+
+- **No need to preserve paragraph breaks**—these will be removed during processing.
+- Just focus on clear, readable text.
+
+---
+
+## 7. Uploading Your Corpus
+
+- Go to the **Load or process a target corpus** page.
+- Under **Process a corpus**, select **New**.
+- Use the uploader to select and upload your `.txt` files.
+- Follow the prompts to process your corpus.
+
+---
+
+## Summary Table: Example File Names and Categories
+
+| File Name      | Category Encoded | Notes                         |
+|----------------|------------------|-------------------------------|
+| acad_01.txt    | acad             | Academic writing              |
+| acad_02.txt    | acad             | Academic writing              |
+| blog_01.txt    | blog             | Blog post                     |
+| blog_02.txt    | blog             | Blog post                     |
+| myfile.txt     | (none)           | No category assigned          |
+
+---
+
+**Tip:** Preparing your files carefully saves time and prevents errors. If you’re new to plain text editing, try [BBEdit](https://www.barebones.com/products/bbedit/download.html) (Mac) or [Sublime Text](https://www.sublimetext.com/) (Windows)—both are free and easy to use!
+
+---

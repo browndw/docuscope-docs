@@ -1,0 +1,76 @@
+# Model Comparison  {.unnumbered}
+
+## DocuScope spaCy Models: Full vs. Common Dictionary
+
+::: {.callout-important}
+**DocuScope CA runs on a model.**  
+When "dictionaries" are referenced, they refer to [the model training data](https://huggingface.co/datasets/browndw/docusco-spacy-training).  
+The "Full Dictionary" model uses the complete set of DocuScope tags, while the "Common Dictionary" model uses a reduced, more general set.
+:::
+
+## Model Overview
+
+| Model Name | HuggingFace Link | Tagset | Description |
+|------------|------------------|--------|-------------|
+| **Full Dictionary** | [en_docusco_spacy](https://huggingface.co/browndw/en_docusco_spacy) | Full DocuScope tagset | Most detailed, includes all original DocuScope categories. |
+| **Common Dictionary** | [en_docusco_spacy_cd](https://huggingface.co/browndw/en_docusco_spacy_cd) | Common DocuScope tagset | Simplified, focuses on the most frequent and general categories. |
+
+Both models are trained on the **CLAWS7 part-of-speech tagset**.
+
+---
+
+## Tagset Differences
+
+### Full Dictionary
+
+- **Scope:** Contains the entire set of DocuScope tags, as used in the original dictionary-lookup technology.
+- **Categories:** Includes fine-grained distinctions (e.g., *Citation Authorized* vs. *Citation Hedged*, *Confidence High* vs. *Confidence Low*), specialized academic moves, and nuanced rhetorical features.
+- **Use Case:** Best for detailed rhetorical, genre, or discourse analysis where subtle distinctions matter.
+
+### Common Dictionary
+
+- **Scope:** Uses a reduced set of the most common and broadly applicable DocuScope tags.
+- **Categories:** Focuses on general rhetorical and linguistic features, omitting some of the more specialized or rare categories.
+- **Use Case:** Ideal for general text analysis, classroom use, or when interpretability and simplicity are priorities.
+
+---
+
+## Why Choose One Over the Other?
+
+### Choose the **Full Dictionary** model if:
+
+- You need **maximum detail** and want to capture subtle rhetorical or genre distinctions.
+- Your research or teaching requires the **full range of DocuScope categories**.
+- You are analyzing academic, professional, or highly structured texts.
+
+### Choose the **Common Dictionary** model if:
+
+- You want a **simpler, more interpretable output**.
+- You are working with **general texts** or need results that are easier to explain to non-specialists.
+- You are doing **exploratory analysis** or classroom demonstrations.
+
+---
+
+## Example: Tagset Comparison
+
+| Tag (Full)              | Present in Common? | Description (abbreviated) |
+|-------------------------|:------------------:|---------------------------|
+| Academic Terms          | ✔️                 | Specialized terms         |
+| Citation Authorized     | ❌                 | (Merged into Citation)    |
+| Confidence High/Low     | ❌                 | (Generalized)             |
+| Metadiscourse Cohesive  | ✔️                 | Cohesive markers          |
+| Strategic               | ✔️                 | Strategy/goal language    |
+| Updates                 | ❌                 | (Omitted)                 |
+
+*The Common Dictionary omits or merges some specialized categories for clarity and ease of use.*
+
+---
+
+## Further Reading
+
+- [DocuScope spaCy Full Model on HuggingFace](https://huggingface.co/browndw/en_docusco_spacy)
+- [DocuScope spaCy Common Dictionary Model](https://huggingface.co/browndw/en_docusco_spacy_cd)
+- [DocuScope Model Training Data](https://huggingface.co/datasets/browndw/docusco-spacy-training)
+- [Kaufer and Ishizaki: The Origins of DocuScope](../about/kaufer-ishizaki.qmd)
+
+---

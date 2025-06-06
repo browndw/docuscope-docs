@@ -34,18 +34,21 @@ book:
         - guide/download-tagged-files.qmd
     - part: Tagsets
       chapters:
-         - tagsets/claws7-tags.qmd
-         - tagsets/docuscope-fd-tags.qmd
-         - tagsets/docuscope-cd-tags.qmd
+        - tagsets/model-comparison.qmd
+        - tagsets/claws7-tags.qmd
+        - tagsets/docuscope-fd-tags.qmd
+        - tagsets/docuscope-cd-tags.qmd
     - part: Datasets
       chapters:
          - datasets/micusp.qmd
          - datasets/bawe.qmd
          - datasets/elsevier.qmd
+         - datasets/hape.qmd
     - part: Vignettes
       chapters:
+         - vignettes/external-corpus.qmd
          - vignettes/results-to-paper.qmd
-    - part: About the DocuScope Project
+    - part: The DocuScope Project
       chapters:
          - about/kaufer-ishizaki.qmd
 

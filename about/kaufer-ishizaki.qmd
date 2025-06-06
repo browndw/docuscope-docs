@@ -29,161 +29,112 @@ Kaufer, D. & Ishizaki, S. (2023). The DocuScope project: History, theory and fut
 ```
 </details> 
 
-# Overview of “The DocuScope Project”  
+# Overview of "The DocuScope Project"  
 *By David Kaufer and Suguru Ishizaki*
 
 ---
 
-## I. Origins: Theoretical Gaps in Rhetorical Tradition
+## I. The Problem: Bridging Thought and Language
 
-### Problem Addressed
-- Traditional rhetoric separates **invention** (what to say) from **style** (how to say it).
-- This divide left unanswered: *How do thoughts become concrete language?*
+### Traditional Challenge
+- Classical rhetoric separated **invention** (what to say) from **style** (how to say it)
+- Question remained: *How do thoughts become concrete language?*
 
-### DocuScope’s Starting Point
-- Aimed to unify invention and style through identifying **rhetorical language patterns**.
-- Initial study: Lincoln–Douglas debates, focusing on **registers** (e.g., personal vs. political speech styles).
+### DocuScope's Solution
+- Identify **rhetorical language patterns** that unify invention and style
+- Study how specific word sequences create rhetorical effects
 
 ---
 
-## II. Composing Patterns: The Hidden Middle Layer
+## II. The Hidden Middle Layer: Composing Patterns
 
-### Concept Introduced
-- Between grammar and genre lies a **middle layer**: *composing patterns*—reusable phrasings that shape rhetorical impact.
+### Key Insight
+Between grammar and genre exists a crucial layer: **composing patterns**—reusable word sequences that create specific rhetorical effects.
 
 ### Examples
-- “I often used to…” signals autobiographical style.
-- Patterns influence:
-  - **Tone** (e.g., subjective vs. objective)
-  - **Intent** (e.g., facilitative, descriptive)
-  - **Register** (e.g., academic, personal)
+- "I often used to..." → signals autobiographical narrative
+- "no surprise that..." → expresses confident prediction
+- "let freedom ring" → combines positive values with descriptive imagery
 
-### Insight
-- These patterns are not strictly grammatical but convey **reader experience** and **rhetorical force**.
-
----
-
-## III. DocuScope: Building the Tool
-
-### What is DocuScope?
-- A software environment and dictionary that classifies word sequences by rhetorical function.
-
-### Features
-- Interactive tagging & visualization
-- Dictionary includes 3–5 word sequences
-- Human-curated with computational scalability
-
-### Curation Process
-- **Inductive**: Built from real texts across genres
-- **Ongoing**: Regularly updated
-- Designed to capture rhetorical **impressions** like:
-  - Confidence
-  - Description
-  - Facilitation
-  - Narrative structure
+### Impact
+These patterns shape how readers experience text:
+- **Tone** (subjective vs. objective)
+- **Purpose** (descriptive, persuasive, facilitative)
+- **Register** (academic, personal, public)
 
 ---
 
-## IV. Key Taxonomies: DocuScope’s Conceptual Framework
+## III. DocuScope: The Tool and Dictionary
 
-### Three Rhetorical Continua
+### What It Does
+- Software that automatically identifies rhetorical patterns in texts
+- Dictionary contains millions of 3-5 word sequences classified by rhetorical function
+- Provides interactive visualization of rhetorical choices
 
-| Continuum           | Description                                   |
-|---------------------|-----------------------------------------------|
-| **Interiority ↔ Externality** | From inner mental states to public/social discourse |
-| **Stories ↔ Information**     | From narrative sequence to hierarchical explanation |
-| **Monologic ↔ Dialogic**      | From speaker-focused to audience-aware language     |
-
-### Sample Rhetorical Categories (Crossing Continua)
-- **Narrative** – Story-driven, may be interior, often dialogic
-- **Academic** – External, informational, often monologic
-- **Facilitate** – Dialogic, supportive, often interior
-- **First Person** – Subjective and narrative
-- **Positive / Negative** – Affect-based, shaping emotional tone
+### Building Process
+- **Human-curated**: Scholars manually classify patterns based on rhetorical function
+- **Corpus-driven**: Patterns drawn from real texts across many genres
+- **Continuously updated**: Dictionary grows through ongoing research
 
 ---
 
-## V. Dealing with Polysemy: Challenges in Classification
+## IV. Three Key Dimensions of Rhetoric
 
-DocuScope addresses **polysemy**—contextual shifts in meaning—by managing four main types:
+DocuScope organizes language patterns along three continua:
 
-### 1. Small Variation
-- Minor lexical changes can flip meaning.
-  - e.g., “swearing **at**” vs. “swearing **to**”
+| **Interiority ↔ Externality** | Inner thoughts and feelings vs. public, external world |
+|-------------------------------|-------------------------------------------------------|
+| **Stories ↔ Information** | Narrative sequence vs. hierarchical explanation |
+| **Monologic ↔ Dialogic** | Speaker-focused vs. audience-aware language |
 
-### 2. Pattern Length
-- Length impacts meaning.
-  - e.g., “they know what they are doing” = **confidence**  
-    “they **doubt** they know what they are doing” = **uncertainty**
-
-### 3. Variation Around a Stable Theme
-- Multiple expressions of the same idea (e.g., “surprised face”, “edge of your seat”).
-- Reflects **stylistic copiousness** from classical rhetoric.
-
-### 4. Assigning Salience
-- Choosing the *focal word* in a phrase.
-  - e.g., “collapsed wall” — is it about *collapse* or the *wall*?
+### Sample Categories
+- **Academic** – Specialized, formal discourse  
+- **Narrative** – Time-based storytelling
+- **Confidence** – Expressing certainty or uncertainty
+- **Description** – Sensory and visual language
+- **First Person** – Subjective, personal perspective
+- **Positive/Negative** – Emotional tone and affect
 
 ---
 
-## VI. Applications: From Corpus Analysis to Student Writing
+## V. Key Challenge: Polysemy (Multiple Meanings)
 
-### Early Use
-- Classified genres in corpora like the Brown Corpus.
+Small changes in word patterns can dramatically shift meaning:
 
-### Broader Applications
-- Used by:
-  - Literary researchers (e.g., Shakespeare studies)
-  - Policy analysts (RAND)
-  - Educational researchers (ETS)
-
-### Educational Shift
-- Led to tools for **single-text analysis**, including:
-  - **DocuScope Write & Audit**
-  - Supports student writing and instructor feedback
+- **"swearing at"** vs. **"swearing to"** (different actions entirely)
+- **"they know what they're doing"** (confidence) vs. **"they doubt they know what they're doing"** (uncertainty)
+- **Length matters**: Longer patterns often override shorter ones for more precise classification
 
 ---
 
-## VII. Recent Development: Integrating Topic Structure
+## VI. Applications: From Research to Education
 
-### Challenge
-- Traditional methods poorly suited for analyzing single texts (e.g., student papers).
+### Research Uses
+- Analyze large text collections (corpora)
+- Study literary works and historical documents
+- Support policy analysis and genre studies
 
-### Solution: **OnTopic**
-- A visualization tool that tracks how **topics evolve** across sentences and paragraphs.
-- Inspired by Functional Sentence Perspective (FSP) and Systemic Functional Linguistics (SFL).
-
-### Integration with DocuScope
-- Helps users:
-  - Focus on **local rhetorical effects**
-  - See how DocuScope patterns align with **key topics**
-
-### Example: MLK’s “I Have a Dream” Speech
-- Topic: “freedom”
-- Patterns: “positive” and “description”
-- Observation: Spike in paragraph 14 (8x repetition of “let freedom ring”)
+### Educational Applications
+- **DocuScope Write & Audit**: Helps students analyze their own writing
+- Provides feedback on rhetorical choices
+- Shows how language patterns create reader experiences
 
 ---
 
-## VIII. Conclusion: Maturation of the DocuScope Project
+## VII. The Bigger Picture
 
-### Trajectory
-- From educational prototype → research platform → integrated educational/research tool
+### Core Innovation
+DocuScope reveals the **hidden rhetorical choices** writers make, providing a practical bridge between thought and expression.
 
-### Key Concepts
-- **Collisions** (overlapping classifications):
-  - Once seen as errors
-  - Now seen as opportunities for **refinement and innovation**
+### Educational Value
+Students can see how their language choices shape reader experience, making revision more strategic and effective.
 
-### Vision of Maturity
-- DocuScope aims to be a **shared public resource** for:
-  - Rhetorical/textual analysis
-  - Writing pedagogy
-  - Ongoing research in rhetorical production
+### Ongoing Development
+The project continues evolving as a shared resource for understanding how language creates rhetorical impact across different genres and contexts.
 
 ---
 
-*DocuScope makes visible the rhetorical decisions writers make, offering a practical, scalable link between thought and expression.*
+*DocuScope makes visible the invisible: how writers use language patterns to guide reader experience and achieve rhetorical goals.*
 
 ---
 

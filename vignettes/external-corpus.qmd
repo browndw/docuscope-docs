@@ -1,0 +1,64 @@
+# Creating and Using an External Corpus File  {.unnumbered}
+
+This vignette walks you through the process of generating an **External corpus** in the corpus-tagger interface. Saving your processed corpus as an external file (in Parquet format) allows you to **skip time-consuming text parsing in the future**—loading a Parquet file is nearly instantaneous, while re-processing raw text files with a spaCy model can take several minutes.
+
+---
+
+## Why Use an External Corpus File?
+
+- **Efficiency:** Once your corpus is processed and saved as a Parquet file, you can reload it instantly in future sessions.
+- **Reproducibility:** The Parquet file preserves all token-level annotations, so you can share or archive your processed data.
+- **Convenience:** No need to re-upload or re-parse your original text files.
+
+---
+
+## Step-by-Step Guide
+
+### 1. Process Your Corpus
+
+- Navigate to the **Load or process a target corpus** page.
+- Under **Process a corpus**, select your source (e.g., upload plain text files).
+- Complete the processing steps as usual (select model, process files, etc.).
+
+### 2. Download the Processed Corpus
+
+- After processing, go to the **Download Corpus Files** app.
+- In the download options, select **Corpus file only**.
+- Click the download button to save your corpus as a `.parquet` file.
+
+### 3. What Does an External Corpus File Look Like?
+
+The Parquet file contains a table with one row per token, including all relevant annotations:
+
+| doc_id        | token      | pos_tag | ds_tag             | pos_id | ds_id |
+|---------------|------------|---------|--------------------|--------|-------|
+| BIO_G0_02_1   | Ernst      | NP1     | Character          | 1      | 1     |
+| BIO_G0_02_1   | Mayr       | NP1     | Character          | 2      | 1     |
+| BIO_G0_02_1   | once       | RR      | Narrative          | 3      | 2     |
+| BIO_G0_02_1   | wrote      | VVD     | Citation           | 4      | 3     |
+| BIO_G0_02_1   | ,          | Y       | Citation           | 5      | 3     |
+| BIO_G0_02_1   | "          | Y       | Untagged           | 6      | 4     |
+| BIO_G0_02_1   | sympatric  | JJ      | AcademicTerms      | 7      | 5     |
+| BIO_G0_02_1   | speciation | NN1     | AcademicTerms      | 8      | 6     |
+| BIO_G0_02_1   | is         | VBZ     | InformationExposition | 9   | 7     |
+| BIO_G0_02_1   | like       | II      | InformationExposition | 10  | 7     |
+| BIO_G0_02_1   | the        | AT      | InformationExposition | 11  | 7     |
+
+**Column meanings:**
+- `doc_id`: Document identifier
+- `token`: The word/token
+- `pos_tag`: Part-of-speech tag
+- `ds_tag`: DocuScope tag
+- `pos_id`: POS unit ID
+- `ds_id`: DocuScope unit ID
+
+---
+
+## 4. Re-using Your External Corpus
+
+- In the future, simply select **External** as your corpus source and upload your `.parquet` file.
+- The corpus will load instantly, ready for analysis or comparison.
+
+---
+
+**Tip:** Use external corpus files to streamline your workflow, especially when working with large datasets or collaborating with others!
