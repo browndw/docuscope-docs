@@ -117,7 +117,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../about/kaufer-ishizaki.html">About the DocuScope Project</a></li><li class="breadcrumb-item"><a href="../about/kaufer-ishizaki.html">History and background</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../about/kaufer-ishizaki.html">The DocuScope Project</a></li><li class="breadcrumb-item"><a href="../about/kaufer-ishizaki.html">History and background</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -261,6 +261,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../tagsets/model-comparison.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Model Comparison</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../tagsets/claws7-tags.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Part-of-Speech Tags</span></a>
   </div>
@@ -306,6 +312,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Elsevier</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/hape.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HAP-E</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -319,6 +331,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../vignettes/external-corpus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Creating and Using an External Corpus File</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../vignettes/results-to-paper.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Turning Your Results Into a Research Paper</span></a>
   </div>
@@ -328,7 +346,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">About the DocuScope Project</span></a>
+ <span class="menu-text">The DocuScope Project</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -354,53 +372,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#overview-of-the-docuscope-project" id="toc-overview-of-the-docuscope-project" class="nav-link active" data-scroll-target="#overview-of-the-docuscope-project">Overview of “The DocuScope Project”</a>
   <ul>
-  <li><a href="#i.-origins-theoretical-gaps-in-rhetorical-tradition" id="toc-i.-origins-theoretical-gaps-in-rhetorical-tradition" class="nav-link" data-scroll-target="#i.-origins-theoretical-gaps-in-rhetorical-tradition">I. Origins: Theoretical Gaps in Rhetorical Tradition</a>
+  <li><a href="#i.-the-problem-bridging-thought-and-language" id="toc-i.-the-problem-bridging-thought-and-language" class="nav-link" data-scroll-target="#i.-the-problem-bridging-thought-and-language">I. The Problem: Bridging Thought and Language</a>
   <ul class="collapse">
-  <li><a href="#problem-addressed" id="toc-problem-addressed" class="nav-link" data-scroll-target="#problem-addressed">Problem Addressed</a></li>
-  <li><a href="#docuscopes-starting-point" id="toc-docuscopes-starting-point" class="nav-link" data-scroll-target="#docuscopes-starting-point">DocuScope’s Starting Point</a></li>
+  <li><a href="#traditional-challenge" id="toc-traditional-challenge" class="nav-link" data-scroll-target="#traditional-challenge">Traditional Challenge</a></li>
+  <li><a href="#docuscopes-solution" id="toc-docuscopes-solution" class="nav-link" data-scroll-target="#docuscopes-solution">DocuScope’s Solution</a></li>
   </ul></li>
-  <li><a href="#ii.-composing-patterns-the-hidden-middle-layer" id="toc-ii.-composing-patterns-the-hidden-middle-layer" class="nav-link" data-scroll-target="#ii.-composing-patterns-the-hidden-middle-layer">II. Composing Patterns: The Hidden Middle Layer</a>
+  <li><a href="#ii.-the-hidden-middle-layer-composing-patterns" id="toc-ii.-the-hidden-middle-layer-composing-patterns" class="nav-link" data-scroll-target="#ii.-the-hidden-middle-layer-composing-patterns">II. The Hidden Middle Layer: Composing Patterns</a>
   <ul class="collapse">
-  <li><a href="#concept-introduced" id="toc-concept-introduced" class="nav-link" data-scroll-target="#concept-introduced">Concept Introduced</a></li>
+  <li><a href="#key-insight" id="toc-key-insight" class="nav-link" data-scroll-target="#key-insight">Key Insight</a></li>
   <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
-  <li><a href="#insight" id="toc-insight" class="nav-link" data-scroll-target="#insight">Insight</a></li>
+  <li><a href="#impact" id="toc-impact" class="nav-link" data-scroll-target="#impact">Impact</a></li>
   </ul></li>
-  <li><a href="#iii.-docuscope-building-the-tool" id="toc-iii.-docuscope-building-the-tool" class="nav-link" data-scroll-target="#iii.-docuscope-building-the-tool">III. DocuScope: Building the Tool</a>
+  <li><a href="#iii.-docuscope-the-tool-and-dictionary" id="toc-iii.-docuscope-the-tool-and-dictionary" class="nav-link" data-scroll-target="#iii.-docuscope-the-tool-and-dictionary">III. DocuScope: The Tool and Dictionary</a>
   <ul class="collapse">
-  <li><a href="#what-is-docuscope" id="toc-what-is-docuscope" class="nav-link" data-scroll-target="#what-is-docuscope">What is DocuScope?</a></li>
-  <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features">Features</a></li>
-  <li><a href="#curation-process" id="toc-curation-process" class="nav-link" data-scroll-target="#curation-process">Curation Process</a></li>
+  <li><a href="#what-it-does" id="toc-what-it-does" class="nav-link" data-scroll-target="#what-it-does">What It Does</a></li>
+  <li><a href="#building-process" id="toc-building-process" class="nav-link" data-scroll-target="#building-process">Building Process</a></li>
   </ul></li>
-  <li><a href="#iv.-key-taxonomies-docuscopes-conceptual-framework" id="toc-iv.-key-taxonomies-docuscopes-conceptual-framework" class="nav-link" data-scroll-target="#iv.-key-taxonomies-docuscopes-conceptual-framework">IV. Key Taxonomies: DocuScope’s Conceptual Framework</a>
+  <li><a href="#iv.-three-key-dimensions-of-rhetoric" id="toc-iv.-three-key-dimensions-of-rhetoric" class="nav-link" data-scroll-target="#iv.-three-key-dimensions-of-rhetoric">IV. Three Key Dimensions of Rhetoric</a>
   <ul class="collapse">
-  <li><a href="#three-rhetorical-continua" id="toc-three-rhetorical-continua" class="nav-link" data-scroll-target="#three-rhetorical-continua">Three Rhetorical Continua</a></li>
-  <li><a href="#sample-rhetorical-categories-crossing-continua" id="toc-sample-rhetorical-categories-crossing-continua" class="nav-link" data-scroll-target="#sample-rhetorical-categories-crossing-continua">Sample Rhetorical Categories (Crossing Continua)</a></li>
+  <li><a href="#sample-categories" id="toc-sample-categories" class="nav-link" data-scroll-target="#sample-categories">Sample Categories</a></li>
   </ul></li>
-  <li><a href="#v.-dealing-with-polysemy-challenges-in-classification" id="toc-v.-dealing-with-polysemy-challenges-in-classification" class="nav-link" data-scroll-target="#v.-dealing-with-polysemy-challenges-in-classification">V. Dealing with Polysemy: Challenges in Classification</a>
+  <li><a href="#v.-key-challenge-polysemy-multiple-meanings" id="toc-v.-key-challenge-polysemy-multiple-meanings" class="nav-link" data-scroll-target="#v.-key-challenge-polysemy-multiple-meanings">V. Key Challenge: Polysemy (Multiple Meanings)</a></li>
+  <li><a href="#vi.-applications-from-research-to-education" id="toc-vi.-applications-from-research-to-education" class="nav-link" data-scroll-target="#vi.-applications-from-research-to-education">VI. Applications: From Research to Education</a>
   <ul class="collapse">
-  <li><a href="#small-variation" id="toc-small-variation" class="nav-link" data-scroll-target="#small-variation">1. Small Variation</a></li>
-  <li><a href="#pattern-length" id="toc-pattern-length" class="nav-link" data-scroll-target="#pattern-length">2. Pattern Length</a></li>
-  <li><a href="#variation-around-a-stable-theme" id="toc-variation-around-a-stable-theme" class="nav-link" data-scroll-target="#variation-around-a-stable-theme">3. Variation Around a Stable Theme</a></li>
-  <li><a href="#assigning-salience" id="toc-assigning-salience" class="nav-link" data-scroll-target="#assigning-salience">4. Assigning Salience</a></li>
+  <li><a href="#research-uses" id="toc-research-uses" class="nav-link" data-scroll-target="#research-uses">Research Uses</a></li>
+  <li><a href="#educational-applications" id="toc-educational-applications" class="nav-link" data-scroll-target="#educational-applications">Educational Applications</a></li>
   </ul></li>
-  <li><a href="#vi.-applications-from-corpus-analysis-to-student-writing" id="toc-vi.-applications-from-corpus-analysis-to-student-writing" class="nav-link" data-scroll-target="#vi.-applications-from-corpus-analysis-to-student-writing">VI. Applications: From Corpus Analysis to Student Writing</a>
+  <li><a href="#vii.-the-bigger-picture" id="toc-vii.-the-bigger-picture" class="nav-link" data-scroll-target="#vii.-the-bigger-picture">VII. The Bigger Picture</a>
   <ul class="collapse">
-  <li><a href="#early-use" id="toc-early-use" class="nav-link" data-scroll-target="#early-use">Early Use</a></li>
-  <li><a href="#broader-applications" id="toc-broader-applications" class="nav-link" data-scroll-target="#broader-applications">Broader Applications</a></li>
-  <li><a href="#educational-shift" id="toc-educational-shift" class="nav-link" data-scroll-target="#educational-shift">Educational Shift</a></li>
-  </ul></li>
-  <li><a href="#vii.-recent-development-integrating-topic-structure" id="toc-vii.-recent-development-integrating-topic-structure" class="nav-link" data-scroll-target="#vii.-recent-development-integrating-topic-structure">VII. Recent Development: Integrating Topic Structure</a>
-  <ul class="collapse">
-  <li><a href="#challenge" id="toc-challenge" class="nav-link" data-scroll-target="#challenge">Challenge</a></li>
-  <li><a href="#solution-ontopic" id="toc-solution-ontopic" class="nav-link" data-scroll-target="#solution-ontopic">Solution: <strong>OnTopic</strong></a></li>
-  <li><a href="#integration-with-docuscope" id="toc-integration-with-docuscope" class="nav-link" data-scroll-target="#integration-with-docuscope">Integration with DocuScope</a></li>
-  <li><a href="#example-mlks-i-have-a-dream-speech" id="toc-example-mlks-i-have-a-dream-speech" class="nav-link" data-scroll-target="#example-mlks-i-have-a-dream-speech">Example: MLK’s “I Have a Dream” Speech</a></li>
-  </ul></li>
-  <li><a href="#viii.-conclusion-maturation-of-the-docuscope-project" id="toc-viii.-conclusion-maturation-of-the-docuscope-project" class="nav-link" data-scroll-target="#viii.-conclusion-maturation-of-the-docuscope-project">VIII. Conclusion: Maturation of the DocuScope Project</a>
-  <ul class="collapse">
-  <li><a href="#trajectory" id="toc-trajectory" class="nav-link" data-scroll-target="#trajectory">Trajectory</a></li>
-  <li><a href="#key-concepts" id="toc-key-concepts" class="nav-link" data-scroll-target="#key-concepts">Key Concepts</a></li>
-  <li><a href="#vision-of-maturity" id="toc-vision-of-maturity" class="nav-link" data-scroll-target="#vision-of-maturity">Vision of Maturity</a></li>
+  <li><a href="#core-innovation" id="toc-core-innovation" class="nav-link" data-scroll-target="#core-innovation">Core Innovation</a></li>
+  <li><a href="#educational-value" id="toc-educational-value" class="nav-link" data-scroll-target="#educational-value">Educational Value</a></li>
+  <li><a href="#ongoing-development" id="toc-ongoing-development" class="nav-link" data-scroll-target="#ongoing-development">Ongoing Development</a></li>
   </ul></li>
   </ul></li>
   <li><a href="#the-docuscope-project-history-theory-and-future-directions" id="toc-the-docuscope-project-history-theory-and-future-directions" class="nav-link" data-scroll-target="#the-docuscope-project-history-theory-and-future-directions">The DocuScope project: History, theory and future directions</a>
@@ -416,7 +418,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../about/kaufer-ishizaki.html">About the DocuScope Project</a></li><li class="breadcrumb-item"><a href="../about/kaufer-ishizaki.html">History and background</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../about/kaufer-ishizaki.html">The DocuScope Project</a></li><li class="breadcrumb-item"><a href="../about/kaufer-ishizaki.html">History and background</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">History and background</h1>
 </div>
@@ -464,263 +466,148 @@ Or in <strong>BibTex</strong> format:
 <h1>Overview of “The DocuScope Project”</h1>
 <p><em>By David Kaufer and Suguru Ishizaki</em></p>
 <hr>
-<section id="i.-origins-theoretical-gaps-in-rhetorical-tradition" class="level2">
-<h2 class="anchored" data-anchor-id="i.-origins-theoretical-gaps-in-rhetorical-tradition">I. Origins: Theoretical Gaps in Rhetorical Tradition</h2>
-<section id="problem-addressed" class="level3">
-<h3 class="anchored" data-anchor-id="problem-addressed">Problem Addressed</h3>
+<section id="i.-the-problem-bridging-thought-and-language" class="level2">
+<h2 class="anchored" data-anchor-id="i.-the-problem-bridging-thought-and-language">I. The Problem: Bridging Thought and Language</h2>
+<section id="traditional-challenge" class="level3">
+<h3 class="anchored" data-anchor-id="traditional-challenge">Traditional Challenge</h3>
 <ul>
-<li>Traditional rhetoric separates <strong>invention</strong> (what to say) from <strong>style</strong> (how to say it).</li>
-<li>This divide left unanswered: <em>How do thoughts become concrete language?</em></li>
+<li>Classical rhetoric separated <strong>invention</strong> (what to say) from <strong>style</strong> (how to say it)</li>
+<li>Question remained: <em>How do thoughts become concrete language?</em></li>
 </ul>
 </section>
-<section id="docuscopes-starting-point" class="level3">
-<h3 class="anchored" data-anchor-id="docuscopes-starting-point">DocuScope’s Starting Point</h3>
+<section id="docuscopes-solution" class="level3">
+<h3 class="anchored" data-anchor-id="docuscopes-solution">DocuScope’s Solution</h3>
 <ul>
-<li>Aimed to unify invention and style through identifying <strong>rhetorical language patterns</strong>.</li>
-<li>Initial study: Lincoln–Douglas debates, focusing on <strong>registers</strong> (e.g., personal vs.&nbsp;political speech styles).</li>
+<li>Identify <strong>rhetorical language patterns</strong> that unify invention and style</li>
+<li>Study how specific word sequences create rhetorical effects</li>
 </ul>
 <hr>
 </section>
 </section>
-<section id="ii.-composing-patterns-the-hidden-middle-layer" class="level2">
-<h2 class="anchored" data-anchor-id="ii.-composing-patterns-the-hidden-middle-layer">II. Composing Patterns: The Hidden Middle Layer</h2>
-<section id="concept-introduced" class="level3">
-<h3 class="anchored" data-anchor-id="concept-introduced">Concept Introduced</h3>
-<ul>
-<li>Between grammar and genre lies a <strong>middle layer</strong>: <em>composing patterns</em>—reusable phrasings that shape rhetorical impact.</li>
-</ul>
+<section id="ii.-the-hidden-middle-layer-composing-patterns" class="level2">
+<h2 class="anchored" data-anchor-id="ii.-the-hidden-middle-layer-composing-patterns">II. The Hidden Middle Layer: Composing Patterns</h2>
+<section id="key-insight" class="level3">
+<h3 class="anchored" data-anchor-id="key-insight">Key Insight</h3>
+<p>Between grammar and genre exists a crucial layer: <strong>composing patterns</strong>—reusable word sequences that create specific rhetorical effects.</p>
 </section>
 <section id="examples" class="level3">
 <h3 class="anchored" data-anchor-id="examples">Examples</h3>
 <ul>
-<li>“I often used to…” signals autobiographical style.</li>
-<li>Patterns influence:
-<ul>
-<li><strong>Tone</strong> (e.g., subjective vs.&nbsp;objective)</li>
-<li><strong>Intent</strong> (e.g., facilitative, descriptive)</li>
-<li><strong>Register</strong> (e.g., academic, personal)</li>
-</ul></li>
+<li>“I often used to…” → signals autobiographical narrative</li>
+<li>“no surprise that…” → expresses confident prediction</li>
+<li>“let freedom ring” → combines positive values with descriptive imagery</li>
 </ul>
 </section>
-<section id="insight" class="level3">
-<h3 class="anchored" data-anchor-id="insight">Insight</h3>
+<section id="impact" class="level3">
+<h3 class="anchored" data-anchor-id="impact">Impact</h3>
+<p>These patterns shape how readers experience text: - <strong>Tone</strong> (subjective vs.&nbsp;objective) - <strong>Purpose</strong> (descriptive, persuasive, facilitative) - <strong>Register</strong> (academic, personal, public)</p>
+<hr>
+</section>
+</section>
+<section id="iii.-docuscope-the-tool-and-dictionary" class="level2">
+<h2 class="anchored" data-anchor-id="iii.-docuscope-the-tool-and-dictionary">III. DocuScope: The Tool and Dictionary</h2>
+<section id="what-it-does" class="level3">
+<h3 class="anchored" data-anchor-id="what-it-does">What It Does</h3>
 <ul>
-<li>These patterns are not strictly grammatical but convey <strong>reader experience</strong> and <strong>rhetorical force</strong>.</li>
+<li>Software that automatically identifies rhetorical patterns in texts</li>
+<li>Dictionary contains millions of 3-5 word sequences classified by rhetorical function</li>
+<li>Provides interactive visualization of rhetorical choices</li>
+</ul>
+</section>
+<section id="building-process" class="level3">
+<h3 class="anchored" data-anchor-id="building-process">Building Process</h3>
+<ul>
+<li><strong>Human-curated</strong>: Scholars manually classify patterns based on rhetorical function</li>
+<li><strong>Corpus-driven</strong>: Patterns drawn from real texts across many genres</li>
+<li><strong>Continuously updated</strong>: Dictionary grows through ongoing research</li>
 </ul>
 <hr>
 </section>
 </section>
-<section id="iii.-docuscope-building-the-tool" class="level2">
-<h2 class="anchored" data-anchor-id="iii.-docuscope-building-the-tool">III. DocuScope: Building the Tool</h2>
-<section id="what-is-docuscope" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-docuscope">What is DocuScope?</h3>
-<ul>
-<li>A software environment and dictionary that classifies word sequences by rhetorical function.</li>
-</ul>
-</section>
-<section id="features" class="level3">
-<h3 class="anchored" data-anchor-id="features">Features</h3>
-<ul>
-<li>Interactive tagging &amp; visualization</li>
-<li>Dictionary includes 3–5 word sequences</li>
-<li>Human-curated with computational scalability</li>
-</ul>
-</section>
-<section id="curation-process" class="level3">
-<h3 class="anchored" data-anchor-id="curation-process">Curation Process</h3>
-<ul>
-<li><strong>Inductive</strong>: Built from real texts across genres</li>
-<li><strong>Ongoing</strong>: Regularly updated</li>
-<li>Designed to capture rhetorical <strong>impressions</strong> like:
-<ul>
-<li>Confidence</li>
-<li>Description</li>
-<li>Facilitation</li>
-<li>Narrative structure</li>
-</ul></li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="iv.-key-taxonomies-docuscopes-conceptual-framework" class="level2">
-<h2 class="anchored" data-anchor-id="iv.-key-taxonomies-docuscopes-conceptual-framework">IV. Key Taxonomies: DocuScope’s Conceptual Framework</h2>
-<section id="three-rhetorical-continua" class="level3">
-<h3 class="anchored" data-anchor-id="three-rhetorical-continua">Three Rhetorical Continua</h3>
+<section id="iv.-three-key-dimensions-of-rhetoric" class="level2">
+<h2 class="anchored" data-anchor-id="iv.-three-key-dimensions-of-rhetoric">IV. Three Key Dimensions of Rhetoric</h2>
+<p>DocuScope organizes language patterns along three continua:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 30%">
-<col style="width: 69%">
+<col style="width: 36%">
+<col style="width: 63%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Continuum</th>
-<th>Description</th>
+<th><strong>Interiority ↔︎ Externality</strong></th>
+<th>Inner thoughts and feelings vs.&nbsp;public, external world</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Interiority ↔︎ Externality</strong></td>
-<td>From inner mental states to public/social discourse</td>
+<td><strong>Stories ↔︎ Information</strong></td>
+<td>Narrative sequence vs.&nbsp;hierarchical explanation</td>
 </tr>
 <tr class="even">
-<td><strong>Stories ↔︎ Information</strong></td>
-<td>From narrative sequence to hierarchical explanation</td>
-</tr>
-<tr class="odd">
 <td><strong>Monologic ↔︎ Dialogic</strong></td>
-<td>From speaker-focused to audience-aware language</td>
+<td>Speaker-focused vs.&nbsp;audience-aware language</td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="sample-rhetorical-categories-crossing-continua" class="level3">
-<h3 class="anchored" data-anchor-id="sample-rhetorical-categories-crossing-continua">Sample Rhetorical Categories (Crossing Continua)</h3>
+<section id="sample-categories" class="level3">
+<h3 class="anchored" data-anchor-id="sample-categories">Sample Categories</h3>
 <ul>
-<li><strong>Narrative</strong> – Story-driven, may be interior, often dialogic</li>
-<li><strong>Academic</strong> – External, informational, often monologic</li>
-<li><strong>Facilitate</strong> – Dialogic, supportive, often interior</li>
-<li><strong>First Person</strong> – Subjective and narrative</li>
-<li><strong>Positive / Negative</strong> – Affect-based, shaping emotional tone</li>
+<li><strong>Academic</strong> – Specialized, formal discourse<br>
+</li>
+<li><strong>Narrative</strong> – Time-based storytelling</li>
+<li><strong>Confidence</strong> – Expressing certainty or uncertainty</li>
+<li><strong>Description</strong> – Sensory and visual language</li>
+<li><strong>First Person</strong> – Subjective, personal perspective</li>
+<li><strong>Positive/Negative</strong> – Emotional tone and affect</li>
 </ul>
 <hr>
 </section>
 </section>
-<section id="v.-dealing-with-polysemy-challenges-in-classification" class="level2">
-<h2 class="anchored" data-anchor-id="v.-dealing-with-polysemy-challenges-in-classification">V. Dealing with Polysemy: Challenges in Classification</h2>
-<p>DocuScope addresses <strong>polysemy</strong>—contextual shifts in meaning—by managing four main types:</p>
-<section id="small-variation" class="level3">
-<h3 class="anchored" data-anchor-id="small-variation">1. Small Variation</h3>
+<section id="v.-key-challenge-polysemy-multiple-meanings" class="level2">
+<h2 class="anchored" data-anchor-id="v.-key-challenge-polysemy-multiple-meanings">V. Key Challenge: Polysemy (Multiple Meanings)</h2>
+<p>Small changes in word patterns can dramatically shift meaning:</p>
 <ul>
-<li>Minor lexical changes can flip meaning.
+<li><strong>“swearing at”</strong> vs.&nbsp;<strong>“swearing to”</strong> (different actions entirely)</li>
+<li><strong>“they know what they’re doing”</strong> (confidence) vs.&nbsp;<strong>“they doubt they know what they’re doing”</strong> (uncertainty)</li>
+<li><strong>Length matters</strong>: Longer patterns often override shorter ones for more precise classification</li>
+</ul>
+<hr>
+</section>
+<section id="vi.-applications-from-research-to-education" class="level2">
+<h2 class="anchored" data-anchor-id="vi.-applications-from-research-to-education">VI. Applications: From Research to Education</h2>
+<section id="research-uses" class="level3">
+<h3 class="anchored" data-anchor-id="research-uses">Research Uses</h3>
 <ul>
-<li>e.g., “swearing <strong>at</strong>” vs.&nbsp;“swearing <strong>to</strong>”</li>
-</ul></li>
+<li>Analyze large text collections (corpora)</li>
+<li>Study literary works and historical documents</li>
+<li>Support policy analysis and genre studies</li>
 </ul>
 </section>
-<section id="pattern-length" class="level3">
-<h3 class="anchored" data-anchor-id="pattern-length">2. Pattern Length</h3>
+<section id="educational-applications" class="level3">
+<h3 class="anchored" data-anchor-id="educational-applications">Educational Applications</h3>
 <ul>
-<li>Length impacts meaning.
-<ul>
-<li>e.g., “they know what they are doing” = <strong>confidence</strong><br>
-“they <strong>doubt</strong> they know what they are doing” = <strong>uncertainty</strong></li>
-</ul></li>
-</ul>
-</section>
-<section id="variation-around-a-stable-theme" class="level3">
-<h3 class="anchored" data-anchor-id="variation-around-a-stable-theme">3. Variation Around a Stable Theme</h3>
-<ul>
-<li>Multiple expressions of the same idea (e.g., “surprised face”, “edge of your seat”).</li>
-<li>Reflects <strong>stylistic copiousness</strong> from classical rhetoric.</li>
-</ul>
-</section>
-<section id="assigning-salience" class="level3">
-<h3 class="anchored" data-anchor-id="assigning-salience">4. Assigning Salience</h3>
-<ul>
-<li>Choosing the <em>focal word</em> in a phrase.
-<ul>
-<li>e.g., “collapsed wall” — is it about <em>collapse</em> or the <em>wall</em>?</li>
-</ul></li>
+<li><strong>DocuScope Write &amp; Audit</strong>: Helps students analyze their own writing</li>
+<li>Provides feedback on rhetorical choices</li>
+<li>Shows how language patterns create reader experiences</li>
 </ul>
 <hr>
 </section>
 </section>
-<section id="vi.-applications-from-corpus-analysis-to-student-writing" class="level2">
-<h2 class="anchored" data-anchor-id="vi.-applications-from-corpus-analysis-to-student-writing">VI. Applications: From Corpus Analysis to Student Writing</h2>
-<section id="early-use" class="level3">
-<h3 class="anchored" data-anchor-id="early-use">Early Use</h3>
-<ul>
-<li>Classified genres in corpora like the Brown Corpus.</li>
-</ul>
+<section id="vii.-the-bigger-picture" class="level2">
+<h2 class="anchored" data-anchor-id="vii.-the-bigger-picture">VII. The Bigger Picture</h2>
+<section id="core-innovation" class="level3">
+<h3 class="anchored" data-anchor-id="core-innovation">Core Innovation</h3>
+<p>DocuScope reveals the <strong>hidden rhetorical choices</strong> writers make, providing a practical bridge between thought and expression.</p>
 </section>
-<section id="broader-applications" class="level3">
-<h3 class="anchored" data-anchor-id="broader-applications">Broader Applications</h3>
-<ul>
-<li>Used by:
-<ul>
-<li>Literary researchers (e.g., Shakespeare studies)</li>
-<li>Policy analysts (RAND)</li>
-<li>Educational researchers (ETS)</li>
-</ul></li>
-</ul>
+<section id="educational-value" class="level3">
+<h3 class="anchored" data-anchor-id="educational-value">Educational Value</h3>
+<p>Students can see how their language choices shape reader experience, making revision more strategic and effective.</p>
 </section>
-<section id="educational-shift" class="level3">
-<h3 class="anchored" data-anchor-id="educational-shift">Educational Shift</h3>
-<ul>
-<li>Led to tools for <strong>single-text analysis</strong>, including:
-<ul>
-<li><strong>DocuScope Write &amp; Audit</strong></li>
-<li>Supports student writing and instructor feedback</li>
-</ul></li>
-</ul>
+<section id="ongoing-development" class="level3">
+<h3 class="anchored" data-anchor-id="ongoing-development">Ongoing Development</h3>
+<p>The project continues evolving as a shared resource for understanding how language creates rhetorical impact across different genres and contexts.</p>
 <hr>
-</section>
-</section>
-<section id="vii.-recent-development-integrating-topic-structure" class="level2">
-<h2 class="anchored" data-anchor-id="vii.-recent-development-integrating-topic-structure">VII. Recent Development: Integrating Topic Structure</h2>
-<section id="challenge" class="level3">
-<h3 class="anchored" data-anchor-id="challenge">Challenge</h3>
-<ul>
-<li>Traditional methods poorly suited for analyzing single texts (e.g., student papers).</li>
-</ul>
-</section>
-<section id="solution-ontopic" class="level3">
-<h3 class="anchored" data-anchor-id="solution-ontopic">Solution: <strong>OnTopic</strong></h3>
-<ul>
-<li>A visualization tool that tracks how <strong>topics evolve</strong> across sentences and paragraphs.</li>
-<li>Inspired by Functional Sentence Perspective (FSP) and Systemic Functional Linguistics (SFL).</li>
-</ul>
-</section>
-<section id="integration-with-docuscope" class="level3">
-<h3 class="anchored" data-anchor-id="integration-with-docuscope">Integration with DocuScope</h3>
-<ul>
-<li>Helps users:
-<ul>
-<li>Focus on <strong>local rhetorical effects</strong></li>
-<li>See how DocuScope patterns align with <strong>key topics</strong></li>
-</ul></li>
-</ul>
-</section>
-<section id="example-mlks-i-have-a-dream-speech" class="level3">
-<h3 class="anchored" data-anchor-id="example-mlks-i-have-a-dream-speech">Example: MLK’s “I Have a Dream” Speech</h3>
-<ul>
-<li>Topic: “freedom”</li>
-<li>Patterns: “positive” and “description”</li>
-<li>Observation: Spike in paragraph 14 (8x repetition of “let freedom ring”)</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="viii.-conclusion-maturation-of-the-docuscope-project" class="level2">
-<h2 class="anchored" data-anchor-id="viii.-conclusion-maturation-of-the-docuscope-project">VIII. Conclusion: Maturation of the DocuScope Project</h2>
-<section id="trajectory" class="level3">
-<h3 class="anchored" data-anchor-id="trajectory">Trajectory</h3>
-<ul>
-<li>From educational prototype → research platform → integrated educational/research tool</li>
-</ul>
-</section>
-<section id="key-concepts" class="level3">
-<h3 class="anchored" data-anchor-id="key-concepts">Key Concepts</h3>
-<ul>
-<li><strong>Collisions</strong> (overlapping classifications):
-<ul>
-<li>Once seen as errors</li>
-<li>Now seen as opportunities for <strong>refinement and innovation</strong></li>
-</ul></li>
-</ul>
-</section>
-<section id="vision-of-maturity" class="level3">
-<h3 class="anchored" data-anchor-id="vision-of-maturity">Vision of Maturity</h3>
-<ul>
-<li>DocuScope aims to be a <strong>shared public resource</strong> for:
-<ul>
-<li>Rhetorical/textual analysis</li>
-<li>Writing pedagogy</li>
-<li>Ongoing research in rhetorical production</li>
-</ul></li>
-</ul>
-<hr>
-<p><em>DocuScope makes visible the rhetorical decisions writers make, offering a practical, scalable link between thought and expression.</em></p>
+<p><em>DocuScope makes visible the invisible: how writers use language patterns to guide reader experience and achieve rhetorical goals.</em></p>
 <hr>
 </section>
 </section>
