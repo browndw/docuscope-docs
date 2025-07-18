@@ -1,3 +1,83 @@
-# MICSUP {.unnumbered}
+# MICUSP {.unnumbered}
 
-{{< iconify material-symbols:construction >}} Under construction.
+## About the Michigan Corpus of Upper-Level Student Papers
+
+The **Michigan Corpus of Upper-level Student Papers (MICUSP)** is a specialized collection of effective student writing from the University of Michigan. This corpus provides a window into how advanced undergraduate and graduate students write across different academic disciplines.
+
+### What's in MICUSP?
+
+MICUSP contains **828 student papers** representing:
+
+- **Writing from 16 different disciplines** including Biology, Economics, English, History, Philosophy, Psychology, and more
+- **Papers from students at different levels**: upper-level undergraduates (juniors and seniors) and graduate students
+- **Multiple paper types**: research papers, reports, argumentative essays, case studies, and proposals
+- **High-quality writing**: All papers received grades of A- or better from instructors
+
+### Why Use MICUSP?
+
+This corpus is particularly valuable for students because it shows:
+
+- **Real examples** of successful academic writing at the college level
+- **Disciplinary differences** in how students write across fields like science, humanities, and social sciences  
+- **Genre variations** - how different types of assignments (reports vs. essays) use language differently
+- **Advanced academic language** patterns that can inform your own writing development
+
+### Available Versions in DocuScope
+
+MICUSP is available in several formats to suit different research needs:
+
+| **Corpus Version** | **Size** | **Best For** |
+|-------------------|----------|--------------|
+| **MICUSP Mini** | Sample subset | Quick exploration and learning the tools |
+| **Full MICUSP** | Complete corpus | Comprehensive analysis across disciplines |
+| **MICUSP by Paper Type** | Organized by genres | Comparing different types of academic writing |
+| **MICUSP by Level** | Separated by student level | Comparing undergraduate vs. graduate writing |
+
+### Research Questions You Can Explore
+
+MICUSP is perfect for investigating questions like:
+
+- **Disciplinary Writing**: How do Biology papers differ from English papers in their language use?
+- **Genre Analysis**: What makes a research paper different from a report or proposal?
+- **Academic Sophistication**: How do graduate students write differently from undergraduates?
+- **Rhetorical Patterns**: Which disciplines use more hedging language ("might be", "could suggest")?
+- **Citation Practices**: How do different fields incorporate sources and evidence?
+
+### Getting Started with MICUSP
+
+1. **Start Small**: Begin with the MICUSP Mini version to familiarize yourself with the corpus
+2. **Focus Your Question**: Choose a specific discipline or paper type that interests you
+3. **Compare Strategically**: Use the organized versions to make meaningful comparisons
+4. **Consider Context**: Remember these are all successful papers - they represent strong student writing
+
+## Citations and Further Reading
+
+### Primary Citation
+For the MICUSP corpus itself:
+
+::: {.callout-note appearance="simple" icon=false}
+**APA Format:**
+Ädel, A., & Römer, U. (2012). Research on advanced student writing across disciplines and levels: Introducing the Michigan Corpus of Upper-level Student Papers. *International Journal of Corpus Linguistics*, *17*(1), 3-34. https://doi.org/10.1075/ijcl.17.1.01ade
+:::
+
+### Key Research Using MICUSP
+
+**Disciplinary Variation:**
+Hardy, J. A., & Römer, U. (2013). Revealing disciplinary variation in student writing: A multi-dimensional analysis of the Michigan Corpus of Upper-level Student Papers (MICUSP). *Corpora*, *8*(2), 183-207. https://doi.org/10.3366/cor.2013.0044
+
+**Genre Analysis:**
+Hardy, J. A., & Friginal, E. (2016). Genre variation in student writing: A multi-dimensional analysis. *Journal of English for Academic Purposes*, *22*, 119-131. https://doi.org/10.1016/j.jeap.2016.05.001
+
+### For Course Citations
+
+If you use MICUSP data in your coursework, cite both the corpus and any specific research that informed your analysis:
+
+::: {.callout-tip}
+**Example:** "Using the Michigan Corpus of Upper-level Student Papers (Äder & Römer, 2012), this analysis examines..."
+:::
+
+---
+
+*Ready to explore? Head to the [Load Corpus](../guide/load-corpus.qmd) guide to get started with MICUSP data analysis.*
+
+
