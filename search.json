@@ -1312,7 +1312,40 @@
     "href": "datasets/hape.html",
     "title": "HAP-E",
     "section": "",
-    "text": "Under construction.",
+    "text": "About the Human-AI Parallel English Corpus\nThe Human-AI Parallel English (HAP-E) Corpus is a cutting-edge dataset that provides a unique opportunity to compare human and AI writing side-by-side. Created by Reinhart et al. (2025), this corpus offers parallel texts where humans and multiple AI models respond to the same writing prompts, making it perfect for exploring the similarities and differences between human and artificial intelligence writing.",
+    "crumbs": [
+      "Datasets",
+      "HAP-E"
+    ]
+  },
+  {
+    "objectID": "datasets/hape.html#about-the-human-ai-parallel-english-corpus",
+    "href": "datasets/hape.html#about-the-human-ai-parallel-english-corpus",
+    "title": "HAP-E",
+    "section": "",
+    "text": "What Makes HAP-E Special?\nHAP-E is the first corpus designed specifically to enable direct comparisons between human and AI writing:\n\nParallel Structure: Each text appears in 7 versions - one human-written and six AI-generated versions from the same prompt\nMultiple AI Models: Includes text from GPT-4o, GPT-4o Mini, and four variants of Meta Llama 3\nDiverse Text Types: Covers 6 major text categories - Academic articles, News, Fiction, Spoken (podcasts), Blogs, and TV/Movie scripts\nControlled Conditions: All texts respond to identical 500-word prompts, ensuring fair comparisons\n\n\n\nWhat’s in HAP-E?\nThe HAP-E corpus contains approximately 8,290 parallel text sets representing:\n\nAcademic Writing: Open-access articles from Elsevier journals\nNews Articles: Contemporary journalism from U.S. news organizations\n\nFiction: Novels and short stories from Project Gutenberg\nSpoken Language: Podcast transcriptions\nBlog Posts: Posts from blogger.com\nScripts: Television and movie scripts\n\nEach human text is matched with AI continuations from: - GPT-4o and GPT-4o Mini (OpenAI) - Llama 3 8B and Llama 3 70B (base models) - Llama 3 8B Instruct and Llama 3 70B Instruct (instruction-tuned models)\n\n\nAvailable Version in DocuScope\n\n\n\n\n\n\n\n\nCorpus Version\nDescription\nBest For\n\n\n\n\nHAP-E Mini\nDown-sampled balanced version\nExploring human vs. AI writing patterns without overwhelming data\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nAbout the Mini Version: The HAP-E Mini available in DocuScope is a carefully curated subset of the full corpus, designed to be manageable for classroom use while maintaining representative examples across all text types and AI models.\n\n\n\n\nWhy Use HAP-E?\nHAP-E offers unique research opportunities that weren’t possible before:\n\nAI Detection Research: Learn to identify features that distinguish AI from human writing\nWriting Style Analysis: Compare how different AI models approach the same writing task\nCross-Genre AI Performance: See how AI writing varies across academic, creative, and journalistic contexts\nContemporary Writing Studies: Analyze the newest forms of text generation in our digital age\nCritical AI Literacy: Develop skills to evaluate and understand AI-generated content\n\n\n\nResearch Questions You Can Explore\nHAP-E enables investigations into questions at the forefront of digital writing studies:\n\nLinguistic Fingerprints: What grammatical patterns reveal AI authorship?\nModel Differences: How does GPT-4o writing differ from Llama 3 writing?\nGenre Adaptation: Do AI models struggle more with creative writing than academic writing?\nInstruction Tuning Effects: How does training AI to follow instructions change its writing style?\nHuman vs. Machine Patterns: What makes human writing distinctively “human”?\n\n\n\nKey Research Findings\nThe original HAP-E study revealed fascinating patterns:\n\nAI models use 2-5 times more present participial clauses than humans (“Running quickly, she…”)\nInstruction-tuned models are easier to detect than base models\nAI models favor specific vocabulary (words like “camaraderie,” “tapestry,” “intricate”)\nDifferent AI models have distinctive “house styles” that can be identified\n\n\n\nGetting Started with HAP-E\n\nStart with Mini: The HAP-E Mini provides manageable data for initial exploration\nChoose Your Focus: Decide whether you want to compare human vs. AI or different AI models\nPick a Genre: Start with one text type (like academic or news) before comparing across genres\nConsider Research Ethics: Remember that understanding AI writing helps us use these tools more responsibly",
+    "crumbs": [
+      "Datasets",
+      "HAP-E"
+    ]
+  },
+  {
+    "objectID": "datasets/hape.html#learn-more-about-hap-e",
+    "href": "datasets/hape.html#learn-more-about-hap-e",
+    "title": "HAP-E",
+    "section": "Learn More About HAP-E",
+    "text": "Learn More About HAP-E\n\nFull Corpus Access\n\nComplete HAP-E Corpus: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus\nHAP-E Mini Version: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus-mini\n\n\n\nResearch Paper\nRead the full study: Do LLMs write like humans? Variation in grammatical and rhetorical styles",
+    "crumbs": [
+      "Datasets",
+      "HAP-E"
+    ]
+  },
+  {
+    "objectID": "datasets/hape.html#citations-and-further-reading",
+    "href": "datasets/hape.html#citations-and-further-reading",
+    "title": "HAP-E",
+    "section": "Citations and Further Reading",
+    "text": "Citations and Further Reading\n\nPrimary Citation\nFor the HAP-E corpus and research findings:\n\n\n\n\n\n\nAPA Format: Reinhart, A., Markey, B., Laudenbach, M., Pantusen, K., Yurko, R., Weinberg, G., & Brown, D. W. (2025). Do LLMs write like humans? Variation in grammatical and rhetorical styles. Proceedings of the National Academy of Sciences, 122(8), e2422455122. https://doi.org/10.1073/pnas.2422455122\n\n\n\n\n\nFor Course Citations\nWhen using HAP-E data in your coursework, cite the corpus research:\n\n\n\n\n\n\nTip\n\n\n\nExample: “Using the Human-AI Parallel English Corpus (Reinhart et al., 2025), this analysis compares…”\n\n\n\n\nEducational Context\nHAP-E is particularly valuable for courses in: - Digital Writing Studies - Computational Linguistics - AI Ethics and Literacy - Contemporary Rhetoric - Data Science and Text Analysis\n\nReady to explore the frontier of human-AI writing comparison? Head to the Load Corpus guide to get started with HAP-E analysis.",
     "crumbs": [
       "Datasets",
       "HAP-E"
