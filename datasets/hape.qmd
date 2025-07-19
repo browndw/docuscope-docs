@@ -1,3 +1,116 @@
 # HAP-E {.unnumbered}
 
-{{< iconify material-symbols:construction >}} Under construction.
+## About the Human-AI Parallel English Corpus
+
+The **Human-AI Parallel English (HAP-E) Corpus** is a cutting-edge dataset that provides a unique opportunity to compare human and AI writing side-by-side. Created by Reinhart et al. (2025), this corpus offers parallel texts where humans and multiple AI models respond to the same writing prompts, making it perfect for exploring the similarities and differences between human and artificial intelligence writing.
+
+### What Makes HAP-E Special?
+
+HAP-E is the first corpus designed specifically to enable **direct comparisons** between human and AI writing:
+
+- **Parallel Structure**: Each text appears in 7 versions - one human-written and six AI-generated versions from the same prompt
+- **Multiple AI Models**: Includes text from GPT-4o, GPT-4o Mini, and four variants of Meta Llama 3
+- **Diverse Text Types**: Covers 6 major text categories - Academic articles, News, Fiction, Spoken (podcasts), Blogs, and TV/Movie scripts
+- **Controlled Conditions**: All texts respond to identical 500-word prompts, ensuring fair comparisons
+
+### What's in HAP-E?
+
+The HAP-E corpus contains approximately **8,290 parallel text sets** representing:
+
+- **Academic Writing**: Open-access articles from Elsevier journals
+- **News Articles**: Contemporary journalism from U.S. news organizations  
+- **Fiction**: Novels and short stories from Project Gutenberg
+- **Spoken Language**: Podcast transcriptions
+- **Blog Posts**: Posts from blogger.com
+- **Scripts**: Television and movie scripts
+
+Each human text is matched with AI continuations from:
+- **GPT-4o** and **GPT-4o Mini** (OpenAI)
+- **Llama 3 8B** and **Llama 3 70B** (base models)
+- **Llama 3 8B Instruct** and **Llama 3 70B Instruct** (instruction-tuned models)
+
+### Available Version in DocuScope
+
+| **Corpus Version** | **Description** | **Best For** |
+|-------------------|-----------------|--------------|
+| **HAP-E Mini** | Down-sampled balanced version | Exploring human vs. AI writing patterns without overwhelming data |
+
+::: {.callout-note}
+**About the Mini Version:** The HAP-E Mini available in DocuScope is a carefully curated subset of the full corpus, designed to be manageable for classroom use while maintaining representative examples across all text types and AI models.
+:::
+
+### Why Use HAP-E?
+
+HAP-E offers unique research opportunities that weren't possible before:
+
+- **AI Detection Research**: Learn to identify features that distinguish AI from human writing
+- **Writing Style Analysis**: Compare how different AI models approach the same writing task
+- **Cross-Genre AI Performance**: See how AI writing varies across academic, creative, and journalistic contexts
+- **Contemporary Writing Studies**: Analyze the newest forms of text generation in our digital age
+- **Critical AI Literacy**: Develop skills to evaluate and understand AI-generated content
+
+### Research Questions You Can Explore
+
+HAP-E enables investigations into questions at the forefront of digital writing studies:
+
+- **Linguistic Fingerprints**: What grammatical patterns reveal AI authorship?
+- **Model Differences**: How does GPT-4o writing differ from Llama 3 writing?
+- **Genre Adaptation**: Do AI models struggle more with creative writing than academic writing?
+- **Instruction Tuning Effects**: How does training AI to follow instructions change its writing style?
+- **Human vs. Machine Patterns**: What makes human writing distinctively "human"?
+
+### Key Research Findings
+
+The original HAP-E study revealed fascinating patterns:
+
+- **AI models use 2-5 times more present participial clauses** than humans ("Running quickly, she...")
+- **Instruction-tuned models are easier to detect** than base models
+- **AI models favor specific vocabulary** (words like "camaraderie," "tapestry," "intricate")
+- **Different AI models have distinctive "house styles"** that can be identified
+
+### Getting Started with HAP-E
+
+1. **Start with Mini**: The HAP-E Mini provides manageable data for initial exploration
+2. **Choose Your Focus**: Decide whether you want to compare human vs. AI or different AI models
+3. **Pick a Genre**: Start with one text type (like academic or news) before comparing across genres
+4. **Consider Research Ethics**: Remember that understanding AI writing helps us use these tools more responsibly
+
+## Learn More About HAP-E
+
+### Full Corpus Access
+- **Complete HAP-E Corpus**: [https://huggingface.co/datasets/browndw/human-ai-parallel-corpus](https://huggingface.co/datasets/browndw/human-ai-parallel-corpus){target="_blank"}
+- **HAP-E Mini Version**: [https://huggingface.co/datasets/browndw/human-ai-parallel-corpus-mini](https://huggingface.co/datasets/browndw/human-ai-parallel-corpus-mini){target="_blank"}
+
+### Research Paper
+Read the full study: [Do LLMs write like humans? Variation in grammatical and rhetorical styles](https://arxiv.org/html/2410.16107v1){target="_blank"}
+
+## Citations and Further Reading
+
+### Primary Citation
+For the HAP-E corpus and research findings:
+
+::: {.callout-note appearance="simple" icon=false}
+**APA Format:**
+Reinhart, A., Markey, B., Laudenbach, M., Pantusen, K., Yurko, R., Weinberg, G., & Brown, D. W. (2025). Do LLMs write like humans? Variation in grammatical and rhetorical styles. *Proceedings of the National Academy of Sciences*, *122*(8), e2422455122. https://doi.org/10.1073/pnas.2422455122
+:::
+
+### For Course Citations
+
+When using HAP-E data in your coursework, cite the corpus research:
+
+::: {.callout-tip}
+**Example:** "Using the Human-AI Parallel English Corpus (Reinhart et al., 2025), this analysis compares..."
+:::
+
+### Educational Context
+
+HAP-E is particularly valuable for courses in:
+- **Digital Writing Studies**
+- **Computational Linguistics** 
+- **AI Ethics and Literacy**
+- **Contemporary Rhetoric**
+- **Data Science and Text Analysis**
+
+---
+
+*Ready to explore the frontier of human-AI writing comparison? Head to the [Load Corpus](../guide/load-corpus.qmd) guide to get started with HAP-E analysis.*
