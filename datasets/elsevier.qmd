@@ -1,10 +1,78 @@
 # Elsevier {.unnumbered}
 
-{{< iconify material-symbols:construction >}} Under construction.
+## About the Elsevier Academic Articles Corpus
 
-For convenience, DocuScope CAC come with some pre-processed data. One of those was compiled specifically for the tool. It contains published academic articles, which were harvested from Elesevier open access. The entire dataset includes more than 40,000 articles. The data processed and saved for the tool have 20 randomly sampled articles from 20 disciplines.
+The **Elsevier Corpus** provides access to published academic research across a wide range of scientific disciplines. This corpus is built from Elsevier's open-access articles, offering students the opportunity to analyze real published research writing from leading international journals.
+
+### What's in the Elsevier Corpus?
+
+The Elsevier corpus is drawn from a larger collection of **over 40,000 open-access articles**. For DocuScope analysis, this has been carefully curated to include **20 randomly sampled articles from each of 20 academic disciplines**, creating a balanced representation of contemporary scientific writing.
+
+The corpus covers major academic fields including:
+
+- **Arts and Humanities** - History and philosophy of science, science studies
+- **Biochemistry, Genetics and Molecular Biology** - Cell biology, genetics, biochemistry
+- **Business, Management and Accounting** - Business research, management studies, tourism
+- **Chemical Engineering** - Process engineering, materials science, catalysis
+- **Chemistry** - Analytical chemistry, electrochemistry, materials chemistry  
+- **Computer Science** - Software engineering, pattern recognition, networks
+- **Decision Sciences** - Transportation research, health informatics, data analysis
+- **Economics, Econometrics and Finance** - Economic modeling, financial analysis, policy studies
+- **Engineering** - Energy systems, refrigeration, mechanical engineering
+- **Environmental Science** - Climate science, pollution control, sustainability
+- **Materials Science** - Nanomaterials, polymers, surface science
+- **Mathematics** - Applied mathematics, computational methods, statistics
+- **Medicine** - Clinical research, medical devices, health interventions
+- **Neuroscience** - Brain research, cognitive science, neurological studies
+- **Physics and Astronomy** - Applied physics, materials physics, energy research
+- **Psychology** - Cognitive psychology, behavioral research, clinical psychology
+- **Social Sciences** - Geography, political science, education, social policy
+
+### Why Use the Elsevier Corpus?
+
+The Elsevier corpus offers unique advantages for studying academic writing:
+
+- **Published Research Quality** - All texts are peer-reviewed, published articles representing high academic standards
+- **Contemporary Writing** - Articles span 2014-2020, showing current academic writing conventions
+- **Disciplinary Breadth** - Balanced sampling across 20 fields enables cross-disciplinary comparisons
+- **International Scope** - Research from institutions worldwide, reflecting global academic discourse
+- **Genre Consistency** - All texts are research articles, allowing focus on disciplinary rather than genre differences
+
+### Available Version in DocuScope
+
+| **Corpus Version** | **Description** | **Best For** |
+|-------------------|-----------------|--------------|
+| **Elsevier** | 400 articles (20 per discipline) | Comparing academic writing across disciplines |
+
+### Research Questions You Can Explore
+
+The Elsevier corpus is ideal for investigating:
+
+- **Disciplinary Writing Conventions**: How do STEM fields differ from humanities in their language use?
+- **Cross-Field Analysis**: What linguistic features distinguish business writing from chemistry writing?
+- **Academic Register Studies**: How does published research writing compare to student writing?
+- **Citation and Hedging Patterns**: Which fields use more cautious language ("may suggest") vs. confident claims?
+- **Technical Vocabulary**: How does specialized terminology vary across disciplines?
+- **Research Reporting**: How do different fields present methodology, results, and conclusions?
+
+### Understanding Academic Disciplines
+
+The corpus uses **20 major discipline categories** that group related fields:
+
+::: {.callout-tip}
+**Research Strategy**: Start by comparing broad categories (like STEM vs. Social Sciences vs. Humanities) before focusing on specific discipline pairs that interest you.
+:::
+
+### Getting Started with the Elsevier Corpus
+
+1. **Choose Your Focus**: Decide whether to compare broad disciplinary families or specific fields
+2. **Consider Your Background**: Start with disciplines you're familiar with to understand the patterns
+3. **Use Comparative Analysis**: The balanced sampling makes cross-disciplinary comparison particularly effective
+4. **Think About Applications**: Consider how academic writing conventions might inform your own research writing
 
 ### Corpus Metadata
+
+The table below shows all 400 articles included in the corpus, with complete bibliographic information. Each article can be accessed through its DOI for additional context about the research.
 
 |doc_id           |doi                               |pub_year|subj_short|subj_name                                   |title                                                                                                                                                                                                                           |
 |-----------------|----------------------------------|--------|---------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -341,6 +409,50 @@ For convenience, DocuScope CAC come with some pre-processed data. One of those w
 |S0020748919300367|10.1016/j.ijnurstu.2019.02.005    |2019    |NURS     |Nursing                                     |Cognitive impairment is independently associated with mortality, extended hospital stays and early readmission of older people with emergency hospital admissions: A retrospective cohort study                                 |
 |S002074891600064X|10.1016/j.ijnurstu.2016.02.001    |2016    |NURS     |Nursing                                     |The effect of nurses' preparedness and nurse practitioner status on triage call management in primary care: A secondary analysis of cross-sectional data from the ESTEEM trial                                                  |
 |S1462388919300183|10.1016/j.ejon.2019.02.003        |2019    |NURS     |Nursing                                     |Haematology nurses' perspectives of their patients' places of care and death: A UK qualitative interview study                                                                                                                  |
+
+---
+
+## Understanding the Data
+
+### Article Selection Process
+- **Source**: Elsevier open-access journals (from a collection of 40,000+ articles)
+- **Sampling Method**: 20 randomly selected articles from each of 20 discipline categories
+- **Time Frame**: Publications spanning 2014-2020
+- **Quality Control**: All articles are peer-reviewed research publications
+
+### Using DOIs for Additional Context
+Each article in the table includes its Digital Object Identifier (DOI), which allows you to:
+- Access the full published article for additional context
+- Understand the research methodology and findings
+- See how your linguistic analysis relates to the content and purpose of each study
+
+## Citations and Usage
+
+### For Course Citations
+When using the Elsevier corpus in your coursework:
+
+::: {.callout-tip}
+**Example:** "Using a corpus of 400 academic articles from Elsevier open-access journals spanning 20 disciplines (2014-2020), this analysis examines..."
+:::
+
+### Data Attribution
+This corpus was assembled from Elsevier's open-access article collection. When referencing specific articles, cite them using their DOI and standard academic citation format.
+
+### Research Ethics
+Remember that these are published research articles representing the work of real researchers. When analyzing patterns, focus on linguistic features rather than critiquing individual studies or researchers.
+
+## Educational Applications
+
+The Elsevier corpus is particularly valuable for courses in:
+- **Academic Writing** - Understanding disciplinary writing conventions
+- **Rhetoric and Composition** - Analyzing professional academic discourse
+- **Corpus Linguistics** - Studying register and genre variation
+- **Writing Across the Curriculum** - Comparing disciplinary communication styles
+- **Research Methods** - Understanding how different fields report research
+
+---
+
+*Ready to explore academic writing across disciplines? Head to the [Load Corpus](../guide/load-corpus.qmd) guide to get started with Elsevier corpus analysis.*
 |S2214139115000177|10.1016/j.ijans.2015.07.003       |2015    |NURS     |Nursing                                     |Assessing nurses' knowledge levels in the nutritional management of diabetes                                                                                                                                                    |
 |S2214139116300282|10.1016/j.ijans.2016.09.002       |2016    |NURS     |Nursing                                     |Healthcare-seeking behaviour and management of type 2 diabetes: From Ugandan traditional healers’ perspective                                                                                                                   |
 |S0020748917300299|10.1016/j.ijnurstu.2017.02.001    |2017    |NURS     |Nursing                                     |Interventions and working relationships of voluntary organisations for diabetes self-management: A cross-national study                                                                                                         |
