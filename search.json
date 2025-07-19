@@ -4,7 +4,67 @@
     "href": "index.html",
     "title": "DocuScope",
     "section": "",
-    "text": "© David West Brown, David Kaufer, Suguru Ishizaki\n\nGetting Started\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "Getting Started\n© David West Brown, David Kaufer, Suguru Ishizaki\nDocuScope Corpus Analysis & Concordancer (DocuScope CA) is a powerful web-based tool that combines traditional corpus analysis with cutting-edge natural language processing to make sophisticated textual analysis accessible to students, researchers, and educators.",
+    "crumbs": [
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "index.html#what-is-docuscope-ca",
+    "href": "index.html#what-is-docuscope-ca",
+    "title": "DocuScope",
+    "section": "What is DocuScope CA?",
+    "text": "What is DocuScope CA?\nDocuScope CA is a Streamlit-powered application that integrates three key technologies:\n\nspaCy NLP processing with custom-trained models for both part-of-speech and rhetorical tagging\nDocuScope rhetorical analysis framework for understanding how language functions in context\nOpenAI integration for AI-assisted analysis and visualization\n\nThe tool enables users to analyze small to medium-sized corpora (collections of texts) to understand patterns in language use, discover rhetorical strategies, and explore linguistic variation across different types of writing.",
+    "crumbs": [
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "index.html#how-docuscope-ca-compares-to-other-tools",
+    "href": "index.html#how-docuscope-ca-compares-to-other-tools",
+    "title": "DocuScope",
+    "section": "How DocuScope CA Compares to Other Tools",
+    "text": "How DocuScope CA Compares to Other Tools\n\nSimilar to Traditional Concordancers\nLike popular tools such as AntConc, DocuScope CA provides:\n\nWord frequency analysis and statistical summaries\nKWIC (Keywords in Context) displays for examining word usage patterns\nN-gram analysis to identify common phrases and collocations\nCorpus comparison capabilities for contrasting different text collections\nDownloadable results for further analysis or reporting\n\n\n\nWhat Makes DocuScope CA Different\nDocuScope CA goes beyond traditional concordancing by offering:\n\nIntegrated Rhetorical Analysis\n\nDocuScope tagging that identifies rhetorical functions (confidence, stance, organization, etc.)\nDual annotation system providing both grammatical (POS) and rhetorical tags simultaneously\nFunctional language analysis that reveals how language works rather than just what words appear\n\n\n\nAI-Powered Assistance\n\nAssisted plotting with OpenAI helping generate and refine visualizations\nIntelligent analysis suggestions based on corpus patterns\nNatural language queries for exploring data\n\n\n\nEducational Focus\n\nPre-loaded corpora including MICUSP, BAWE, Elsevier, and HAP-E datasets\nGuided workflows designed for classroom and research use\nMultiple analysis levels from basic frequency counts to advanced rhetorical patterns\n\n\n\nModern Web Interface\n\nNo software installation required - runs entirely in your web browser\nInteractive visualizations with Plotly integration\nSession management that preserves your work across analysis sessions\nReal-time processing with immediate results",
+    "crumbs": [
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "index.html#key-analysis-capabilities",
+    "href": "index.html#key-analysis-capabilities",
+    "title": "DocuScope",
+    "section": "Key Analysis Capabilities",
+    "text": "Key Analysis Capabilities\nDocuScope CA offers 14 main analysis modules organized into intuitive workflows:\n\nCore Analysis Tools\n\nToken Frequencies - Word and phrase frequency analysis with filtering options\nTag Frequencies - Analysis of grammatical and rhetorical tag distributions\nN-grams - Identification of common word sequences and phrases\nCollocations - Statistical analysis of word associations and co-occurrences\nKWIC (Keywords in Context) - Detailed examination of word usage in context\n\n\n\nComparative Analysis\n\nCompare Corpora - Statistical comparison between different text collections\nCompare Corpus Parts - Analysis of variation within a single corpus\n\n\n\nAdvanced Features\n\nAdvanced Plotting - Create custom visualizations and statistical graphics\nSingle Document Analysis - Deep dive into individual texts\nAssisted Plotting - AI-powered visualization generation and refinement\nAssisted Analysis - OpenAI-guided exploration of corpus patterns\n\n\n\nData Management\n\nDownload Corpus - Export processed data for external analysis\nDownload Tagged Files - Save annotated texts with linguistic tags\nManage Corpus Data - Upload, process, and organize your text collections",
+    "crumbs": [
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "index.html#getting-started-your-first-steps",
+    "href": "index.html#getting-started-your-first-steps",
+    "title": "DocuScope",
+    "section": "Getting Started: Your First Steps",
+    "text": "Getting Started: Your First Steps\n\nStep 1: Access the “Manage Corpus Data” Interface\nThe “Manage Corpus Data” page is your starting point for any analysis. This interface allows you to work with texts in several ways:\n\nOption A: Use Pre-loaded Corpora\nStart with ready-to-analyze datasets: - MICUSP - High-quality student writing from University of Michigan - BAWE - British academic writing across disciplines and levels - Elsevier - Published academic articles across 20 scientific fields - HAP-E - Human vs. AI writing comparisons\n\n\nOption B: Upload External Data\nBring your own pre-processed corpus: - Upload .parquet files from other corpus analysis tools - Load previously processed DocuScope CA datasets - Import data with existing annotations\n\n\nOption C: Process New Texts\nUpload and analyze your own collection: - Upload multiple .txt files (essays, articles, documents) - Choose between full DocuScope model or Common Dictionary tagging - Let the system process and tag your texts automatically\n\n\n\nStep 2: Explore Your Data\nOnce your corpus is loaded:\n\nStart with Token Frequencies to get familiar with your data’s vocabulary\nExamine Tag Frequencies to understand rhetorical and grammatical patterns\n\nUse KWIC analysis to see how key terms function in context\nTry corpus comparisons if you have multiple datasets\n\n\n\nStep 3: Dive Deeper\nAs you become comfortable with the basics:\n\nExperiment with N-grams to find common phrases and expressions\nExplore collocations to understand word associations\nUse advanced plotting to create publication-ready visualizations\nTry AI-assisted features for guided analysis and insights",
+    "crumbs": [
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "index.html#who-can-use-docuscope-ca",
+    "href": "index.html#who-can-use-docuscope-ca",
+    "title": "DocuScope",
+    "section": "Who Can Use DocuScope CA?",
+    "text": "Who Can Use DocuScope CA?\n\nStudents\n\nAnalyze your own writing for rhetorical effectiveness\nCompare your work to published examples in your field\nUnderstand disciplinary writing conventions\nDevelop critical language awareness\n\n\n\nResearchers\n\nConduct corpus-based studies of language variation\nAnalyze rhetorical strategies across genres and contexts\nCompare human and AI-generated texts\nInvestigate cross-cultural writing patterns\n\n\n\nEducators\n\nDemonstrate linguistic concepts with real data\nCreate assignments using provided corpora\nHelp students understand academic writing conventions\nIntegrate corpus analysis into writing instruction",
+    "crumbs": [
+      "Getting Started"
+    ]
+  },
+  {
+    "objectID": "index.html#ready-to-begin",
+    "href": "index.html#ready-to-begin",
+    "title": "DocuScope",
+    "section": "Ready to Begin?",
+    "text": "Ready to Begin?\nThe best way to learn DocuScope CA is to start exploring. We recommend:\n\nBegin with a pre-loaded corpus to familiarize yourself with the interface\nFollow the guided workflows in our documentation\nStart simple with basic frequency analysis before moving to advanced features\nExperiment freely - the tool is designed for exploration and discovery\n\n\n\n\n\n\n\n\nTip\n\n\n\nNew to corpus analysis? Start with our Load Corpus guide to learn the fundamentals, then explore the Token Frequencies tutorial to see the tool in action.\n\n\nReady to dive in? Visit the “Manage Corpus Data” page in DocuScope CA to load your first corpus and begin exploring the fascinating world of computational text analysis.",
     "crumbs": [
       "Getting Started"
     ]
