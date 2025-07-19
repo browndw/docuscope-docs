@@ -20,6 +20,156 @@
 
 # Getting Started {.unnumbered}
 
-This is a Quarto book.
+**DocuScope Corpus Analysis & Concordancer (DocuScope CA)** is a powerful web-based tool that combines traditional corpus analysis with cutting-edge natural language processing to make sophisticated textual analysis accessible to students, researchers, and educators.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+## What is DocuScope CA?
+
+DocuScope CA is a **Streamlit-powered application** that integrates three key technologies:
+
+- **spaCy NLP processing** with custom-trained models for both part-of-speech and rhetorical tagging
+- **DocuScope rhetorical analysis** framework for understanding how language functions in context
+- **OpenAI integration** for AI-assisted analysis and visualization
+
+The tool enables users to analyze small to medium-sized corpora (collections of texts) to understand patterns in language use, discover rhetorical strategies, and explore linguistic variation across different types of writing.
+
+## How DocuScope CA Compares to Other Tools
+
+### Similar to Traditional Concordancers
+Like popular tools such as **AntConc**, DocuScope CA provides:
+
+- **Word frequency analysis** and statistical summaries
+- **KWIC (Keywords in Context)** displays for examining word usage patterns
+- **N-gram analysis** to identify common phrases and collocations
+- **Corpus comparison** capabilities for contrasting different text collections
+- **Downloadable results** for further analysis or reporting
+
+### What Makes DocuScope CA Different
+
+DocuScope CA goes beyond traditional concordancing by offering:
+
+#### **Integrated Rhetorical Analysis**
+- **DocuScope tagging** that identifies rhetorical functions (confidence, stance, organization, etc.)
+- **Dual annotation system** providing both grammatical (POS) and rhetorical tags simultaneously
+- **Functional language analysis** that reveals how language works rather than just what words appear
+
+#### **AI-Powered Assistance**
+- **Assisted plotting** with OpenAI helping generate and refine visualizations
+- **Intelligent analysis** suggestions based on corpus patterns
+- **Natural language queries** for exploring data
+
+#### **Educational Focus**
+- **Pre-loaded corpora** including MICUSP, BAWE, Elsevier, and HAP-E datasets
+- **Guided workflows** designed for classroom and research use
+- **Multiple analysis levels** from basic frequency counts to advanced rhetorical patterns
+
+#### **Modern Web Interface**
+- **No software installation** required - runs entirely in your web browser
+- **Interactive visualizations** with Plotly integration
+- **Session management** that preserves your work across analysis sessions
+- **Real-time processing** with immediate results
+
+## Key Analysis Capabilities
+
+DocuScope CA offers **14 main analysis modules** organized into intuitive workflows:
+
+### **Core Analysis Tools**
+1. **Token Frequencies** - Word and phrase frequency analysis with filtering options
+2. **Tag Frequencies** - Analysis of grammatical and rhetorical tag distributions
+3. **N-grams** - Identification of common word sequences and phrases
+4. **Collocations** - Statistical analysis of word associations and co-occurrences
+5. **KWIC (Keywords in Context)** - Detailed examination of word usage in context
+
+### **Comparative Analysis**
+6. **Compare Corpora** - Statistical comparison between different text collections
+7. **Compare Corpus Parts** - Analysis of variation within a single corpus
+
+### **Advanced Features**
+8. **Advanced Plotting** - Create custom visualizations and statistical graphics
+9. **Single Document Analysis** - Deep dive into individual texts
+10. **Assisted Plotting** - AI-powered visualization generation and refinement
+11. **Assisted Analysis** - OpenAI-guided exploration of corpus patterns
+
+### **Data Management**
+12. **Download Corpus** - Export processed data for external analysis
+13. **Download Tagged Files** - Save annotated texts with linguistic tags
+14. **Manage Corpus Data** - Upload, process, and organize your text collections
+
+## Getting Started: Your First Steps
+
+### Step 1: Access the "Manage Corpus Data" Interface
+
+The **"Manage Corpus Data"** page is your starting point for any analysis. This interface allows you to work with texts in several ways:
+
+#### **Option A: Use Pre-loaded Corpora**
+Start with ready-to-analyze datasets:
+- **MICUSP** - High-quality student writing from University of Michigan
+- **BAWE** - British academic writing across disciplines and levels
+- **Elsevier** - Published academic articles across 20 scientific fields
+- **HAP-E** - Human vs. AI writing comparisons
+
+#### **Option B: Upload External Data**
+Bring your own pre-processed corpus:
+- Upload `.parquet` files from other corpus analysis tools
+- Load previously processed DocuScope CA datasets
+- Import data with existing annotations
+
+#### **Option C: Process New Texts**
+Upload and analyze your own collection:
+- Upload multiple `.txt` files (essays, articles, documents)
+- Choose between full DocuScope model or Common Dictionary tagging
+- Let the system process and tag your texts automatically
+
+### Step 2: Explore Your Data
+
+Once your corpus is loaded:
+
+1. **Start with Token Frequencies** to get familiar with your data's vocabulary
+2. **Examine Tag Frequencies** to understand rhetorical and grammatical patterns  
+3. **Use KWIC analysis** to see how key terms function in context
+4. **Try corpus comparisons** if you have multiple datasets
+
+### Step 3: Dive Deeper
+
+As you become comfortable with the basics:
+
+- **Experiment with N-grams** to find common phrases and expressions
+- **Explore collocations** to understand word associations
+- **Use advanced plotting** to create publication-ready visualizations
+- **Try AI-assisted features** for guided analysis and insights
+
+## Who Can Use DocuScope CA?
+
+### **Students**
+- Analyze your own writing for rhetorical effectiveness
+- Compare your work to published examples in your field
+- Understand disciplinary writing conventions
+- Develop critical language awareness
+
+### **Researchers**
+- Conduct corpus-based studies of language variation
+- Analyze rhetorical strategies across genres and contexts
+- Compare human and AI-generated texts
+- Investigate cross-cultural writing patterns
+
+### **Educators**
+- Demonstrate linguistic concepts with real data
+- Create assignments using provided corpora
+- Help students understand academic writing conventions
+- Integrate corpus analysis into writing instruction
+
+## Ready to Begin?
+
+The best way to learn DocuScope CA is to start exploring. We recommend:
+
+1. **Begin with a pre-loaded corpus** to familiarize yourself with the interface
+2. **Follow the guided workflows** in our documentation
+3. **Start simple** with basic frequency analysis before moving to advanced features
+4. **Experiment freely** - the tool is designed for exploration and discovery
+
+---
+
+::: {.callout-tip}
+**New to corpus analysis?** Start with our [Load Corpus](guide/load-corpus.qmd) guide to learn the fundamentals, then explore the [Token Frequencies](guide/token-frequencies.qmd) tutorial to see the tool in action.
+:::
+
+**Ready to dive in?** Visit the **"Manage Corpus Data"** page in DocuScope CA to load your first corpus and begin exploring the fascinating world of computational text analysis.
