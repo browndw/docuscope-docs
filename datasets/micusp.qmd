@@ -8,7 +8,7 @@ The **Michigan Corpus of Upper-level Student Papers (MICUSP)** is a specialized 
 
 MICUSP contains **828 student papers** representing:
 
-- **Writing from 16 different disciplines** including Biology, Economics, English, History, Philosophy, Psychology, and more
+- **Writing from 17 different disciplines** including Biology, Economics, English, History, Philosophy, Psychology, and more
 - **Papers from students at different levels**: upper-level undergraduates (juniors and seniors) and graduate students
 - **Multiple paper types**: research papers, reports, argumentative essays, case studies, and proposals
 - **High-quality writing**: All papers received grades of A- or better from instructors
