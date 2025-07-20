@@ -12,8 +12,9 @@ book:
     collapse-level: 1
     tools:
     - icon: github
-      href: https://github.com/browndw
+      href: https://github.com/browndw/docuscope-ca-online
     - icon: globe2
+      href: https://docuscope-ca.eberly.cmu.edu/
   chapters:
     - index.qmd
     - part: DocuScope CA Apps
