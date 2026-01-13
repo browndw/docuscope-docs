@@ -37,8 +37,7 @@ The **Compare Corpora** page lets you compare two sets of texts (your target and
   - A log-ratio of 1 means "twice as frequent"; 2 means "four times as frequent", etc.
   - Positive values = more frequent in the target corpus; negative values = more frequent in the reference corpus.
 
-::: {.callout-tip}
-**Tip:**  
+::: {.callout-tip}  
 Use log-likelihood to see if a difference is statistically significant, and log-ratio to see how big that difference is.
 :::
 

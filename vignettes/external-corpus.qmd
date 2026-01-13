@@ -61,4 +61,6 @@ The Parquet file contains a table with one row per token, including all relevant
 
 ---
 
-**Tip:** Use external corpus files to streamline your workflow, especially when working with large datasets or collaborating with others!
+::: {.callout-tip}
+Use external corpus files to streamline your workflow, especially when working with large datasets or collaborating with others!
+:::

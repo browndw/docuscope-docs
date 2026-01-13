@@ -43,7 +43,6 @@ A **collocation** is a pair or group of words (or tags) that tend to appear toge
 - **NPMI (Normalized PMI):** Scales PMI between -1 and 1, making it easier to compare across different word pairs and reducing the impact of rare events.
 
 ::: {.callout-tip}
-**Tip:**  
 If you want to avoid results dominated by rare word pairs, try PMI2, PMI3, or NPMI instead of standard PMI.
 :::
 

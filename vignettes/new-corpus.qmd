@@ -52,7 +52,10 @@ This vignette guides you through preparing and uploading a **new corpus** for an
 - For example, if you are using texts from sources like Project Gutenberg, **remove any headers, footers, or licensing information** that is not part of the original work.  
   - *Example: Project Gutenberg files often include information like "The Project Gutenberg eBook of..." at the top and licensing/legal text at the end. If left in, words like "ebook" or "license" may appear frequently in your results!*
 - If your data comes from web pages or other sources, **make sure all HTML or markup tags are removed**. The app cannot distinguish between text and markup, so tags like `<div>`, `<p>`, or `<body>` will be counted as words if present.
-- **Tip:** Open your `.txt` files in a plain text editor and review the content before uploading.
+
+::: {.callout-tip}
+ Open your `.txt` files in a plain text editor and review the content before uploading.
+:::
 
 ---
 
@@ -84,6 +87,8 @@ This vignette guides you through preparing and uploading a **new corpus** for an
 
 ---
 
-**Tip:** Preparing your files carefully saves time and prevents errors. If you’re new to plain text editing, try [BBEdit](https://www.barebones.com/products/bbedit/download.html) (Mac) or [Sublime Text](https://www.sublimetext.com/) (Windows)—both are free and easy to use!
+::: {.callout-tip}
+Preparing your files carefully saves time and prevents errors. If you’re new to plain text editing, try [BBEdit](https://www.barebones.com/products/bbedit/download.html) (Mac) or [Sublime Text](https://www.sublimetext.com/) (Windows)—both are free and easy to use!
+:::
 
 ---

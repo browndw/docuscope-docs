@@ -41,8 +41,7 @@ Pandabot uses AI to turn your question into Python code, runs it on your selecte
   - "List all documents where noun frequency is above 5%."
 - Pandabot will generate the code, run it, and display the result as a table, number, text, or plot.
 
-::: {.callout-tip}
-**Tip:**  
+::: {.callout-tip}  
 You can ask for summaries, group comparisons, filtering, or even simple visualizations. For more advanced or iterative plotting, use the **AI-Assisted Plotting** tool instead.
 :::
 

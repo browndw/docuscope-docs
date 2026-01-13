@@ -54,8 +54,7 @@ Plotbot uses AI to turn your text prompts into Python code for plotting. Each ti
   - "Show only documents from group A."
 - Plotbot remembers your previous messages and builds on them, so you can iterate until you’re satisfied.
 
-::: {.callout-tip}
-**Tip:**  
+::: {.callout-tip} 
 Be as specific as you like! You can ask for titles, legends, color changes, or even new plot types. If Plotbot doesn’t get it right, clarify your request or start over.
 :::
 

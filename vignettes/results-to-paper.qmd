@@ -16,7 +16,9 @@ Your claim should be **specific**, **data-driven**, and rhetorically **meaningfu
 ### Example: Aull on Student Writing  
 Aull shows that first-year writing often overuses **Confidence High** and **Public Terms**, not just to sound "academic," but to **project certainty and generalization** when students are unsure how to argue within disciplinary constraints [@aull2023language].
 
-**Tip:** Connect category use to **audience expectations**, **genre conventions**, or **communicative goals**.
+::: {.callout-tip}
+Connect category use to **audience expectations**, **genre conventions**, or **communicative goals**.
+:::
 
 ### Common Pitfall to Avoid:
 ❌ "Business emails use more Directive language than academic papers."
@@ -31,7 +33,9 @@ A figure or table isn't decoration—it's **evidence**. Show clear contrasts or 
 ### Example: DeJeu on Grant Proposals  
 DeJeu uses visualizations (e.g., PCA plots) to show that **nonprofit** proposals emphasize **Facilitate** and **Positive** categories, whereas **research** proposals emphasize **Cautious Epistemic** features like **Hedged Confidence** [@dejeu2024topoi].
 
-**Practical Tip:** Use simple bar charts or frequency tables. Label everything clearly and interpret the figure in your writing. Don't just say "Figure 1 shows the results"—explain what the reader should notice and why it matters.
+::: {.callout-tip}
+Use simple bar charts or frequency tables. Label everything clearly and interpret the figure in your writing. Don't just say "Figure 1 shows the results"—explain what the reader should notice and why it matters.
+:::
 
 ### What Makes a Good Visualization:
 - **Clear labels** and **meaningful comparisons**
