@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -54,14 +54,15 @@ div.csl-indent {
 <link href="../vignettes/external-corpus.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a78892f0e217defc391245c7911ae65e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a863b8eb64886dc43f3ff02fa8c5da2c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
@@ -119,7 +120,8 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="../index.html" class="sidebar-logo-link">
-      <img src="../images/docuscope-logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="../images/docuscope-logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../images/docuscope-logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="../">DocuScope CA</a> 
@@ -431,7 +433,19 @@ div.csl-indent {
 <section id="example-aull-on-student-writing" class="level3">
 <h3 class="anchored" data-anchor-id="example-aull-on-student-writing">Example: Aull on Student Writing</h3>
 <p>Aull shows that first-year writing often overuses <strong>Confidence High</strong> and <strong>Public Terms</strong>, not just to sound “academic,” but to <strong>project certainty and generalization</strong> when students are unsure how to argue within disciplinary constraints <span class="citation" data-cites="aull2023language">(<a href="#ref-aull2023language" role="doc-biblioref">Aull 2023</a>)</span>.</p>
-<p><strong>Tip:</strong> Connect category use to <strong>audience expectations</strong>, <strong>genre conventions</strong>, or <strong>communicative goals</strong>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Connect category use to <strong>audience expectations</strong>, <strong>genre conventions</strong>, or <strong>communicative goals</strong>.</p>
+</div>
+</div>
 </section>
 <section id="common-pitfall-to-avoid" class="level3">
 <h3 class="anchored" data-anchor-id="common-pitfall-to-avoid">Common Pitfall to Avoid:</h3>
@@ -445,7 +459,19 @@ div.csl-indent {
 <section id="example-dejeu-on-grant-proposals" class="level3">
 <h3 class="anchored" data-anchor-id="example-dejeu-on-grant-proposals">Example: DeJeu on Grant Proposals</h3>
 <p>DeJeu uses visualizations (e.g., PCA plots) to show that <strong>nonprofit</strong> proposals emphasize <strong>Facilitate</strong> and <strong>Positive</strong> categories, whereas <strong>research</strong> proposals emphasize <strong>Cautious Epistemic</strong> features like <strong>Hedged Confidence</strong> <span class="citation" data-cites="dejeu2024topoi">(<a href="#ref-dejeu2024topoi" role="doc-biblioref">DeJeu 2024</a>)</span>.</p>
-<p><strong>Practical Tip:</strong> Use simple bar charts or frequency tables. Label everything clearly and interpret the figure in your writing. Don’t just say “Figure 1 shows the results”—explain what the reader should notice and why it matters.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use simple bar charts or frequency tables. Label everything clearly and interpret the figure in your writing. Don’t just say “Figure 1 shows the results”—explain what the reader should notice and why it matters.</p>
+</div>
+</div>
 </section>
 <section id="what-makes-a-good-visualization" class="level3">
 <h3 class="anchored" data-anchor-id="what-makes-a-good-visualization">What Makes a Good Visualization:</h3>
@@ -672,13 +698,14 @@ O’Hanlon, Claire E. 2019. <span>“What Kills Us and What Moves Us: A Comparat
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
