@@ -47,6 +47,9 @@ book:
          - datasets/hape.qmd
     - part: Vignettes
       chapters:
+         - vignettes/workflow-academic-levels.qmd
+         - vignettes/workflow-passive-constructions.qmd
+         - vignettes/workflow-hape-collocations.qmd
          - vignettes/external-corpus.qmd
          - vignettes/results-to-paper.qmd
     - part: The DocuScope Project
