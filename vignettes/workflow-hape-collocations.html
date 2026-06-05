@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>   Tag Frequencies – DocuScope</title>
+<title>3&nbsp; Collocational Patterns in Human and AI Writing – DocuScope</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -33,8 +52,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../guide/ngrams.html" rel="next">
-<link href="../guide/token-frequencies.html" rel="prev">
+<link href="../vignettes/external-corpus.html" rel="next">
+<link href="../vignettes/workflow-passive-constructions.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -45,7 +64,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-ade43af013ec777e44c4dc1937c7d1d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,6 +92,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -87,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../guide/load-corpus.html">DocuScope CA Apps</a></li><li class="breadcrumb-item"><a href="../guide/tag-frequencies.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> Tag Frequencies</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../vignettes/workflow-academic-levels.html">Vignettes</a></li><li class="breadcrumb-item"><a href="../vignettes/workflow-hape-collocations.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Collocational Patterns in Human and AI Writing</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -128,13 +175,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">DocuScope CA Apps</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../guide/load-corpus.html" class="sidebar-item-text sidebar-link">
@@ -149,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../guide/tag-frequencies.html" class="sidebar-item-text sidebar-link active">
+  <a href="../guide/tag-frequencies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> Tag Frequencies</span></a>
   </div>
 </li>
@@ -293,13 +340,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Vignettes</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../vignettes/workflow-academic-levels.html" class="sidebar-item-text sidebar-link">
@@ -314,7 +361,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../vignettes/workflow-hape-collocations.html" class="sidebar-item-text sidebar-link">
+  <a href="../vignettes/workflow-hape-collocations.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Collocational Patterns in Human and AI Writing</span></span></a>
   </div>
 </li>
@@ -359,27 +406,33 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-you-can-do" id="toc-what-you-can-do" class="nav-link active" data-scroll-target="#what-you-can-do">What You Can Do</a></li>
-  <li><a href="#step-1-generate-a-tag-frequency-table" id="toc-step-1-generate-a-tag-frequency-table" class="nav-link" data-scroll-target="#step-1-generate-a-tag-frequency-table">Step 1: Generate a Tag Frequency Table</a></li>
-  <li><a href="#step-2-choose-a-tagset" id="toc-step-2-choose-a-tagset" class="nav-link" data-scroll-target="#step-2-choose-a-tagset">Step 2: Choose a Tagset</a></li>
-  <li><a href="#step-3-filter-and-explore" id="toc-step-3-filter-and-explore" class="nav-link" data-scroll-target="#step-3-filter-and-explore">Step 3: Filter and Explore</a></li>
-  <li><a href="#step-4-table-and-plot-views" id="toc-step-4-table-and-plot-views" class="nav-link" data-scroll-target="#step-4-table-and-plot-views">Step 4: Table and Plot Views</a></li>
-  <li><a href="#step-5-download-your-table" id="toc-step-5-download-your-table" class="nav-link" data-scroll-target="#step-5-download-your-table">Step 5: Download Your Table</a></li>
-  <li><a href="#understanding-the-table" id="toc-understanding-the-table" class="nav-link" data-scroll-target="#understanding-the-table">Understanding the Table</a></li>
-  <li><a href="#tips-for-new-users" id="toc-tips-for-new-users" class="nav-link" data-scroll-target="#tips-for-new-users">Tips for New Users</a></li>
-  <li><a href="#if-you-get-stuck" id="toc-if-you-get-stuck" class="nav-link" data-scroll-target="#if-you-get-stuck">If You Get Stuck</a></li>
+  <li><a href="#use-case" id="toc-use-case" class="nav-link active" data-scroll-target="#use-case"><span class="header-section-number">3.1</span> Use Case</a></li>
+  <li><a href="#step-1-load-the-corpus" id="toc-step-1-load-the-corpus" class="nav-link" data-scroll-target="#step-1-load-the-corpus"><span class="header-section-number">3.2</span> Step 1: Load the Corpus</a>
+  <ul>
+  <li><a href="#process-document-metadata" id="toc-process-document-metadata" class="nav-link" data-scroll-target="#process-document-metadata"><span class="header-section-number">3.2.1</span> Process Document Metadata</a></li>
+  </ul></li>
+  <li><a href="#step-2-identify-a-target-word-with-token-frequencies" id="toc-step-2-identify-a-target-word-with-token-frequencies" class="nav-link" data-scroll-target="#step-2-identify-a-target-word-with-token-frequencies"><span class="header-section-number">3.3</span> Step 2: Identify a Target Word with Token Frequencies</a></li>
+  <li><a href="#step-3-compute-collocations" id="toc-step-3-compute-collocations" class="nav-link" data-scroll-target="#step-3-compute-collocations"><span class="header-section-number">3.4</span> Step 3: Compute Collocations</a>
+  <ul>
+  <li><a href="#understanding-npmi" id="toc-understanding-npmi" class="nav-link" data-scroll-target="#understanding-npmi"><span class="header-section-number">3.4.1</span> Understanding NPMI</a></li>
+  <li><a href="#reading-the-collocations-table" id="toc-reading-the-collocations-table" class="nav-link" data-scroll-target="#reading-the-collocations-table"><span class="header-section-number">3.4.2</span> Reading the Collocations Table</a></li>
+  </ul></li>
+  <li><a href="#step-4-examine-concordance-lines-with-kwic" id="toc-step-4-examine-concordance-lines-with-kwic" class="nav-link" data-scroll-target="#step-4-examine-concordance-lines-with-kwic"><span class="header-section-number">3.5</span> Step 4: Examine Concordance Lines with KWIC</a>
+  <ul>
+  <li><a href="#patterns-in-gpt-4-academic-writing" id="toc-patterns-in-gpt-4-academic-writing" class="nav-link" data-scroll-target="#patterns-in-gpt-4-academic-writing"><span class="header-section-number">3.5.1</span> Patterns in GPT-4 Academic Writing</a></li>
+  <li><a href="#patterns-in-human-academic-writing" id="toc-patterns-in-human-academic-writing" class="nav-link" data-scroll-target="#patterns-in-human-academic-writing"><span class="header-section-number">3.5.2</span> Patterns in Human Academic Writing</a></li>
+  <li><a href="#patterns-in-llama-tvmovie-script-writing" id="toc-patterns-in-llama-tvmovie-script-writing" class="nav-link" data-scroll-target="#patterns-in-llama-tvmovie-script-writing"><span class="header-section-number">3.5.3</span> Patterns in Llama TV/Movie Script Writing</a></li>
+  </ul></li>
+  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation"><span class="header-section-number">3.6</span> Interpretation</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../guide/load-corpus.html">DocuScope CA Apps</a></li><li class="breadcrumb-item"><a href="../guide/tag-frequencies.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> Tag Frequencies</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../vignettes/workflow-academic-levels.html">Vignettes</a></li><li class="breadcrumb-item"><a href="../vignettes/workflow-hape-collocations.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Collocational Patterns in Human and AI Writing</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"></svg><br>
-<path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"><br>
-<br>
-Tag Frequencies</path></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Collocational Patterns in Human and AI Writing</span></h1>
 </div>
 
 
@@ -396,69 +449,111 @@ Tag Frequencies</path></h1>
 </header>
 
 
-<p><iconify-icon role="img" inline="" icon="material-symbols:construction" aria-label="Icon construction from material-symbols Iconify.design set." title="Icon construction from material-symbols Iconify.design set."></iconify-icon> Under construction.</p>
-<p>The <strong>Tag Frequencies</strong> page lets you view, filter, and visualize how often different linguistic tags appear in your corpus. You can also download the results for further analysis.</p>
-<hr>
-<section id="what-you-can-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-can-do">What You Can Do</h2>
+<section id="use-case" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="use-case"><span class="header-section-number">3.1</span> Use Case</h2>
+<p>A researcher in digital writing studies wants to investigate whether large language models (LLMs) produce distinctive word associations when compared to human writers — and whether those patterns vary by genre. Specifically: does a common evaluative adjective like <em>important</em> collocate with the same words across GPT-4-generated, Llama-generated, and human texts? And does genre (academic, news, spoken, TV/movie scripts) modulate those patterns?</p>
+<p>This vignette introduces two tools for moving from raw frequency data to interpretable linguistic patterns:</p>
 <ul>
-<li>Generate a tag frequency table for your loaded corpus</li>
-<li>Choose between Parts-of-Speech (POS) tags or DocuScope tags</li>
-<li>Filter the table to focus on specific tags</li>
-<li>View the data as a table or as a bar plot</li>
-<li>Download the table as an Excel file</li>
+<li>The <strong>Collocations</strong> tool, which uses point-wise mutual information (PMI) statistics to identify words that co-occur with a node word more often than chance would predict</li>
+<li>The <strong>KWIC</strong> (Key Words in Context) tool, which presents concordance lines — aligned rows showing each occurrence of a word surrounded by its left and right context — enabling qualitative exploration of how a word is actually used</li>
 </ul>
-<hr>
-</section>
-<section id="step-1-generate-a-tag-frequency-table" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-generate-a-tag-frequency-table">Step 1: Generate a Tag Frequency Table</h2>
-<p>If you haven’t already generated a tag frequency table, you’ll see a prompt to do so.</p>
-<ul>
-<li>Click the <strong>Tags Table</strong> button in the sidebar.</li>
-<li>Wait for processing to complete. If you see a warning, check that you have loaded a target corpus.</li>
-</ul>
-<div class="callout callout-style-default callout-important callout-titled">
+<p><strong>Corpus used:</strong> <code>H_HAPE_mini</code> (Internal corpora, Large Dictionary)</p>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>What is a “tag”?</strong><br>
-A <em>tag</em> is a label assigned to each token in your text, such as a part-of-speech (noun, verb, etc.) or a DocuScope rhetorical category. Tag frequency tables show how often each tag appears in your documents.</p>
+<p>The <strong>HAP-E Mini</strong> corpus contains a curated, balanced sample drawn from the Human-AI Parallel English (HAP-E) Corpus <span class="citation" data-cites="reinhart2025llms">(<a href="#ref-reinhart2025llms" role="doc-biblioref">Reinhart et al. 2025</a>)</span>. The full HAP-E corpus pairs human-authored texts with multiple LLM continuations of the same prompts. The mini version retains three author groups across six text types. See the <a href="../datasets/hape.html">HAP-E dataset page</a> for full details.</p>
 </div>
 </div>
 <hr>
 </section>
-<section id="step-2-choose-a-tagset" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-choose-a-tagset">Step 2: Choose a Tagset</h2>
-<p>Once your tag frequency table is ready, use the sidebar to select which tags to display:</p>
-<ul>
-<li><strong>Parts-of-Speech</strong>: Shows grammatical categories.
-<ul>
-<li>Choose between <em>General</em> (broad categories) or <em>Specific</em> (detailed tags).</li>
-</ul></li>
-<li><strong>DocuScope</strong>: Shows rhetorical or functional categories from the DocuScope system.</li>
-</ul>
+<section id="step-1-load-the-corpus" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="step-1-load-the-corpus"><span class="header-section-number">3.2</span> Step 1: Load the Corpus</h2>
+<p>Navigate to <strong>Manage Corpus Data</strong>. Under the <strong>Internal</strong> tab, select the <strong>Large Dictionary</strong> model, then choose <strong>H_HAPE_mini</strong> from the corpus dropdown. Click <strong>Process Target</strong>.</p>
+<p>After loading, the corpus summary will confirm:</p>
+<pre><code>Number of part-of-speech tokens in corpus:  1,390,260
+Number of DocuScope tokens in corpus:        1,078,344
+Number of documents in corpus:               2,700</code></pre>
+<section id="process-document-metadata" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="process-document-metadata"><span class="header-section-number">3.2.1</span> Process Document Metadata</h3>
+<p>When prompted about document categories, select <strong>Yes</strong> and click <strong>Process Document Metadata</strong>. The H_HAPE_mini filenames encode author group and text type (e.g., <code>gpt4_acad_0744</code>, <code>human_spok_1393</code>, <code>llama_tvm_0020</code>). DocuScope CA extracts the author group prefix as the document category.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>What counts as metadata here?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In this workflow, <strong>metadata</strong> means document-level labels extracted from the filenames, not additional linguistic annotation. For <code>H_HAPE_mini</code>, the filename prefix identifies the author group (<code>gpt4</code>, <code>human</code>, or <code>llama</code>), while later parts of the ID preserve the text type.</p>
+<p>Processing metadata makes those author-group labels available throughout the app. That is what allows you to compare categories in later workflows, while still using the document IDs in KWIC to inspect text type at the same time.</p>
+</div>
+</div>
+<p>The metadata will identify three categories:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Description</th>
+<th>Documents</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>gpt4</code></td>
+<td>Texts authored by ChatGPT-4o</td>
+<td>900</td>
+</tr>
+<tr class="even">
+<td><code>human</code></td>
+<td>Texts authored by human writers</td>
+<td>900</td>
+</tr>
+<tr class="odd">
+<td><code>llama</code></td>
+<td>Texts authored by Llama 8B Instruct</td>
+<td>900</td>
+</tr>
+</tbody>
+</table>
+<p>Each category spans all six text types in the corpus: academic articles, news, fiction, spoken language, blog posts, and TV/movie scripts. Because the corpus is balanced across both author groups and text types, differences across categories are more plausibly attributed to authorship style than to topic selection alone.</p>
 <hr>
 </section>
-<section id="step-3-filter-and-explore" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-filter-and-explore">Step 3: Filter and Explore</h2>
-<ul>
-<li>Use the <strong>Select tags to filter</strong> box to focus on specific tags of interest.</li>
-<li>The table updates automatically to show only the tags you select.</li>
-</ul>
-<hr>
 </section>
-<section id="step-4-table-and-plot-views" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-table-and-plot-views">Step 4: Table and Plot Views</h2>
-<ul>
-<li>Use the <strong>Table</strong> tab to view the frequency data in tabular form.</li>
-<li>Use the <strong>Plot</strong> tab to see a bar chart of tag frequencies.</li>
-</ul>
+<section id="step-2-identify-a-target-word-with-token-frequencies" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="step-2-identify-a-target-word-with-token-frequencies"><span class="header-section-number">3.3</span> Step 2: Identify a Target Word with Token Frequencies</h2>
+<p>Before computing collocations, it helps to identify a candidate word with sufficient corpus frequency. Navigate to <strong>Token Frequencies</strong> and click <strong>Frequency Table</strong> in the sidebar.</p>
+<p>The table shows frequency, relative frequency, and range for every lemma in the corpus. Sort by <strong>Freq</strong> (absolute frequency) descending to see the most common tokens. To locate a specific word, use the <strong>Search</strong> button in the table toolbar and enter <code>important</code>.</p>
+<p>The search will return the relevant row for the adjective:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Token</th>
+<th>Tag</th>
+<th>AF</th>
+<th>RF (per million)</th>
+<th>Range (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>important</td>
+<td>JJ</td>
+<td>381</td>
+<td>274</td>
+<td>69.78</td>
+</tr>
+</tbody>
+</table>
+<p>With 381 occurrences distributed across 69.78% of documents, <em>important</em> is frequent and wide-ranging enough to support a meaningful collocation analysis. Its semantic load — it signals evaluation, emphasis, and epistemic stance — makes it a theoretically motivated target for examining how human and AI writers construct argumentative language.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -469,30 +564,416 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Tip:</strong><br>
-Visualizing tag frequencies can help you quickly spot patterns or differences between categories in your corpus.</p>
+<p><strong>Choosing a node word for collocation analysis:</strong> A good node word should have sufficient corpus frequency (at least 50–100 occurrences is recommended) and a clear semantic or functional role. Very high-frequency function words like <em>the</em> or <em>is</em> tend to produce collocation tables dominated by other function words. Evaluative adjectives like <em>important</em>, <em>significant</em>, or <em>critical</em> are productive targets because their collocational profile reveals how writers construct stance and emphasis.</p>
+<p>In this workflow, <em>important</em> is a useful choice because it is frequent enough to analyze reliably, interpretable across multiple genres, and likely to reveal evaluative framing rather than just topic-specific vocabulary.</p>
 </div>
 </div>
 <hr>
 </section>
-<section id="step-5-download-your-table" class="level2">
-<h2 class="anchored" data-anchor-id="step-5-download-your-table">Step 5: Download Your Table</h2>
+<section id="step-3-compute-collocations" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="step-3-compute-collocations"><span class="header-section-number">3.4</span> Step 3: Compute Collocations</h2>
+<p>Navigate to <strong>Collocations</strong>. The <strong>Collocation Configuration</strong> panel will appear. Enter <code>important</code> in the <strong>Node word</strong> field and press Enter.</p>
+<p>Use the following settings:</p>
 <ul>
-<li>Use the <strong>Excel</strong> button in the sidebar to download the current table as an Excel file.</li>
-<li>You can open this file in spreadsheet software for further analysis or sharing.</li>
+<li><strong>Span:</strong> 4 Left, 4 Right (the default — considers up to four tokens on each side of the node)</li>
+<li><strong>Association measure:</strong> NPMI (Normalized Pointwise Mutual Information — the default)</li>
+<li><strong>Anchor tag:</strong> No Tag (search by lemma, not restricted to a specific POS)</li>
 </ul>
+<p>Click <strong>Collocations Table</strong> in the sidebar.</p>
+<p>This workflow moves from <strong>Token Frequencies</strong> to <strong>Collocations</strong> for a reason: the frequency table helps you choose a viable node word, while the collocations table shows which words are statistically associated with that node.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Why start with NPMI?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>PMI is one of the most widely used association measures, but it is highly sensitive to rare combinations. In practice, that often means researchers need to add an extra frequency filter or manually ignore very low-frequency collocates.</p>
+<p>NPMI is often a good exploratory default because it rescales scores to a bounded range and usually produces a more interpretable ranking for mid-sized corpora. It does not eliminate rare-item effects, but it can reduce how much manual filtering is needed.</p>
+<p>The key methodological question is not which measure is universally best, but which one produces a ranking that is useful for your corpus size and research goal.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Why use No Tag first?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Start with <strong>No Tag</strong> when the node word is already clear enough for exploratory analysis. Add an anchor tag only when you need to disambiguate a word that can play multiple important grammatical roles, or when you want tighter control over what counts as a match.</p>
+</div>
+</div>
+<section id="understanding-npmi" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="understanding-npmi"><span class="header-section-number">3.4.1</span> Understanding NPMI</h3>
+<p>NPMI is a normalized variant of Pointwise Mutual Information. For a pair of words (<span class="math inline">\(w_1\)</span>, <span class="math inline">\(w_2\)</span>), PMI is defined as:</p>
+<p><span class="math display">\[\text{PMI}(w_1, w_2) = \log_2 \frac{P(w_1, w_2)}{P(w_1) \cdot P(w_2)}\]</span></p>
+<p>where <span class="math inline">\(P(w_1, w_2)\)</span> is the probability of the pair co-occurring within the span window and <span class="math inline">\(P(w_1)\)</span>, <span class="math inline">\(P(w_2)\)</span> are their individual corpus probabilities. NPMI divides PMI by <span class="math inline">\(-\log_2 P(w_1, w_2)\)</span>, rescaling scores to the range <span class="math inline">\([-1, 1]\)</span>:</p>
+<ul>
+<li><strong>NPMI near 1.0:</strong> the words co-occur almost exclusively with each other</li>
+<li><strong>NPMI near 0:</strong> co-occurrence is no greater than chance</li>
+<li><strong>NPMI near -1.0:</strong> the words actively avoid each other</li>
+</ul>
+<p>High NPMI identifies <em>distinctive</em> collocates — words whose presence near the node word is statistically surprising given their overall corpus frequency. This is different from raw frequency: a very common word like <em>the</em> will rarely achieve high NPMI even if it appears near <em>important</em> hundreds of times.</p>
+<p>Whether rare-item inflation matters depends on the research question. If you want stable, recurring phraseology, the very top of the table may contain too much noise from one-off combinations. If you are using collocations as a discovery tool for close reading, those unusual pairings may still be worth inspecting.</p>
+</section>
+<section id="reading-the-collocations-table" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="reading-the-collocations-table"><span class="header-section-number">3.4.2</span> Reading the Collocations Table</h3>
+<p>The table returns five columns:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Token</strong></td>
+<td>The collocate word</td>
+</tr>
+<tr class="even">
+<td><strong>Tag</strong></td>
+<td>Its CLAWS7 part-of-speech tag</td>
+</tr>
+<tr class="odd">
+<td><strong>Freq Span</strong></td>
+<td>How many times it appears within the span of <em>important</em></td>
+</tr>
+<tr class="even">
+<td><strong>MI</strong></td>
+<td>The NPMI score</td>
+</tr>
+<tr class="odd">
+<td><strong>Freq Total</strong></td>
+<td>How many times it appears anywhere in the corpus</td>
+</tr>
+</tbody>
+</table>
+<p>The table is sorted by NPMI descending. The top rows are typically <strong>hapax legomena</strong> — words that appear only once in the corpus and that single occurrence happens to be near the node word. These achieve high NPMI because <span class="math inline">\(P(w_1, w_2)\)</span> is as high as it can be relative to <span class="math inline">\(P(w_2)\)</span>, but they contribute little to an account of typical usage patterns.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/vignettes/collocations-important-table.png" class="img-fluid figure-img" alt="Collocations table showing Token, Tag, Freq Span, Freq Total, and MI columns for the node word 'important'. Top rows include hapax legomena like 'acronym' (NN1, Freq Span=2, Freq Total=1, MI=0.661) and 'advertiser', 'caveats', 'differ' (Freq Span=1, Freq Total=1, MI=0.580)."></p>
+<figcaption>Collocations table for <em>important</em> (NPMI, 4L–4R span). Top results are maximally associated but rare; scrolling or tag-filtering reveals higher-frequency collocates.</figcaption>
+</figure>
+</div>
+<p>To investigate higher-frequency collocates, use the <strong>Select tags to filter</strong> accordion. Clicking individual POS tags limits the display to collocates of that grammatical class, making it easier to identify meaningful patterns against the noise of rare items. Alternatively, scroll the table toward the end (lower NPMI scores) to find the most frequent collocates.</p>
+<p>Selected collocates of interest, retrieved by scrolling or tag-filtering:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Token</th>
+<th>Tag</th>
+<th>Freq Span</th>
+<th>Freq Total</th>
+<th>NPMI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>note</td>
+<td>VVI</td>
+<td>4</td>
+<td>11</td>
+<td>0.564</td>
+</tr>
+<tr class="even">
+<td>parameter</td>
+<td>NN1</td>
+<td>5</td>
+<td>18</td>
+<td>0.552</td>
+</tr>
+<tr class="odd">
+<td>thing</td>
+<td>NN1</td>
+<td>3</td>
+<td>264</td>
+<td>0.488</td>
+</tr>
+<tr class="even">
+<td>role</td>
+<td>NN1</td>
+<td>9</td>
+<td>455</td>
+<td>0.358</td>
+</tr>
+<tr class="odd">
+<td>very</td>
+<td>RG</td>
+<td>13</td>
+<td>742</td>
+<td>0.359</td>
+</tr>
+<tr class="even">
+<td>also</td>
+<td>RR</td>
+<td>24</td>
+<td>1,750</td>
+<td>0.357</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Tag glossary:</strong> VVI = infinitive form of a main verb; NN1 = singular common noun; RG = degree adverb (e.g., <em>very</em>, <em>quite</em>); RR = general adverb (e.g., <em>also</em>, <em>really</em>).</p>
+</div>
+</div>
+<p>Three patterns emerge from this selection:</p>
+<ol type="1">
+<li><p><strong>“important to note”</strong> (note VVI, NPMI=0.564): The infinitive <em>note</em> appears only 11 times in the entire corpus, yet 4 of those occurrences fall within the span of <em>important</em>. This is a strong statistical signal for the fixed phrase <em>it is important to note</em> — a formulaic hedging device common in academic and instructional writing.</p></li>
+<li><p><strong>“important role/component/element”</strong> (role NN1, NPMI=0.358): The noun <em>role</em> appears frequently across the corpus (455 times) but still achieves a moderate NPMI score, reflecting the conventional pre-nominal pattern <em>an important role in…</em>, <em>an important component of…</em>. These nominal collocates signal that writers use <em>important</em> to preface substantive claims about the function of entities in a system.</p></li>
+<li><p><strong>Intensifiers</strong> (<em>very</em> RG, <em>also</em> RR): These high-frequency adverbs achieve similar NPMI scores but serve different functions. <em>Very</em> appears in emphatic constructions (<em>very important consideration</em>), while <em>also</em> most often participates in additive structures (<em>also important is…</em> or <em>it is also important to…</em>).</p></li>
+</ol>
 <hr>
 </section>
-<section id="understanding-the-table" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-the-table">Understanding the Table</h2>
-<ul>
-<li>Use the <strong>Column explanation</strong> expander in the sidebar for definitions of each column.</li>
-<li>Columns typically include the tag, its frequency, and possibly its percentage of the total.</li>
-</ul>
-<hr>
 </section>
-<section id="tips-for-new-users" class="level2">
-<h2 class="anchored" data-anchor-id="tips-for-new-users">Tips for New Users</h2>
+<section id="step-4-examine-concordance-lines-with-kwic" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="step-4-examine-concordance-lines-with-kwic"><span class="header-section-number">3.5</span> Step 4: Examine Concordance Lines with KWIC</h2>
+<p>The collocations table reveals <em>which</em> words associate with <em>important</em>, but not <em>how</em> those associations are deployed in actual sentences. Navigate to <strong>Key Words in Context (KWIC)</strong> to investigate the concordance lines.</p>
+<p>In the <strong>KWIC Configuration</strong> panel, enter <code>important</code> in the <strong>Node word</strong> field. Leave <strong>Search mode</strong> set to <strong>Fixed</strong> (exact match) and click <strong>KWIC Table</strong> in the sidebar.</p>
+<p>Using <strong>Fixed</strong> search is appropriate here because the goal is to examine the exact lexical item <em>important</em>, not related forms such as <em>importance</em> or <em>importantly</em>.</p>
+<p>The table returns one row per corpus occurrence of <em>important</em>, with four columns: <strong>Doc ID</strong>, <strong>Pre-Node</strong> (left context), <strong>Node</strong>, and <strong>Post-Node</strong> (right context). The Doc ID encodes both the author group and the text type (e.g., <code>gpt4_acad_0744</code> = GPT-4, academic text #744).</p>
+<p>Because the table is sorted by document ID, rows with shared prefixes cluster together. That makes it possible to scan stretches like <code>gpt4_acad_*</code>, <code>human_acad_*</code>, or <code>llama_tvm_*</code> as rough groupings before doing any additional filtering.</p>
+<p>The examples below are illustrative slices of the concordance, not exhaustive summaries of every occurrence in the corpus.</p>
+<section id="patterns-in-gpt-4-academic-writing" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="patterns-in-gpt-4-academic-writing"><span class="header-section-number">3.5.1</span> Patterns in GPT-4 Academic Writing</h3>
+<p>The first rows in the table (sorted alphabetically, so <code>gpt4_acad_*</code> documents appear first) reveal a striking pattern:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 28%">
+<col style="width: 17%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Doc ID</th>
+<th>Pre-Node</th>
+<th>Node</th>
+<th>Post-Node</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>gpt4_acad_0178</td>
+<td>and Fink, 2011). Equally</td>
+<td><strong>important</strong></td>
+<td>is the potential utility of machine learning</td>
+</tr>
+<tr class="even">
+<td>gpt4_acad_0382</td>
+<td>the achievements in vehicle platooning signify</td>
+<td><strong>important</strong></td>
+<td>strides toward that vision. Engineers and</td>
+</tr>
+<tr class="odd">
+<td>gpt4_acad_0428</td>
+<td>adoption. The social dimension is equally</td>
+<td><strong>important</strong></td>
+<td>, requiring a shift in public perception</td>
+</tr>
+<tr class="even">
+<td>gpt4_acad_0641</td>
+<td>harm reduction strategies and EC regulation,</td>
+<td><strong>important</strong></td>
+<td>steps toward reducing the considerable public health</td>
+</tr>
+<tr class="odd">
+<td>gpt4_acad_0744</td>
+<td>2012). However, it is</td>
+<td><strong>important</strong></td>
+<td>to recognize the need for continued calibration</td>
+</tr>
+<tr class="even">
+<td>gpt4_acad_0797</td>
+<td>al., 2017). Equally</td>
+<td><strong>important</strong></td>
+<td>are economic considerations. The economic viability</td>
+</tr>
+<tr class="odd">
+<td>gpt4_acad_0969</td>
+<td>conservation practices has gained recognition as an</td>
+<td><strong>important</strong></td>
+<td>element for achieving sustainable resource management</td>
+</tr>
+<tr class="even">
+<td>gpt4_acad_1034</td>
+<td>, or even brain enhancement technologies raises</td>
+<td><strong>important</strong></td>
+<td>questions regarding equity, access, and</td>
+</tr>
+<tr class="odd">
+<td>gpt4_acad_1089</td>
+<td>for instance, is gradually becoming an</td>
+<td><strong>important</strong></td>
+<td>component in prion research, allowing visualization</td>
+</tr>
+</tbody>
+</table>
+<p>Two constructions dominate:</p>
+<ul>
+<li><strong>“Equally important is/are…”</strong> — this discourse connector appears twice in just these nine rows (<code>gpt4_acad_0178</code>, <code>gpt4_acad_0797</code>). It functions as a cohesive device for introducing a new argument of equal weight to the preceding one. The inverted copular structure (<em>Equally important are economic considerations</em>) is a hallmark of formal written prose.</li>
+<li><strong>“it is important to [VERB]”</strong> — here, <em>to recognize</em> (<code>gpt4_acad_0744</code>). This epistemic hedge is the grammatical environment predicted by the NPMI collocate <em>note</em> (VVI): the infinitive follows <em>important</em> in a <em>to</em>-infinitive complement.</li>
+</ul>
+</section>
+<section id="patterns-in-human-academic-writing" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="patterns-in-human-academic-writing"><span class="header-section-number">3.5.2</span> Patterns in Human Academic Writing</h3>
+<p>Scrolling to the <code>human_acad_*</code> rows reveals a different profile:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 28%">
+<col style="width: 17%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Doc ID</th>
+<th>Pre-Node</th>
+<th>Node</th>
+<th>Post-Node</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>human_acad_0557</td>
+<td>of proportional population growth rates has some</td>
+<td><strong>important</strong></td>
+<td>consequences. For example, two ecosystems</td>
+</tr>
+<tr class="even">
+<td>human_acad_0578</td>
+<td>’s empowerment in the agricultural sector is</td>
+<td><strong>important</strong></td>
+<td>, given that agriculture remains the basis</td>
+</tr>
+<tr class="odd">
+<td>human_acad_0611</td>
+<td>bean level is not available. Another</td>
+<td><strong>important</strong></td>
+<td>parameter related to cocoa bean quality is</td>
+</tr>
+<tr class="even">
+<td>human_acad_0632</td>
+<td>of biomass and coal differ in many</td>
+<td><strong>important</strong></td>
+<td>ways, which can result in completely</td>
+</tr>
+<tr class="odd">
+<td>human_acad_0641</td>
+<td>a smoker has been identified as an</td>
+<td><strong>important</strong></td>
+<td>barrier to smoking cessation</td>
+</tr>
+<tr class="even">
+<td>human_acad_0641</td>
+<td>al., 2009). Another</td>
+<td><strong>important</strong></td>
+<td>factor in the transition from smoker to</td>
+</tr>
+<tr class="odd">
+<td>human_acad_0641</td>
+<td>, 2013), it is therefore</td>
+<td><strong>important</strong></td>
+<td>that such symptoms are minimised to ensure</td>
+</tr>
+<tr class="even">
+<td>human_acad_0680</td>
+<td>The improvement compared to AC is certainly</td>
+<td><strong>important</strong></td>
+<td>, but still, there are obvious</td>
+</tr>
+<tr class="odd">
+<td>human_acad_0741</td>
+<td>of structure on lipolysis is therefore an</td>
+<td><strong>important</strong></td>
+<td>aspect to consider when designing oleogel systems</td>
+</tr>
+</tbody>
+</table>
+<p>Human academic writing uses <em>important</em> primarily in two ways:</p>
+<ul>
+<li><strong>Pre-nominal use with empirical nouns</strong>: “Another important <em>parameter</em>”, “an important <em>barrier</em>”, “an important <em>factor</em>”, “an important <em>aspect</em>” — each modified noun names a specific research-domain concept (parameter, barrier, factor, aspect), grounding the claim in technical vocabulary.</li>
+<li><strong>Complement clause construction</strong>: “it is therefore important <em>that</em> such symptoms are minimised” — notably, this is a <em>that</em>-complement clause rather than the infinitive <em>to</em>-complement (<em>it is important to</em>) common in GPT-4 texts.</li>
+</ul>
+<p>The “Equally important is/are…” discourse connector, conspicuous in the GPT-4 rows, does not appear in the visible human academic rows.</p>
+</section>
+<section id="patterns-in-llama-tvmovie-script-writing" class="level3" data-number="3.5.3">
+<h3 data-number="3.5.3" class="anchored" data-anchor-id="patterns-in-llama-tvmovie-script-writing"><span class="header-section-number">3.5.3</span> Patterns in Llama TV/Movie Script Writing</h3>
+<p>Scrolling toward the <code>llama_tvm_*</code> rows (alphabetically later) shows a markedly different register:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 28%">
+<col style="width: 17%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Doc ID</th>
+<th>Pre-Node</th>
+<th>Node</th>
+<th>Post-Node</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>llama_tvm_0020</td>
+<td>We need to focus on what’s</td>
+<td><strong>important</strong></td>
+<td>. Connor looks up at him,</td>
+</tr>
+<tr class="even">
+<td>llama_tvm_0020</td>
+<td>hope in his eyes. What’s</td>
+<td><strong>important</strong></td>
+<td>, Dad? Dennis takes another drag</td>
+</tr>
+<tr class="odd">
+<td>llama_tvm_0020</td>
+<td>You need to focus on what’s</td>
+<td><strong>important</strong></td>
+<td>. Dennis nods, determination etched on</td>
+</tr>
+<tr class="even">
+<td>llama_tvm_0113</td>
+<td>of seniors walking by, looking very</td>
+<td><strong>important</strong></td>
+<td>and very… senior. Fred’s</td>
+</tr>
+<tr class="odd">
+<td>llama_tvm_0779</td>
+<td>. Let’s get back to the</td>
+<td><strong>important</strong></td>
+<td>stuff. Like the report. Yeah</td>
+</tr>
+<tr class="even">
+<td>llama_tvm_0820</td>
+<td>be gross, it’s actually really</td>
+<td><strong>important</strong></td>
+<td>for us to study owl pellets</td>
+</tr>
+</tbody>
+</table>
+<p>Here, <em>important</em> functions as an <strong>evaluative predicate in dialogue</strong> — “What’s important?” / “focus on what’s important” / “the important stuff”. The informal repetition, sentence fragments, and character voice typical of scripts contrast sharply with both the GPT-4 academic and human academic patterns. This illustrates a crucial methodological point: genre can constrain vocabulary use as powerfully as authorship does.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -503,35 +984,41 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>If you don’t see any data, make sure you have loaded and processed a target corpus.</li>
-<li>Try both tagsets (POS and DocuScope) to see which is most useful for your project.</li>
-<li>Download your results often so you can experiment without losing your work.</li>
-</ul>
+<p>Because document IDs in H_HAPE_mini encode both author group and text type (e.g., <code>gpt4_acad_0744</code> encodes author=gpt4, type=academic), the KWIC table allows researchers to trace patterns across both dimensions simultaneously without needing additional metadata filtering. A researcher can scan all <code>*_acad_*</code> rows to compare academic writing across authors, or scan all <code>gpt4_*</code> rows to compare GPT-4 writing across genres.</p>
 </div>
 </div>
 <hr>
 </section>
-<section id="if-you-get-stuck" class="level2">
-<h2 class="anchored" data-anchor-id="if-you-get-stuck">If You Get Stuck</h2>
-<div class="callout callout-style-default callout-important callout-titled">
+</section>
+<section id="interpretation" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="interpretation"><span class="header-section-number">3.6</span> Interpretation</h2>
+<p>The workflow — Token Frequencies → Collocations → KWIC — traces a path from corpus-level statistics to individual text evidence. Each step contributes something the others cannot:</p>
+<ol type="1">
+<li><p><strong>Token Frequencies</strong> established that <em>important</em> is sufficiently frequent and widely distributed to support analysis (AF=381, Range=69.78%). Without this step, we might not know whether any collocational patterns found reflect genuine tendencies or are artefacts of a handful of documents.</p></li>
+<li><p><strong>Collocations (NPMI)</strong> revealed the strongest statistical associates: <em>note</em> (VVI) with NPMI=0.564 signals the phrase <em>important to note</em>, while <em>role</em> and <em>parameter</em> (both NN1) signal nominal collocates of varying frequency. The NPMI score reweights co-occurrence by corpus frequency, preventing common words from dominating the results.</p></li>
+<li><p><strong>KWIC</strong> gave us evidence for the patterns latent in the statistics. The strong NPMI of <em>note</em> (VVI) reflects the GPT-4 academic phrase “it is important to <em>recognize</em>”, while the high frequency of <em>role</em> as collocate appears across both human and AI academic texts. Most strikingly, the “Equally important is/are…” construction — a cohesive discourse connector for introducing parallel arguments — appears repeatedly in GPT-4 academic texts but is absent from the visible human academic concordance lines.</p></li>
+</ol>
+<p>These findings align with prior observations about AI-generated academic writing: LLMs tend to favor <strong>formulaic discourse organization devices</strong> (such as “Equally important”, “It is important to note”) that signal academic register without necessarily being specific to the topic at hand. Human academic writing, by contrast, tends to attach <em>important</em> to content-specific technical vocabulary (parameter, barrier, consequences) reflecting engagement with the disciplinary literature.</p>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>Use the <strong>reset</strong> button on the Manage Corpus Data page if you need to start over.</li>
-<li>If you see warnings, check that your corpus is loaded and processed.</li>
-</ul>
+<p>The patterns observed here are suggestive rather than definitive. A full statistical comparison across author groups — including keyness testing and effect-size measures — would require the <strong>Compare Corpus Parts</strong> workflow (see the <a href="../vignettes/workflow-passive-constructions.html">passive constructions vignette</a> for an example). The KWIC and Collocations tools are best used for targeted qualitative investigation of candidate patterns identified by quantitative means.</p>
 </div>
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-reinhart2025llms" class="csl-entry" role="listitem">
+Reinhart, Alex, Ben Markey, Michael Laudenbach, et al. 2025. <span>“Do LLMs Write Like Humans? Variation in Grammatical and Rhetorical Styles.”</span> <em>Proceedings of the National Academy of Sciences</em> 122 (8): e2422455122. <a href="https://doi.org/10.1073/pnas.2422455122">https://doi.org/10.1073/pnas.2422455122</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -937,13 +1424,13 @@ Important
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../guide/token-frequencies.html" class="pagination-link" aria-label="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;20px&quot; viewBox=&quot;0 -960 960 960&quot; width=&quot;20px&quot; fill=&quot;#434343&quot;><path d=&quot;M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z&quot;/></svg> Token Frequencies">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> Token Frequencies</span>
+      <a href="../vignettes/workflow-passive-constructions.html" class="pagination-link" aria-label="Passive Constructions Across Disciplines">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Passive Constructions Across Disciplines</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../guide/ngrams.html" class="pagination-link" aria-label="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;20px&quot; viewBox=&quot;0 -960 960 960&quot; width=&quot;20px&quot; fill=&quot;#434343&quot;><path d=&quot;M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z&quot;/></svg> N-grams &amp; Clusters">
-        <span class="nav-page-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M312-96q-33 0-52.5-19.5T240-168v-480q0-33 19.5-52.5T312-720h480q33 0 52.5 19.5T864-648v480q0 33-19.5 52.5T792-96H312Zm0-72h204v-132H312v132Zm276 0h204v-132H588v132ZM96-240v-552.45q0-32.55 19.5-52.05t52.05-19.5H720v72H168v552H96Zm216-132h204v-132H312v132Zm276 0h204v-132H588v132ZM312-576h480v-72H312v72Z"></path></svg> N-grams &amp; Clusters</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../vignettes/external-corpus.html" class="pagination-link" aria-label="Creating and Using an External Corpus File">
+        <span class="nav-page-text">Creating and Using an External Corpus File</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Turning Your Results Into a Research Paper – DocuScope</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -24,7 +27,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -54,15 +56,14 @@ div.csl-indent {
 <link href="../vignettes/external-corpus.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a863b8eb64886dc43f3ff02fa8c5da2c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ade43af013ec777e44c4dc1937c7d1d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
@@ -105,7 +106,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../vignettes/external-corpus.html">Vignettes</a></li><li class="breadcrumb-item"><a href="../vignettes/results-to-paper.html">Turning Your Results Into a Research Paper</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../vignettes/workflow-academic-levels.html">Vignettes</a></li><li class="breadcrumb-item"><a href="../vignettes/results-to-paper.html">Turning Your Results Into a Research Paper</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -320,6 +321,24 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../vignettes/workflow-academic-levels.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Rhetorical Patterns Across Academic Levels</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vignettes/workflow-passive-constructions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Passive Constructions Across Disciplines</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vignettes/workflow-hape-collocations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Collocational Patterns in Human and AI Writing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../vignettes/external-corpus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Creating and Using an External Corpus File</span></a>
   </div>
@@ -359,41 +378,41 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-makes-docuscope-research-unique" id="toc-what-makes-docuscope-research-unique" class="nav-link active" data-scroll-target="#what-makes-docuscope-research-unique"><iconify-icon role="img" inline="" icon="material-symbols:lightbulb" aria-label="Icon lightbulb from material-symbols Iconify.design set." title="Icon lightbulb from material-symbols Iconify.design set."></iconify-icon> What Makes DocuScope Research Unique?</a></li>
-  <li><a href="#focus-your-claim" id="toc-focus-your-claim" class="nav-link" data-scroll-target="#focus-your-claim"><iconify-icon role="img" inline="" icon="material-symbols:center-focus-strong" aria-label="Icon center-focus-strong from material-symbols Iconify.design set." title="Icon center-focus-strong from material-symbols Iconify.design set."></iconify-icon> 1. Focus Your Claim</a>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6c6967687462756c62203e7d7d-what-makes-docuscope-research-unique" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6c6967687462756c62203e7d7d-what-makes-docuscope-research-unique" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6c6967687462756c62203e7d7d-what-makes-docuscope-research-unique"><iconify-icon role="img" inline="" icon="material-symbols:lightbulb" aria-label="Icon lightbulb from material-symbols Iconify.design set." title="Icon lightbulb from material-symbols Iconify.design set."></iconify-icon> What Makes DocuScope Research Unique?</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a63656e7465722d666f6375732d7374726f6e67203e7d7d-1.-focus-your-claim" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a63656e7465722d666f6375732d7374726f6e67203e7d7d-1.-focus-your-claim" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a63656e7465722d666f6375732d7374726f6e67203e7d7d-1.-focus-your-claim"><iconify-icon role="img" inline="" icon="material-symbols:center-focus-strong" aria-label="Icon center-focus-strong from material-symbols Iconify.design set." title="Icon center-focus-strong from material-symbols Iconify.design set."></iconify-icon> 1. Focus Your Claim</a>
   <ul>
   <li><a href="#example-aull-on-student-writing" id="toc-example-aull-on-student-writing" class="nav-link" data-scroll-target="#example-aull-on-student-writing">Example: Aull on Student Writing</a></li>
   <li><a href="#common-pitfall-to-avoid" id="toc-common-pitfall-to-avoid" class="nav-link" data-scroll-target="#common-pitfall-to-avoid">Common Pitfall to Avoid:</a></li>
   </ul></li>
-  <li><a href="#use-visualizations-to-anchor-your-claim" id="toc-use-visualizations-to-anchor-your-claim" class="nav-link" data-scroll-target="#use-visualizations-to-anchor-your-claim"><iconify-icon role="img" inline="" icon="material-symbols:bar-chart" aria-label="Icon bar-chart from material-symbols Iconify.design set." title="Icon bar-chart from material-symbols Iconify.design set."></iconify-icon> 2. Use Visualizations to Anchor Your Claim</a>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6261722d6368617274203e7d7d-2.-use-visualizations-to-anchor-your-claim" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6261722d6368617274203e7d7d-2.-use-visualizations-to-anchor-your-claim" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6261722d6368617274203e7d7d-2.-use-visualizations-to-anchor-your-claim"><iconify-icon role="img" inline="" icon="material-symbols:bar-chart" aria-label="Icon bar-chart from material-symbols Iconify.design set." title="Icon bar-chart from material-symbols Iconify.design set."></iconify-icon> 2. Use Visualizations to Anchor Your Claim</a>
   <ul>
   <li><a href="#example-dejeu-on-grant-proposals" id="toc-example-dejeu-on-grant-proposals" class="nav-link" data-scroll-target="#example-dejeu-on-grant-proposals">Example: DeJeu on Grant Proposals</a></li>
   <li><a href="#what-makes-a-good-visualization" id="toc-what-makes-a-good-visualization" class="nav-link" data-scroll-target="#what-makes-a-good-visualization">What Makes a Good Visualization:</a></li>
   </ul></li>
-  <li><a href="#interpret-like-a-rhetorician" id="toc-interpret-like-a-rhetorician" class="nav-link" data-scroll-target="#interpret-like-a-rhetorician"><iconify-icon role="img" inline="" icon="material-symbols:psychology-alt" aria-label="Icon psychology-alt from material-symbols Iconify.design set." title="Icon psychology-alt from material-symbols Iconify.design set."></iconify-icon> 3. Interpret Like a Rhetorician</a>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a70737963686f6c6f67792d616c74203e7d7d-3.-interpret-like-a-rhetorician" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a70737963686f6c6f67792d616c74203e7d7d-3.-interpret-like-a-rhetorician" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a70737963686f6c6f67792d616c74203e7d7d-3.-interpret-like-a-rhetorician"><iconify-icon role="img" inline="" icon="material-symbols:psychology-alt" aria-label="Icon psychology-alt from material-symbols Iconify.design set." title="Icon psychology-alt from material-symbols Iconify.design set."></iconify-icon> 3. Interpret Like a Rhetorician</a>
   <ul>
   <li><a href="#example-marcellino-on-marine-corps-speech" id="toc-example-marcellino-on-marine-corps-speech" class="nav-link" data-scroll-target="#example-marcellino-on-marine-corps-speech">Example: Marcellino on Marine Corps Speech</a></li>
   <li><a href="#the-so-what-test" id="toc-the-so-what-test" class="nav-link" data-scroll-target="#the-so-what-test">The “So What?” Test:</a></li>
   </ul></li>
-  <li><a href="#avoid-truisms-and-oversimplification" id="toc-avoid-truisms-and-oversimplification" class="nav-link" data-scroll-target="#avoid-truisms-and-oversimplification"><iconify-icon role="img" inline="" icon="material-symbols:cancel" aria-label="Icon cancel from material-symbols Iconify.design set." title="Icon cancel from material-symbols Iconify.design set."></iconify-icon> 4. Avoid Truisms and Oversimplification</a>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a63616e63656c203e7d7d-4.-avoid-truisms-and-oversimplification" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a63616e63656c203e7d7d-4.-avoid-truisms-and-oversimplification" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a63616e63656c203e7d7d-4.-avoid-truisms-and-oversimplification"><iconify-icon role="img" inline="" icon="material-symbols:cancel" aria-label="Icon cancel from material-symbols Iconify.design set." title="Icon cancel from material-symbols Iconify.design set."></iconify-icon> 4. Avoid Truisms and Oversimplification</a>
   <ul>
   <li><a href="#better" id="toc-better" class="nav-link" data-scroll-target="#better">Better:</a></li>
   <li><a href="#example-ohanlon-on-epistemic-voice" id="toc-example-ohanlon-on-epistemic-voice" class="nav-link" data-scroll-target="#example-ohanlon-on-epistemic-voice">Example: O’Hanlon on Epistemic Voice</a></li>
   <li><a href="#red-flags-in-your-writing" id="toc-red-flags-in-your-writing" class="nav-link" data-scroll-target="#red-flags-in-your-writing">Red Flags in Your Writing:</a></li>
   </ul></li>
-  <li><a href="#use-docuscope-categories-thoughtfully" id="toc-use-docuscope-categories-thoughtfully" class="nav-link" data-scroll-target="#use-docuscope-categories-thoughtfully"><iconify-icon role="img" inline="" icon="material-symbols:build" aria-label="Icon build from material-symbols Iconify.design set." title="Icon build from material-symbols Iconify.design set."></iconify-icon> 5. Use DocuScope Categories Thoughtfully</a>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6275696c64203e7d7d-5.-use-docuscope-categories-thoughtfully" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6275696c64203e7d7d-5.-use-docuscope-categories-thoughtfully" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6275696c64203e7d7d-5.-use-docuscope-categories-thoughtfully"><iconify-icon role="img" inline="" icon="material-symbols:build" aria-label="Icon build from material-symbols Iconify.design set." title="Icon build from material-symbols Iconify.design set."></iconify-icon> 5. Use DocuScope Categories Thoughtfully</a>
   <ul>
   <li><a href="#example-ishizaki-on-crowdfunding" id="toc-example-ishizaki-on-crowdfunding" class="nav-link" data-scroll-target="#example-ishizaki-on-crowdfunding">Example: Ishizaki on Crowdfunding</a></li>
   <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">Best Practices:</a></li>
   </ul></li>
-  <li><a href="#handle-statistical-significance-and-limitations" id="toc-handle-statistical-significance-and-limitations" class="nav-link" data-scroll-target="#handle-statistical-significance-and-limitations"><iconify-icon role="img" inline="" icon="material-symbols:warning" aria-label="Icon warning from material-symbols Iconify.design set." title="Icon warning from material-symbols Iconify.design set."></iconify-icon> 6. Handle Statistical Significance and Limitations</a>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a7761726e696e67203e7d7d-6.-handle-statistical-significance-and-limitations" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a7761726e696e67203e7d7d-6.-handle-statistical-significance-and-limitations" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a7761726e696e67203e7d7d-6.-handle-statistical-significance-and-limitations"><iconify-icon role="img" inline="" icon="material-symbols:warning" aria-label="Icon warning from material-symbols Iconify.design set." title="Icon warning from material-symbols Iconify.design set."></iconify-icon> 6. Handle Statistical Significance and Limitations</a>
   <ul>
   <li><a href="#when-to-mention-statistics" id="toc-when-to-mention-statistics" class="nav-link" data-scroll-target="#when-to-mention-statistics">When to Mention Statistics:</a></li>
   <li><a href="#example-language" id="toc-example-language" class="nav-link" data-scroll-target="#example-language">Example Language:</a></li>
   </ul></li>
-  <li><a href="#imrd-structure-with-scholarly-examples" id="toc-imrd-structure-with-scholarly-examples" class="nav-link" data-scroll-target="#imrd-structure-with-scholarly-examples"><iconify-icon role="img" inline="" icon="material-symbols:table-rows-narrow" aria-label="Icon table-rows-narrow from material-symbols Iconify.design set." title="Icon table-rows-narrow from material-symbols Iconify.design set."></iconify-icon> 7. IMRD Structure (with Scholarly Examples)</a></li>
-  <li><a href="#pre-submission-checklist" id="toc-pre-submission-checklist" class="nav-link" data-scroll-target="#pre-submission-checklist"><iconify-icon role="img" inline="" icon="material-symbols:checklist" aria-label="Icon checklist from material-symbols Iconify.design set." title="Icon checklist from material-symbols Iconify.design set."></iconify-icon> 8. Pre-Submission Checklist</a></li>
-  <li><a href="#final-thought-youre-mapping-the-territory" id="toc-final-thought-youre-mapping-the-territory" class="nav-link" data-scroll-target="#final-thought-youre-mapping-the-territory"><iconify-icon role="img" inline="" icon="material-symbols:explore" aria-label="Icon explore from material-symbols Iconify.design set." title="Icon explore from material-symbols Iconify.design set."></iconify-icon> Final Thought: You’re Mapping the Territory</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a7461626c652d726f77732d6e6172726f77203e7d7d-7.-imrd-structure-with-scholarly-examples" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a7461626c652d726f77732d6e6172726f77203e7d7d-7.-imrd-structure-with-scholarly-examples" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a7461626c652d726f77732d6e6172726f77203e7d7d-7.-imrd-structure-with-scholarly-examples"><iconify-icon role="img" inline="" icon="material-symbols:table-rows-narrow" aria-label="Icon table-rows-narrow from material-symbols Iconify.design set." title="Icon table-rows-narrow from material-symbols Iconify.design set."></iconify-icon> 7. IMRD Structure (with Scholarly Examples)</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a636865636b6c697374203e7d7d-8.-pre-submission-checklist" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a636865636b6c697374203e7d7d-8.-pre-submission-checklist" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a636865636b6c697374203e7d7d-8.-pre-submission-checklist"><iconify-icon role="img" inline="" icon="material-symbols:checklist" aria-label="Icon checklist from material-symbols Iconify.design set." title="Icon checklist from material-symbols Iconify.design set."></iconify-icon> 8. Pre-Submission Checklist</a></li>
+  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6578706c6f7265203e7d7d-final-thought-youre-mapping-the-territory" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6578706c6f7265203e7d7d-final-thought-youre-mapping-the-territory" class="nav-link" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6578706c6f7265203e7d7d-final-thought-youre-mapping-the-territory"><iconify-icon role="img" inline="" icon="material-symbols:explore" aria-label="Icon explore from material-symbols Iconify.design set." title="Icon explore from material-symbols Iconify.design set."></iconify-icon> Final Thought: You’re Mapping the Territory</a></li>
   <li><a href="#works-cited" id="toc-works-cited" class="nav-link" data-scroll-target="#works-cited">Works Cited</a></li>
   </ul>
 </nav>
@@ -401,7 +420,7 @@ div.csl-indent {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../vignettes/external-corpus.html">Vignettes</a></li><li class="breadcrumb-item"><a href="../vignettes/results-to-paper.html">Turning Your Results Into a Research Paper</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../vignettes/workflow-academic-levels.html">Vignettes</a></li><li class="breadcrumb-item"><a href="../vignettes/results-to-paper.html">Turning Your Results Into a Research Paper</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Turning Your Results Into a Research Paper</h1>
 </div>
@@ -421,14 +440,14 @@ div.csl-indent {
 
 
 <p><em>Advice for Using DocuScope and Interpreting Your Results</em></p>
-<section id="what-makes-docuscope-research-unique" class="level2">
-<h2 class="anchored" data-anchor-id="what-makes-docuscope-research-unique"><iconify-icon role="img" inline="" icon="material-symbols:lightbulb" aria-label="Icon lightbulb from material-symbols Iconify.design set." title="Icon lightbulb from material-symbols Iconify.design set."></iconify-icon> What Makes DocuScope Research Unique?</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6c6967687462756c62203e7d7d-what-makes-docuscope-research-unique" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6c6967687462756c62203e7d7d-what-makes-docuscope-research-unique"><iconify-icon role="img" inline="" icon="material-symbols:lightbulb" aria-label="Icon lightbulb from material-symbols Iconify.design set." title="Icon lightbulb from material-symbols Iconify.design set."></iconify-icon> What Makes DocuScope Research Unique?</h2>
 <p>DocuScope research isn’t just about counting words—it’s about understanding <strong>rhetorical choices</strong>. You’re asking: How do writers use language strategically to achieve their goals? What patterns reveal about audience, purpose, and context?</p>
 <p><strong>Remember:</strong> Numbers are your starting point, not your endpoint. Your job is to explain what those patterns mean for how people communicate.</p>
 <hr>
 </section>
-<section id="focus-your-claim" class="level2">
-<h2 class="anchored" data-anchor-id="focus-your-claim"><iconify-icon role="img" inline="" icon="material-symbols:center-focus-strong" aria-label="Icon center-focus-strong from material-symbols Iconify.design set." title="Icon center-focus-strong from material-symbols Iconify.design set."></iconify-icon> 1. Focus Your Claim</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a63656e7465722d666f6375732d7374726f6e67203e7d7d-1.-focus-your-claim" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a63656e7465722d666f6375732d7374726f6e67203e7d7d-1.-focus-your-claim"><iconify-icon role="img" inline="" icon="material-symbols:center-focus-strong" aria-label="Icon center-focus-strong from material-symbols Iconify.design set." title="Icon center-focus-strong from material-symbols Iconify.design set."></iconify-icon> 1. Focus Your Claim</h2>
 <p>Your claim should be <strong>specific</strong>, <strong>data-driven</strong>, and rhetorically <strong>meaningful</strong>. Instead of saying “this category appears a lot,” ask what <strong>rhetorical work</strong> it’s doing.</p>
 <section id="example-aull-on-student-writing" class="level3">
 <h3 class="anchored" data-anchor-id="example-aull-on-student-writing">Example: Aull on Student Writing</h3>
@@ -453,8 +472,8 @@ Tip
 <hr>
 </section>
 </section>
-<section id="use-visualizations-to-anchor-your-claim" class="level2">
-<h2 class="anchored" data-anchor-id="use-visualizations-to-anchor-your-claim"><iconify-icon role="img" inline="" icon="material-symbols:bar-chart" aria-label="Icon bar-chart from material-symbols Iconify.design set." title="Icon bar-chart from material-symbols Iconify.design set."></iconify-icon> 2. Use Visualizations to Anchor Your Claim</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6261722d6368617274203e7d7d-2.-use-visualizations-to-anchor-your-claim" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6261722d6368617274203e7d7d-2.-use-visualizations-to-anchor-your-claim"><iconify-icon role="img" inline="" icon="material-symbols:bar-chart" aria-label="Icon bar-chart from material-symbols Iconify.design set." title="Icon bar-chart from material-symbols Iconify.design set."></iconify-icon> 2. Use Visualizations to Anchor Your Claim</h2>
 <p>A figure or table isn’t decoration—it’s <strong>evidence</strong>. Show clear contrasts or trends from your corpus that directly support your claim.</p>
 <section id="example-dejeu-on-grant-proposals" class="level3">
 <h3 class="anchored" data-anchor-id="example-dejeu-on-grant-proposals">Example: DeJeu on Grant Proposals</h3>
@@ -483,8 +502,8 @@ Tip
 <hr>
 </section>
 </section>
-<section id="interpret-like-a-rhetorician" class="level2">
-<h2 class="anchored" data-anchor-id="interpret-like-a-rhetorician"><iconify-icon role="img" inline="" icon="material-symbols:psychology-alt" aria-label="Icon psychology-alt from material-symbols Iconify.design set." title="Icon psychology-alt from material-symbols Iconify.design set."></iconify-icon> 3. Interpret Like a Rhetorician</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a70737963686f6c6f67792d616c74203e7d7d-3.-interpret-like-a-rhetorician" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a70737963686f6c6f67792d616c74203e7d7d-3.-interpret-like-a-rhetorician"><iconify-icon role="img" inline="" icon="material-symbols:psychology-alt" aria-label="Icon psychology-alt from material-symbols Iconify.design set." title="Icon psychology-alt from material-symbols Iconify.design set."></iconify-icon> 3. Interpret Like a Rhetorician</h2>
 <p>Students often describe what they found but stop short of interpretation. Always ask: - What is this language <strong>doing</strong>? - Why might the writer have used it? - How does this serve their <strong>audience</strong> and <strong>purpose</strong>?</p>
 <section id="example-marcellino-on-marine-corps-speech" class="level3">
 <h3 class="anchored" data-anchor-id="example-marcellino-on-marine-corps-speech">Example: Marcellino on Marine Corps Speech</h3>
@@ -496,8 +515,8 @@ Tip
 <hr>
 </section>
 </section>
-<section id="avoid-truisms-and-oversimplification" class="level2">
-<h2 class="anchored" data-anchor-id="avoid-truisms-and-oversimplification"><iconify-icon role="img" inline="" icon="material-symbols:cancel" aria-label="Icon cancel from material-symbols Iconify.design set." title="Icon cancel from material-symbols Iconify.design set."></iconify-icon> 4. Avoid Truisms and Oversimplification</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a63616e63656c203e7d7d-4.-avoid-truisms-and-oversimplification" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a63616e63656c203e7d7d-4.-avoid-truisms-and-oversimplification"><iconify-icon role="img" inline="" icon="material-symbols:cancel" aria-label="Icon cancel from material-symbols Iconify.design set." title="Icon cancel from material-symbols Iconify.design set."></iconify-icon> 4. Avoid Truisms and Oversimplification</h2>
 <p>Vague statements like “this field is more objective” or “this genre is more formal” won’t earn credit. Be specific about <strong>how</strong> and <strong>why</strong> linguistic patterns create meaning.</p>
 <section id="better" class="level3">
 <h3 class="anchored" data-anchor-id="better">Better:</h3>
@@ -519,8 +538,8 @@ Tip
 <hr>
 </section>
 </section>
-<section id="use-docuscope-categories-thoughtfully" class="level2">
-<h2 class="anchored" data-anchor-id="use-docuscope-categories-thoughtfully"><iconify-icon role="img" inline="" icon="material-symbols:build" aria-label="Icon build from material-symbols Iconify.design set." title="Icon build from material-symbols Iconify.design set."></iconify-icon> 5. Use DocuScope Categories Thoughtfully</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6275696c64203e7d7d-5.-use-docuscope-categories-thoughtfully" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6275696c64203e7d7d-5.-use-docuscope-categories-thoughtfully"><iconify-icon role="img" inline="" icon="material-symbols:build" aria-label="Icon build from material-symbols Iconify.design set." title="Icon build from material-symbols Iconify.design set."></iconify-icon> 5. Use DocuScope Categories Thoughtfully</h2>
 <p>Introduce categories clearly and provide examples. Help your reader see not just what a category means, but <strong>how it functions</strong> in context.</p>
 <section id="example-ishizaki-on-crowdfunding" class="level3">
 <h3 class="anchored" data-anchor-id="example-ishizaki-on-crowdfunding">Example: Ishizaki on Crowdfunding</h3>
@@ -537,8 +556,8 @@ Tip
 <hr>
 </section>
 </section>
-<section id="handle-statistical-significance-and-limitations" class="level2">
-<h2 class="anchored" data-anchor-id="handle-statistical-significance-and-limitations"><iconify-icon role="img" inline="" icon="material-symbols:warning" aria-label="Icon warning from material-symbols Iconify.design set." title="Icon warning from material-symbols Iconify.design set."></iconify-icon> 6. Handle Statistical Significance and Limitations</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a7761726e696e67203e7d7d-6.-handle-statistical-significance-and-limitations" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a7761726e696e67203e7d7d-6.-handle-statistical-significance-and-limitations"><iconify-icon role="img" inline="" icon="material-symbols:warning" aria-label="Icon warning from material-symbols Iconify.design set." title="Icon warning from material-symbols Iconify.design set."></iconify-icon> 6. Handle Statistical Significance and Limitations</h2>
 <p>Be honest about what your data can and cannot tell you.</p>
 <section id="when-to-mention-statistics" class="level3">
 <h3 class="anchored" data-anchor-id="when-to-mention-statistics">When to Mention Statistics:</h3>
@@ -554,8 +573,8 @@ Tip
 <hr>
 </section>
 </section>
-<section id="imrd-structure-with-scholarly-examples" class="level2">
-<h2 class="anchored" data-anchor-id="imrd-structure-with-scholarly-examples"><iconify-icon role="img" inline="" icon="material-symbols:table-rows-narrow" aria-label="Icon table-rows-narrow from material-symbols Iconify.design set." title="Icon table-rows-narrow from material-symbols Iconify.design set."></iconify-icon> 7. IMRD Structure (with Scholarly Examples)</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a7461626c652d726f77732d6e6172726f77203e7d7d-7.-imrd-structure-with-scholarly-examples" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a7461626c652d726f77732d6e6172726f77203e7d7d-7.-imrd-structure-with-scholarly-examples"><iconify-icon role="img" inline="" icon="material-symbols:table-rows-narrow" aria-label="Icon table-rows-narrow from material-symbols Iconify.design set." title="Icon table-rows-narrow from material-symbols Iconify.design set."></iconify-icon> 7. IMRD Structure (with Scholarly Examples)</h2>
 <p>Here’s how to structure your paper using the IMRD model, with scholarly models:</p>
 <table class="caption-top table">
 <colgroup>
@@ -594,8 +613,8 @@ Tip
 </tbody>
 </table>
 </section>
-<section id="pre-submission-checklist" class="level2">
-<h2 class="anchored" data-anchor-id="pre-submission-checklist"><iconify-icon role="img" inline="" icon="material-symbols:checklist" aria-label="Icon checklist from material-symbols Iconify.design set." title="Icon checklist from material-symbols Iconify.design set."></iconify-icon> 8. Pre-Submission Checklist</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a636865636b6c697374203e7d7d-8.-pre-submission-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a636865636b6c697374203e7d7d-8.-pre-submission-checklist"><iconify-icon role="img" inline="" icon="material-symbols:checklist" aria-label="Icon checklist from material-symbols Iconify.design set." title="Icon checklist from material-symbols Iconify.design set."></iconify-icon> 8. Pre-Submission Checklist</h2>
 <p>Before submitting, ask yourself:</p>
 <p><strong>About Your Claim:</strong></p>
 <ul>
@@ -617,8 +636,8 @@ Tip
 </ul>
 <hr>
 </section>
-<section id="final-thought-youre-mapping-the-territory" class="level2">
-<h2 class="anchored" data-anchor-id="final-thought-youre-mapping-the-territory"><iconify-icon role="img" inline="" icon="material-symbols:explore" aria-label="Icon explore from material-symbols Iconify.design set." title="Icon explore from material-symbols Iconify.design set."></iconify-icon> Final Thought: You’re Mapping the Territory</h2>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6578706c6f7265203e7d7d-final-thought-youre-mapping-the-territory" class="level2">
+<h2 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2069636f6e696679206d6174657269616c2d73796d626f6c733a6578706c6f7265203e7d7d-final-thought-youre-mapping-the-territory"><iconify-icon role="img" inline="" icon="material-symbols:explore" aria-label="Icon explore from material-symbols Iconify.design set." title="Icon explore from material-symbols Iconify.design set."></iconify-icon> Final Thought: You’re Mapping the Territory</h2>
 <p>As a novice researcher, your goal isn’t to offer definitive answers—it’s to use linguistic evidence to make a <strong>focused, well-reasoned rhetorical claim</strong>.</p>
 <p>DocuScope gives you patterns. Your task is to explain: - <strong>What do they tell us about writing?</strong> - <strong>How do they reflect audience, genre, or context?</strong> - <strong>What insights do they offer</strong> for writers, teachers, or communicators?</p>
 <p>Remember: You’re not just analyzing language—you’re uncovering the strategic thinking behind communication choices. Every linguistic pattern represents human decision-making in action.</p>
@@ -627,15 +646,15 @@ Tip
 <h2 class="anchored" data-anchor-id="works-cited">Works Cited</h2>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-aull2023language" class="csl-entry" role="listitem">
-Aull, Laura. 2023. <span>“Language Patterns in Secondary and Postsecondary Student Writing.”</span> In <em>Corpora and Rhetorically Informed Text Analysis: The Diverse Applications of <span>DocuScope</span></em>, edited by David West Brown and Danielle Zawodny Wetzel, 94–118. John Benjamins. <a href="https://doi.org/10.1075/scl.109.05aul">https://doi.org/10.1075/scl.109.05aul</a>.
+Aull, Laura. 2023. <span>“Language Patterns in Secondary and Postsecondary Student Writing.”</span> In <em>Corpora and Rhetorically Informed Text Analysis: The Diverse Applications of <span>DocuScope</span></em>, edited by David West Brown and Danielle Zawodny Wetzel. John Benjamins. <a href="https://doi.org/10.1075/scl.109.05aul">https://doi.org/10.1075/scl.109.05aul</a>.
 </div>
 <div id="ref-dejeu2024topoi" class="csl-entry" role="listitem">
 DeJeu, Emily Barrow. 2024. <span>“Topoi of Nonprofit Proposal Writing.”</span> <em>Business and Professional Communication Quarterly</em> 87 (1): 122–51. <a href="https://doi.org/10.1177/23294906231182616">https://doi.org/10.1177/23294906231182616</a>.
 </div>
 <div id="ref-ishizaki2016computer" class="csl-entry" role="listitem">
-Ishizaki, Suguru. 2016. <span>“Computer-Aided Rhetorical Analysis of Crowdfunding Pitches.”</span> In <em>2016 IEEE International Professional Communication Conference (IPCC)</em>, 1–4. IEEE. <a href="https://doi.org/10.1109/IPCC.2016.7740540">https://doi.org/10.1109/IPCC.2016.7740540</a>.
+Ishizaki, Suguru. 2016. <span>“Computer-Aided Rhetorical Analysis of Crowdfunding Pitches.”</span> <em>2016 IEEE International Professional Communication Conference (IPCC)</em>, 1–4. <a href="https://doi.org/10.1109/IPCC.2016.7740540">https://doi.org/10.1109/IPCC.2016.7740540</a>.
 </div>
 <div id="ref-marcellino2014talk" class="csl-entry" role="listitem">
 Marcellino, William M. 2014. <span>“Talk Like a Marine: USMC Linguistic Acculturation and Civil–Military Argument.”</span> <em>Discourse Studies</em> 16 (3): 385–405. <a href="https://doi.org/10.1177/1461445613508895">https://doi.org/10.1177/1461445613508895</a>.
