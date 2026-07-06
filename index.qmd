@@ -22,6 +22,10 @@
 
 **DocuScope Corpus Analysis & Concordancer (DocuScope CA)** is a powerful web-based tool that combines traditional corpus analysis with cutting-edge natural language processing to make sophisticated textual analysis accessible to students, researchers, and educators.
 
+::: {.callout-warning}
+DocuScope CA's underlying spaCy model has been trained on English texts. Both DocuScope and CLAWS7, the tagsets the model emits, were developed for parsing and analyzing English-language texts. Texts that include some words or phrases in other languages are unlikely to substantially affect results. However, processing full texts in languages other than English is discouraged and, in some deployments, may be blocked to avoid generating unreliable or misleading outputs.
+:::
+
 ## What is DocuScope CA?
 
 DocuScope CA is a **Streamlit-powered application** that integrates three key technologies:

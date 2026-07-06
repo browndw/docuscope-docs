@@ -10,6 +10,10 @@ The **Manage Corpus Data** page is where you load, process, and manage your corp
 
 ---
 
+::: {.callout-warning}
+DocuScope CA's underlying spaCy model has been trained on English texts. Both DocuScope and CLAWS7, the tagsets the model emits, were developed for parsing and analyzing English-language texts. Texts that include some words or phrases in other languages are unlikely to substantially affect results. However, processing full texts in languages other than English is discouraged and, in some deployments, may be blocked to avoid generating unreliable or misleading outputs.
+:::
+
 ## Step 1: Load or Process a Target Corpus
 
 Before using any other tools, you must load or process a **target corpus**.
