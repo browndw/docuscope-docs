@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ade43af013ec777e44c4dc1937c7d1d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-3d73c9dd21032f6a02c0f397ec6d8864.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
@@ -400,6 +400,19 @@ Manage Corpus Data</path></h1>
 <h1>Manage Corpus Data</h1>
 <p>The <strong>Manage Corpus Data</strong> page is where you load, process, and manage your corpora before moving on to analysis and visualization.</p>
 <hr>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>DocuScope CA’s underlying spaCy model has been trained on English texts. Both DocuScope and CLAWS7, the tagsets the model emits, were developed for parsing and analyzing English-language texts. Texts that include some words or phrases in other languages are unlikely to substantially affect results. However, processing full texts in languages other than English is discouraged and, in some deployments, may be blocked to avoid generating unreliable or misleading outputs.</p>
+</div>
+</div>
 <section id="step-1-load-or-process-a-target-corpus" class="level2">
 <h2 class="anchored" data-anchor-id="step-1-load-or-process-a-target-corpus">Step 1: Load or Process a Target Corpus</h2>
 <p>Before using any other tools, you must load or process a <strong>target corpus</strong>.</p>
