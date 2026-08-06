@@ -50,6 +50,7 @@ book:
          - vignettes/workflow-academic-levels.qmd
          - vignettes/workflow-passive-constructions.qmd
          - vignettes/workflow-hape-collocations.qmd
+         - vignettes/new-corpus.qmd
          - vignettes/external-corpus.qmd
          - vignettes/results-to-paper.qmd
     - part: The DocuScope Project
