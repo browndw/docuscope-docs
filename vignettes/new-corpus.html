@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>   AI-Assisted Analysis – DocuScope</title>
+<title>Preparing a New Corpus for Processing – DocuScope</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -36,8 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../guide/download-corpus.html" rel="next">
-<link href="../guide/assisted-plotting.html" rel="prev">
+<link href="../vignettes/external-corpus.html" rel="next">
+<link href="../vignettes/workflow-hape-collocations.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -48,7 +48,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-4f42f5c190fb4bb877cee5e415e2ff57.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/iconify-3.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -90,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../guide/load-corpus.html">DocuScope CA Apps</a></li><li class="breadcrumb-item"><a href="../guide/assisted-analysis.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M192-384q-40 0-68-28t-28-68q0-40 28-68t68-28v-72q0-29.7 21.15-50.85Q234.3-720 264-720h120q0-40 28-68t68-28q40 0 68 28t28 68h120q29.7 0 50.85 21.15Q768-677.7 768-648v72q40 0 68 28t28 68q0 40-28 68t-68 28v168q0 29.7-21.16 50.85Q725.68-144 695.96-144H263.72Q234-144 213-165.15T192-216v-168Zm168-72q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14Zm228 0q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14ZM336-312h288v-72H336v72Zm-72 96h432v-432H264v432Zm216-216Z"></path></svg> AI-Assisted Analysis</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../vignettes/workflow-academic-levels.html">Vignettes</a></li><li class="breadcrumb-item"><a href="../vignettes/new-corpus.html">Preparing a New Corpus for Processing</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -131,13 +130,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">DocuScope CA Apps</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../guide/load-corpus.html" class="sidebar-item-text sidebar-link">
@@ -206,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../guide/assisted-analysis.html" class="sidebar-item-text sidebar-link active">
+  <a href="../guide/assisted-analysis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M192-384q-40 0-68-28t-28-68q0-40 28-68t68-28v-72q0-29.7 21.15-50.85Q234.3-720 264-720h120q0-40 28-68t68-28q40 0 68 28t28 68h120q29.7 0 50.85 21.15Q768-677.7 768-648v72q40 0 68 28t28 68q0 40-28 68t-68 28v168q0 29.7-21.16 50.85Q725.68-144 695.96-144H263.72Q234-144 213-165.15T192-216v-168Zm168-72q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14Zm228 0q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14ZM336-312h288v-72H336v72Zm-72 96h432v-432H264v432Zm216-216Z"></path></svg> AI-Assisted Analysis</span></a>
   </div>
 </li>
@@ -296,13 +295,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Vignettes</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../vignettes/workflow-academic-levels.html" class="sidebar-item-text sidebar-link">
@@ -323,7 +322,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../vignettes/new-corpus.html" class="sidebar-item-text sidebar-link">
+  <a href="../vignettes/new-corpus.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Preparing a New Corpus for Processing</span></a>
   </div>
 </li>
@@ -368,30 +367,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-you-can-do" id="toc-what-you-can-do" class="nav-link active" data-scroll-target="#what-you-can-do">What You Can Do</a></li>
-  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works">How It Works</a></li>
-  <li><a href="#step-by-step-guide" id="toc-step-by-step-guide" class="nav-link" data-scroll-target="#step-by-step-guide">Step-by-Step Guide</a>
-  <ul>
-  <li><a href="#select-data" id="toc-select-data" class="nav-link" data-scroll-target="#select-data">1. Select Data</a></li>
-  <li><a href="#ask-a-question" id="toc-ask-a-question" class="nav-link" data-scroll-target="#ask-a-question">2. Ask a Question</a></li>
-  <li><a href="#download-results" id="toc-download-results" class="nav-link" data-scroll-target="#download-results">3. Download Results</a></li>
-  <li><a href="#manage-api-keys-and-quotas" id="toc-manage-api-keys-and-quotas" class="nav-link" data-scroll-target="#manage-api-keys-and-quotas">4. Manage API Keys and Quotas</a></li>
-  <li><a href="#clear-chat-history" id="toc-clear-chat-history" class="nav-link" data-scroll-target="#clear-chat-history">5. Clear Chat History</a></li>
-  </ul></li>
-  <li><a href="#tips-for-new-users" id="toc-tips-for-new-users" class="nav-link" data-scroll-target="#tips-for-new-users">Tips for New Users</a></li>
-  <li><a href="#if-you-get-stuck" id="toc-if-you-get-stuck" class="nav-link" data-scroll-target="#if-you-get-stuck">If You Get Stuck</a></li>
+  <li><a href="#file-format-use-plain-text-.txt" id="toc-file-format-use-plain-text-.txt" class="nav-link active" data-scroll-target="#file-format-use-plain-text-.txt">1. File Format: Use Plain Text (.txt)</a></li>
+  <li><a href="#file-naming-avoid-spaces-use-underscores" id="toc-file-naming-avoid-spaces-use-underscores" class="nav-link" data-scroll-target="#file-naming-avoid-spaces-use-underscores">2. File Naming: Avoid Spaces, Use Underscores</a></li>
+  <li><a href="#encoding-metadata-in-file-names-optional-but-recommended" id="toc-encoding-metadata-in-file-names-optional-but-recommended" class="nav-link" data-scroll-target="#encoding-metadata-in-file-names-optional-but-recommended">3. Encoding Metadata in File Names (Optional, but Recommended)</a></li>
+  <li><a href="#encoding-make-sure-files-are-utf-8" id="toc-encoding-make-sure-files-are-utf-8" class="nav-link" data-scroll-target="#encoding-make-sure-files-are-utf-8">4. Encoding: Make Sure Files Are UTF-8</a></li>
+  <li><a href="#content-only-include-what-you-want-counted" id="toc-content-only-include-what-you-want-counted" class="nav-link" data-scroll-target="#content-only-include-what-you-want-counted">5. Content: Only Include What You Want Counted</a></li>
+  <li><a href="#paragraphs-and-formatting" id="toc-paragraphs-and-formatting" class="nav-link" data-scroll-target="#paragraphs-and-formatting">6. Paragraphs and Formatting</a></li>
+  <li><a href="#uploading-your-corpus" id="toc-uploading-your-corpus" class="nav-link" data-scroll-target="#uploading-your-corpus">7. Uploading Your Corpus</a></li>
+  <li><a href="#summary-table-example-file-names-and-categories" id="toc-summary-table-example-file-names-and-categories" class="nav-link" data-scroll-target="#summary-table-example-file-names-and-categories">Summary Table: Example File Names and Categories</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../guide/load-corpus.html">DocuScope CA Apps</a></li><li class="breadcrumb-item"><a href="../guide/assisted-analysis.html"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M192-384q-40 0-68-28t-28-68q0-40 28-68t68-28v-72q0-29.7 21.15-50.85Q234.3-720 264-720h120q0-40 28-68t68-28q40 0 68 28t28 68h120q29.7 0 50.85 21.15Q768-677.7 768-648v72q40 0 68 28t28 68q0 40-28 68t-68 28v168q0 29.7-21.16 50.85Q725.68-144 695.96-144H263.72Q234-144 213-165.15T192-216v-168Zm168-72q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14Zm228 0q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14ZM336-312h288v-72H336v72Zm-72 96h432v-432H264v432Zm216-216Z"></path></svg> AI-Assisted Analysis</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../vignettes/workflow-academic-levels.html">Vignettes</a></li><li class="breadcrumb-item"><a href="../vignettes/new-corpus.html">Preparing a New Corpus for Processing</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"></svg><br>
-<path d="M192-384q-40 0-68-28t-28-68q0-40 28-68t68-28v-72q0-29.7 21.15-50.85Q234.3-720 264-720h120q0-40 28-68t68-28q40 0 68 28t28 68h120q29.7 0 50.85 21.15Q768-677.7 768-648v72q40 0 68 28t28 68q0 40-28 68t-68 28v168q0 29.7-21.16 50.85Q725.68-144 695.96-144H263.72Q234-144 213-165.15T192-216v-168Zm168-72q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14Zm228 0q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14ZM336-312h288v-72H336v72Zm-72 96h432v-432H264v432Zm216-216Z"><br>
-<br>
-AI-Assisted Analysis</path></h1>
+<h1 class="title">Preparing a New Corpus for Processing</h1>
 </div>
 
 
@@ -408,58 +400,71 @@ AI-Assisted Analysis</path></h1>
 </header>
 
 
-<p><iconify-icon role="img" inline="" icon="material-symbols:construction" aria-label="Icon construction from material-symbols Iconify.design set." title="Icon construction from material-symbols Iconify.design set."></iconify-icon> Under construction.</p>
-<p>The <strong>AI-Assisted Analysis</strong> page lets you ask questions about your data in plain English. Powered by PandasAI, this tool is designed for one-off, natural language queries about your data tables—making it easy to get summaries, statistics, and insights without writing code.</p>
+<p>This vignette guides you through preparing and uploading a <strong>new corpus</strong> for analysis in the corpus-tagger interface. Careful preparation of your text files ensures smooth processing and accurate results.</p>
 <hr>
-<section id="what-you-can-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-can-do">What You Can Do</h2>
+<section id="file-format-use-plain-text-.txt" class="level2">
+<h2 class="anchored" data-anchor-id="file-format-use-plain-text-.txt">1. File Format: Use Plain Text (.txt)</h2>
 <ul>
-<li>Select a data table from your corpus (Target, Reference, Keywords, or Grouped)</li>
-<li>Preview and optionally pivot or normalize your data</li>
-<li>Ask questions about your data in natural language (e.g., “What is the average frequency of nouns?”)</li>
-<li>Get answers as text, tables, or simple plots</li>
-<li>Download results (including plots as PNG images)</li>
-<li>Clear your chat history and start a new query</li>
-</ul>
-<hr>
-</section>
-<section id="how-it-works" class="level2">
-<h2 class="anchored" data-anchor-id="how-it-works">How It Works</h2>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Pandabot uses AI to turn your question into Python code, runs it on your selected data, and returns the result. Each prompt is handled as a single, independent query—there is no iterative conversation or memory of previous prompts.</p>
-</div>
-</div>
-<hr>
-</section>
-<section id="step-by-step-guide" class="level2">
-<h2 class="anchored" data-anchor-id="step-by-step-guide">Step-by-Step Guide</h2>
-<section id="select-data" class="level3">
-<h3 class="anchored" data-anchor-id="select-data">1. Select Data</h3>
+<li><strong>All files must be in plain text format</strong> (<code>.txt</code>).</li>
+<li><strong>Do not use word processors</strong> (like Microsoft Word) to save your files, as they add hidden formatting and may not save files as true plain text.</li>
+<li><strong>Recommended free text editors:</strong>
 <ul>
-<li>Use the <strong>Select corpus</strong> radio buttons to choose which data to analyze (Target, Reference, Keywords, or Grouped).</li>
-<li>Use the <strong>Select data to analyze</strong> dropdown to pick a specific table (e.g., tag frequencies, document-term matrix).</li>
-<li>Preview your data in the main panel. You can toggle <strong>Pivot Table</strong> or <strong>Make Percent</strong> to adjust the format.</li>
-</ul>
-</section>
-<section id="ask-a-question" class="level3">
-<h3 class="anchored" data-anchor-id="ask-a-question">2. Ask a Question</h3>
-<ul>
-<li>Enter your question in the chat input at the bottom. For example:
-<ul>
-<li>“Show the top 10 most frequent tags.”</li>
-<li>“What is the mean frequency of verbs by group?”</li>
-<li>“List all documents where noun frequency is above 5%.”</li>
+<li><strong>Mac OS:</strong> <a href="https://www.barebones.com/products/bbedit/download.html">BBEdit</a></li>
+<li><strong>Windows:</strong> <a href="https://www.sublimetext.com/">Sublime Text</a></li>
 </ul></li>
-<li>Pandabot will generate the code, run it, and display the result as a table, number, text, or plot.</li>
+<li><strong>Why not Word?</strong> Word and similar applications save files in proprietary formats (like <code>.docx</code>) that include extra formatting and may not use the correct encoding. This can cause problems during processing.</li>
+</ul>
+<hr>
+</section>
+<section id="file-naming-avoid-spaces-use-underscores" class="level2">
+<h2 class="anchored" data-anchor-id="file-naming-avoid-spaces-use-underscores">2. File Naming: Avoid Spaces, Use Underscores</h2>
+<ul>
+<li><strong>Avoid spaces</strong> in file names. Use underscores (<code>_</code>) or hyphens (<code>-</code>) instead.
+<ul>
+<li>Good: <code>acad_01.txt</code>, <code>blog_02.txt</code></li>
+<li>Bad: <code>my file.txt</code>, <code>essay 1.txt</code></li>
+</ul></li>
+<li><strong>Why?</strong> Spaces and special characters can cause errors during upload and processing.</li>
+</ul>
+<hr>
+</section>
+<section id="encoding-metadata-in-file-names-optional-but-recommended" class="level2">
+<h2 class="anchored" data-anchor-id="encoding-metadata-in-file-names-optional-but-recommended">3. Encoding Metadata in File Names (Optional, but Recommended)</h2>
+<ul>
+<li>You can <strong>encode category information</strong> at the start of each file name, before an underscore.</li>
+<li><strong>Example:</strong>
+<ul>
+<li><code>acad_01.txt</code>, <code>acad_02.txt</code> (category: <code>acad</code>)</li>
+<li><code>blog_01.txt</code>, <code>blog_02.txt</code> (category: <code>blog</code>)</li>
+</ul></li>
+<li>This allows you to compare up to <strong>20 different categories</strong> in your analysis.</li>
+<li><strong>Tip:</strong> Keep category names short and consistent.</li>
+</ul>
+<hr>
+</section>
+<section id="encoding-make-sure-files-are-utf-8" class="level2">
+<h2 class="anchored" data-anchor-id="encoding-make-sure-files-are-utf-8">4. Encoding: Make Sure Files Are UTF-8</h2>
+<ul>
+<li><strong>Files must be saved with UTF-8 encoding.</strong></li>
+<li>UTF-8 is a standard way computers represent text, ensuring all characters are read correctly.</li>
+<li>Most modern text editors (like BBEdit and Sublime Text) save files as UTF-8 by default.</li>
+<li><strong>How to check?</strong>
+<ul>
+<li>In BBEdit: When saving, make sure “Encoding” is set to “Unicode (UTF-8)”.</li>
+<li>In Sublime Text: Files are saved as UTF-8 by default.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="content-only-include-what-you-want-counted" class="level2">
+<h2 class="anchored" data-anchor-id="content-only-include-what-you-want-counted">5. Content: Only Include What You Want Counted</h2>
+<ul>
+<li><strong>Be sure that your text files contain only the content you want analyzed.</strong></li>
+<li>For example, if you are using texts from sources like Project Gutenberg, <strong>remove any headers, footers, or licensing information</strong> that is not part of the original work.
+<ul>
+<li><em>Example: Project Gutenberg files often include information like “The Project Gutenberg eBook of…” at the top and licensing/legal text at the end. If left in, words like “ebook” or “license” may appear frequently in your results!</em></li>
+</ul></li>
+<li>If your data comes from web pages or other sources, <strong>make sure all HTML or markup tags are removed</strong>. The app cannot distinguish between text and markup, so tags like <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, or <code>&lt;body&gt;</code> will be counted as words if present.</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -471,34 +476,68 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You can ask for summaries, group comparisons, filtering, or even simple visualizations. For more advanced or iterative plotting, use the <strong>AI-Assisted Plotting</strong> tool instead.</p>
+<p>Open your <code>.txt</code> files in a plain text editor and review the content before uploading.</p>
 </div>
 </div>
+<hr>
 </section>
-<section id="download-results" class="level3">
-<h3 class="anchored" data-anchor-id="download-results">3. Download Results</h3>
+<section id="paragraphs-and-formatting" class="level2">
+<h2 class="anchored" data-anchor-id="paragraphs-and-formatting">6. Paragraphs and Formatting</h2>
 <ul>
-<li>If your result is a plot, you can download it as a PNG image.</li>
-<li>Tables and text results can be copied for further use.</li>
-</ul>
-</section>
-<section id="manage-api-keys-and-quotas" class="level3">
-<h3 class="anchored" data-anchor-id="manage-api-keys-and-quotas">4. Manage API Keys and Quotas</h3>
-<ul>
-<li>If you’re using the community API, you have a daily quota of queries. The sidebar shows your usage and remaining queries.</li>
-<li>If you run out, or want to use your own OpenAI API key, enter it in the sidebar.</li>
-</ul>
-</section>
-<section id="clear-chat-history" class="level3">
-<h3 class="anchored" data-anchor-id="clear-chat-history">5. Clear Chat History</h3>
-<ul>
-<li>Use the <strong>Clear Pandabot History</strong> button in the sidebar to start a new query. This removes all previous messages.</li>
+<li><strong>No need to preserve paragraph breaks</strong>—these will be removed during processing.</li>
+<li>Just focus on clear, readable text.</li>
 </ul>
 <hr>
 </section>
+<section id="uploading-your-corpus" class="level2">
+<h2 class="anchored" data-anchor-id="uploading-your-corpus">7. Uploading Your Corpus</h2>
+<ul>
+<li>Go to the <strong>Load or process a target corpus</strong> page.</li>
+<li>Under <strong>Process a corpus</strong>, select <strong>New</strong>.</li>
+<li>Use the uploader to select and upload your <code>.txt</code> files.</li>
+<li>Follow the prompts to process your corpus.</li>
+</ul>
+<hr>
 </section>
-<section id="tips-for-new-users" class="level2">
-<h2 class="anchored" data-anchor-id="tips-for-new-users">Tips for New Users</h2>
+<section id="summary-table-example-file-names-and-categories" class="level2">
+<h2 class="anchored" data-anchor-id="summary-table-example-file-names-and-categories">Summary Table: Example File Names and Categories</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>File Name</th>
+<th>Category Encoded</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>acad_01.txt</td>
+<td>acad</td>
+<td>Academic writing</td>
+</tr>
+<tr class="even">
+<td>acad_02.txt</td>
+<td>acad</td>
+<td>Academic writing</td>
+</tr>
+<tr class="odd">
+<td>blog_01.txt</td>
+<td>blog</td>
+<td>Blog post</td>
+</tr>
+<tr class="even">
+<td>blog_02.txt</td>
+<td>blog</td>
+<td>Blog post</td>
+</tr>
+<tr class="odd">
+<td>myfile.txt</td>
+<td>(none)</td>
+<td>No category assigned</td>
+</tr>
+</tbody>
+</table>
+<hr>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -509,35 +548,10 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>Start with simple questions: “Show all tags,” “What is the average frequency of adjectives?”</li>
-<li>For more complex visualizations or iterative refinement, use the <strong>AI-Assisted Plotting</strong> tool.</li>
-<li>Download or copy your results for use in reports or further analysis.</li>
-</ul>
+<p>Preparing your files carefully saves time and prevents errors. If you’re new to plain text editing, try <a href="https://www.barebones.com/products/bbedit/download.html">BBEdit</a> (Mac) or <a href="https://www.sublimetext.com/">Sublime Text</a> (Windows)—both are free and easy to use!</p>
 </div>
 </div>
 <hr>
-</section>
-<section id="if-you-get-stuck" class="level2">
-<h2 class="anchored" data-anchor-id="if-you-get-stuck">If You Get Stuck</h2>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Make sure you have loaded and processed a target corpus.</li>
-<li>If you see warnings about data, check your table selection.</li>
-<li>If you run out of community API queries, enter your own OpenAI API key.</li>
-<li>Use the <strong>reset</strong> button on the Manage Corpus Data page if you need to start over.</li>
-</ul>
-</div>
-</div>
 
 
 </section>
@@ -945,13 +959,13 @@ Important
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../guide/assisted-plotting.html" class="pagination-link" aria-label="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;20px&quot; viewBox=&quot;0 -960 960 960&quot; width=&quot;20px&quot; fill=&quot;#434343&quot;><path d=&quot;M192-384q-40 0-68-28t-28-68q0-40 28-68t68-28v-72q0-29.7 21.15-50.85Q234.3-720 264-720h120q0-40 28-68t68-28q40 0 68 28t28 68h120q29.7 0 50.85 21.15Q768-677.7 768-648v72q40 0 68 28t28 68q0 40-28 68t-68 28v168q0 29.7-21.16 50.85Q725.68-144 695.96-144H263.72Q234-144 213-165.15T192-216v-168Zm168-72q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14Zm228 0q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14ZM336-312h288v-72H336v72Zm-72 96h432v-432H264v432Zm216-216Z&quot;/></svg> AI-Assisted Plotting">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M192-384q-40 0-68-28t-28-68q0-40 28-68t68-28v-72q0-29.7 21.15-50.85Q234.3-720 264-720h120q0-40 28-68t68-28q40 0 68 28t28 68h120q29.7 0 50.85 21.15Q768-677.7 768-648v72q40 0 68 28t28 68q0 40-28 68t-68 28v168q0 29.7-21.16 50.85Q725.68-144 695.96-144H263.72Q234-144 213-165.15T192-216v-168Zm168-72q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14Zm228 0q20 0 34-14t14-34q0-20-14-34t-34-14q-20 0-34 14t-14 34q0 20 14 34t34 14ZM336-312h288v-72H336v72Zm-72 96h432v-432H264v432Zm216-216Z"></path></svg> AI-Assisted Plotting</span>
+      <a href="../vignettes/workflow-hape-collocations.html" class="pagination-link" aria-label="Collocational Patterns in Human and AI Writing">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Collocational Patterns in Human and AI Writing</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../guide/download-corpus.html" class="pagination-link" aria-label="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;20px&quot; viewBox=&quot;0 -960 960 960&quot; width=&quot;20px&quot; fill=&quot;#434343&quot;><path d=&quot;M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z&quot;/></svg> Download Corpus Data">
-        <span class="nav-page-text"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewbox="0 -960 960 960" width="20px" fill="#434343"><path d="M480-336 288-528l51-51 105 105v-342h72v342l105-105 51 51-192 192ZM263.72-192Q234-192 213-213.15T192-264v-72h72v72h432v-72h72v72q0 29.7-21.16 50.85Q725.68-192 695.96-192H263.72Z"></path></svg> Download Corpus Data</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../vignettes/external-corpus.html" class="pagination-link" aria-label="Creating and Using an External Corpus File">
+        <span class="nav-page-text">Creating and Using an External Corpus File</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

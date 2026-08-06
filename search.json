@@ -1731,6 +1731,105 @@
     ]
   },
   {
+    "objectID": "vignettes/new-corpus.html",
+    "href": "vignettes/new-corpus.html",
+    "title": "Preparing a New Corpus for Processing",
+    "section": "",
+    "text": "1. File Format: Use Plain Text (.txt)\nThis vignette guides you through preparing and uploading a new corpus for analysis in the corpus-tagger interface. Careful preparation of your text files ensures smooth processing and accurate results.",
+    "crumbs": [
+      "Vignettes",
+      "Preparing a New Corpus for Processing"
+    ]
+  },
+  {
+    "objectID": "vignettes/new-corpus.html#file-format-use-plain-text-.txt",
+    "href": "vignettes/new-corpus.html#file-format-use-plain-text-.txt",
+    "title": "Preparing a New Corpus for Processing",
+    "section": "",
+    "text": "All files must be in plain text format (.txt).\nDo not use word processors (like Microsoft Word) to save your files, as they add hidden formatting and may not save files as true plain text.\nRecommended free text editors:\n\nMac OS: BBEdit\nWindows: Sublime Text\n\nWhy not Word? Word and similar applications save files in proprietary formats (like .docx) that include extra formatting and may not use the correct encoding. This can cause problems during processing.",
+    "crumbs": [
+      "Vignettes",
+      "Preparing a New Corpus for Processing"
+    ]
+  },
+  {
+    "objectID": "vignettes/new-corpus.html#file-naming-avoid-spaces-use-underscores",
+    "href": "vignettes/new-corpus.html#file-naming-avoid-spaces-use-underscores",
+    "title": "Preparing a New Corpus for Processing",
+    "section": "2. File Naming: Avoid Spaces, Use Underscores",
+    "text": "2. File Naming: Avoid Spaces, Use Underscores\n\nAvoid spaces in file names. Use underscores (_) or hyphens (-) instead.\n\nGood: acad_01.txt, blog_02.txt\nBad: my file.txt, essay 1.txt\n\nWhy? Spaces and special characters can cause errors during upload and processing.",
+    "crumbs": [
+      "Vignettes",
+      "Preparing a New Corpus for Processing"
+    ]
+  },
+  {
+    "objectID": "vignettes/new-corpus.html#encoding-metadata-in-file-names-optional-but-recommended",
+    "href": "vignettes/new-corpus.html#encoding-metadata-in-file-names-optional-but-recommended",
+    "title": "Preparing a New Corpus for Processing",
+    "section": "3. Encoding Metadata in File Names (Optional, but Recommended)",
+    "text": "3. Encoding Metadata in File Names (Optional, but Recommended)\n\nYou can encode category information at the start of each file name, before an underscore.\nExample:\n\nacad_01.txt, acad_02.txt (category: acad)\nblog_01.txt, blog_02.txt (category: blog)\n\nThis allows you to compare up to 20 different categories in your analysis.\nTip: Keep category names short and consistent.",
+    "crumbs": [
+      "Vignettes",
+      "Preparing a New Corpus for Processing"
+    ]
+  },
+  {
+    "objectID": "vignettes/new-corpus.html#encoding-make-sure-files-are-utf-8",
+    "href": "vignettes/new-corpus.html#encoding-make-sure-files-are-utf-8",
+    "title": "Preparing a New Corpus for Processing",
+    "section": "4. Encoding: Make Sure Files Are UTF-8",
+    "text": "4. Encoding: Make Sure Files Are UTF-8\n\nFiles must be saved with UTF-8 encoding.\nUTF-8 is a standard way computers represent text, ensuring all characters are read correctly.\nMost modern text editors (like BBEdit and Sublime Text) save files as UTF-8 by default.\nHow to check?\n\nIn BBEdit: When saving, make sure “Encoding” is set to “Unicode (UTF-8)”.\nIn Sublime Text: Files are saved as UTF-8 by default.",
+    "crumbs": [
+      "Vignettes",
+      "Preparing a New Corpus for Processing"
+    ]
+  },
+  {
+    "objectID": "vignettes/new-corpus.html#content-only-include-what-you-want-counted",
+    "href": "vignettes/new-corpus.html#content-only-include-what-you-want-counted",
+    "title": "Preparing a New Corpus for Processing",
+    "section": "5. Content: Only Include What You Want Counted",
+    "text": "5. Content: Only Include What You Want Counted\n\nBe sure that your text files contain only the content you want analyzed.\nFor example, if you are using texts from sources like Project Gutenberg, remove any headers, footers, or licensing information that is not part of the original work.\n\nExample: Project Gutenberg files often include information like “The Project Gutenberg eBook of…” at the top and licensing/legal text at the end. If left in, words like “ebook” or “license” may appear frequently in your results!\n\nIf your data comes from web pages or other sources, make sure all HTML or markup tags are removed. The app cannot distinguish between text and markup, so tags like &lt;div&gt;, &lt;p&gt;, or &lt;body&gt; will be counted as words if present.\n\n\n\n\n\n\n\nTip\n\n\n\nOpen your .txt files in a plain text editor and review the content before uploading.",
+    "crumbs": [
+      "Vignettes",
+      "Preparing a New Corpus for Processing"
+    ]
+  },
+  {
+    "objectID": "vignettes/new-corpus.html#paragraphs-and-formatting",
+    "href": "vignettes/new-corpus.html#paragraphs-and-formatting",
+    "title": "Preparing a New Corpus for Processing",
+    "section": "6. Paragraphs and Formatting",
+    "text": "6. Paragraphs and Formatting\n\nNo need to preserve paragraph breaks—these will be removed during processing.\nJust focus on clear, readable text.",
+    "crumbs": [
+      "Vignettes",
+      "Preparing a New Corpus for Processing"
+    ]
+  },
+  {
+    "objectID": "vignettes/new-corpus.html#uploading-your-corpus",
+    "href": "vignettes/new-corpus.html#uploading-your-corpus",
+    "title": "Preparing a New Corpus for Processing",
+    "section": "7. Uploading Your Corpus",
+    "text": "7. Uploading Your Corpus\n\nGo to the Load or process a target corpus page.\nUnder Process a corpus, select New.\nUse the uploader to select and upload your .txt files.\nFollow the prompts to process your corpus.",
+    "crumbs": [
+      "Vignettes",
+      "Preparing a New Corpus for Processing"
+    ]
+  },
+  {
+    "objectID": "vignettes/new-corpus.html#summary-table-example-file-names-and-categories",
+    "href": "vignettes/new-corpus.html#summary-table-example-file-names-and-categories",
+    "title": "Preparing a New Corpus for Processing",
+    "section": "Summary Table: Example File Names and Categories",
+    "text": "Summary Table: Example File Names and Categories\n\n\n\nFile Name\nCategory Encoded\nNotes\n\n\n\n\nacad_01.txt\nacad\nAcademic writing\n\n\nacad_02.txt\nacad\nAcademic writing\n\n\nblog_01.txt\nblog\nBlog post\n\n\nblog_02.txt\nblog\nBlog post\n\n\nmyfile.txt\n(none)\nNo category assigned\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nPreparing your files carefully saves time and prevents errors. If you’re new to plain text editing, try BBEdit (Mac) or Sublime Text (Windows)—both are free and easy to use!",
+    "crumbs": [
+      "Vignettes",
+      "Preparing a New Corpus for Processing"
+    ]
+  },
+  {
     "objectID": "vignettes/external-corpus.html",
     "href": "vignettes/external-corpus.html",
     "title": "Creating and Using an External Corpus File",
